@@ -7,7 +7,7 @@ function App() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/items", )
+    fetch("https://flowerized-backend.herokuapp.com/api/items/", )
       .then(response => response.json())
       .then((data) => setItems(data));
   },[]);
