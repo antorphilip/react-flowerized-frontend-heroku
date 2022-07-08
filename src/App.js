@@ -7,7 +7,7 @@ function App() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch("https://flowerized-backend.herokuapp.com/api/items/", )
+    fetch("https://flowerized-backend.herokuapp.com/api/items", )
       .then(response => response.json())
       .then((data) => setItems(data));
   },[]);
