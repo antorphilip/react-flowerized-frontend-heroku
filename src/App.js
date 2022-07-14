@@ -8,12 +8,17 @@ import Customize from './components/pages/Customize';
 import Reviews from './components/pages/Reviews';
 import AboutUs from './components/pages/AboutUs';
 import ContactUs from './components/pages/ContactUs';
+import HeroSection from './components/HeroSection';
+import Login from './components/Login';
 
 function App() {
   return (
     <>
+    
     <Router>
-      <Navbar />
+    <Navbar />
+    <HeroSection />
+    <Login/>
       <Routes>
         <Route path='/' exact component={Home} />
         <Route path='/events' component={Events} />
