@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Button } from "./Button";
 import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
+import { Button } from "./Button";
 
-
-function Navbar() {
+function NavBar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
@@ -79,15 +78,6 @@ function Navbar() {
           </Link>
         </li>
 
-        <li className={styles["nav-item"]}>
-          <Link
-            to="/customize"
-            className={styles["nav-links"]}
-            onClick={closeMobileMenu}
-          >
-            CUSTOMIZE
-          </Link>
-        </li>
 
         <li className={styles["nav-item"]}>
           <Link
@@ -125,14 +115,25 @@ function Navbar() {
             className={styles["nav-links-mobile"]}
             onClick={closeMobileMenu}
           >
-            Sign in
+            Log in
           </Link>
         </li>
+        <li>
+          <Link
+            to="/register"
+            className={styles["nav-links-mobile"]}
+            onClick={closeMobileMenu}
+          >
+            Register
+          </Link>
+        </li>
+
+
       </ul>
 
       {button && <Button buttonStyle="btn--outline">Sign it</Button>}
     </nav>
-  );
+  )
 }
 
-export default Navbar;
+export default NavBar

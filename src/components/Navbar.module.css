@@ -5,6 +5,7 @@
   font-size: 1.2rem;
   position: sticky;
   z-index: 999;
+  border-bottom: 1px solid #333f27;
 }
 
 .nav-header {
@@ -55,6 +56,7 @@
 
 .menu-icon {
   display: none;
+  margin-top: -10px;
 }
 
 @media screen and (max-width: 960px) {
@@ -89,9 +91,13 @@
     display: flex;
     text-align: center;
     align-items: center;
-    padding: 0.5rem;
+    padding: 20px 20px;
     width: 100%;
     display: table;
+    margin-bottom: 2rem;
+  }
+  .nav-item{
+    margin: -40px;
   }
 
   .nav-links:hover {
@@ -118,17 +124,20 @@
   .nav-links-mobile {
     display: block;
     text-align: center;
-    margin: 2rem auto;
+    margin: 0rem auto;
+    margin-top: -60px;
     border-radius: 4px;
-    width: 80%;
+    width: 100%;
     text-decoration: none;
     font-size: 1.5rem;
     background-color: transparent;
     color: #fff;
-    padding: 14px 20px;
+    padding: 20px 20px;
     border: 1px solid #fff;
     transition: all 0.3s ease-out;
   }
+
+
 
   .nav-links-mobile:hover {
     background: #fff;
