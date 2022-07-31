@@ -1,7 +1,7 @@
 import React from 'react'
 import Home from './components/pages/Home'
 import { Route, Routes } from "react-router"
-import NavBar from './components/NavBar'
+import NavBar from './components/Navbar'
 import Login from './components/pages/Login'
 import Events from './components/pages/Events'
 
