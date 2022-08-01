@@ -6,16 +6,16 @@
 }
 
 
-.log-mes{
+.sign-mes{
     margin-bottom: 25px;
     letter-spacing: 10px;
     color: #333f27;
     font-size: xx-large;
     font-weight: bolder;
 }
-.cover{
+.cover-signup{
     width: 100%;
-    height: 45vh;
+    height: 55vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +40,7 @@
     border: hidden;
 }
 
-.login-btn{
+.sign-btn{
     display: flex;
     padding-top: 15px;
     justify-content: center;
@@ -56,14 +56,23 @@
     border: hidden;
 }
 
-.login-btn:hover {
+.sign-btn:hover {
     background-color: #37432b;
   }
 
-  .alt-sign{
-    margin-top: 30px;
+  .mes{
+    margin-top: 20px;
     text-decoration: none;
     letter-spacing: 1.5px;
+  }
+
+  .mes-log{
+    text-decoration: none;
+    letter-spacing: 1.5px;
+  }
+
+  .link{
+    text-decoration: none;
   }
 
 @media screen and (max-width: 960px) {
@@ -73,7 +82,7 @@
         height: 60px;
     }
 
-    .login-btn{
+    .sign-btn{
         width: 90%;
         height: 60px;
     }

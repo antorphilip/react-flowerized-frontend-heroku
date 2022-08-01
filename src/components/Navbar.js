@@ -120,7 +120,7 @@ function NavBar() {
         </li>
         <li>
           <Link
-            to="/register"
+            to="/signup"
             className={styles["nav-links-mobile"]}
             onClick={closeMobileMenu}
           >

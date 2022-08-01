@@ -2,8 +2,7 @@ import React from 'react';
 import  "../Login.css"
 import HeroSection from '../HeroSection';
 import Footer from '../Footer'
-
-
+import { Link } from 'react-router-dom';
 
 
 const Login = () => {
@@ -15,11 +14,15 @@ const Login = () => {
         <input className="txt-box" type="text" placeholder="Email"/>
         <input className="txt-box" type="password" placeholder="Password"/>
         <button className='login-btn'>Login</button>
-        <p className='alt-sign'>Not a member? Signup</p>
+        <p className='alt-sign'>Not a member? <Link to='/signup' className='alt-sign'>Signup</Link></p>
+
+        
+
 
 
       </div>
       <Footer />
+      
     </div>
   )
 }
