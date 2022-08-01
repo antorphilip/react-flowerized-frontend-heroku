@@ -29,8 +29,8 @@ const Footer = () => {
                 <div className='col'>
                     <h4>STAY CONNECTED</h4>
                     <ul  id="url-link" className='list-unstyled'>
-                        <li className='icon'><a href="https://www.facebook.com/bloomsbymarra"><i class="fa-brands fa-facebook fa-3x"></i></a></li>
-                        <li className='icon'><a href="https://www.facebook.com"><i class="fa-brands fa-instagram fa-3x"></i></a></li>
+                        <li className='icon'><a href="https://www.facebook.com/bloomsbymarra" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook fa-3x"></i></a></li>
+                        <li className='icon'><a href="https://www.instagram.com/bloomsbymarra/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram fa-3x"></i></a></li>
                     </ul>
                 </div>
             </div>
