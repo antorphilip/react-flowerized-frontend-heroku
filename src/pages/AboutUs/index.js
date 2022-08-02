@@ -12,7 +12,7 @@ const AboutUs = () => {
 
 
     <div class="flex flex-wrap justify-center mt-2">
-            <img class="object-contain w-[60%] mt-5"  src="./image/aboutus-banner.png" alt="logo"/>
+            <img class="object-contain w-[70%] mt-5"  src="./image/aboutus-banner.png" alt="logo"/>
     </div>
 
             <p  class="w-[70%] h-[20vh] mx-[auto] font-[Poppins] text-justify text-lg indent-12 mt-5 leading-loose">
