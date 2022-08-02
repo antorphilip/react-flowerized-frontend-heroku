@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Events from "./pages/Events";
 import Login from './pages/Login';
 import AboutUs from './pages/AboutUs';
+import Signup from './pages/Signup';
 
 
 
@@ -40,6 +41,13 @@ function App() {
         path="/login"
         element={
             <Login />
+        }
+      />
+
+      <Route
+        path="/signup"
+        element={
+            <Signup />
         }
       />
 

@@ -2,24 +2,24 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer class="text-center lg:text-left bg-[#37432B] text-[#ECDCE4]">
-  <div class="flex justify-center items-center lg:justify-between p-6 border-b border-gray-300">
-    <div class="mr-12 hidden lg:block">
-      <span>Get connected with us on social networks:</span>
+    <footer class="text-center lg:text-left bg-gradient-to-r from-[#37432b] to-[#4d613a] text-[#ECDCE4]">
+  <div class="flex justify-center items-center lg:justify-between p-3 border-b border-gray-300">
+    <div class="mr-11 hidden lg:block">
+      <span class="font-[Poppins] tracking-[2px] no-underline">Get connected with us on social networks:</span>
     </div>
     <div class="flex justify-center">
-      <a href="https://www.facebook.com/bloomsbymarra" class="mr-6 text-[#ECDCE4]">
+      <a href="https://www.facebook.com/bloomsbymarra" target="_blank" rel="noopener noreferrer" class="mr-6 text-[#ECDCE4]">
         <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f"
-          class="w-2.5" role="img" xmlns="http://www.w3.org/2000/svg"
+          class="w-5" role="img" xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 320 512">
           <path fill="currentColor"
             d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
           </path>
         </svg>
       </a>
-      <a href="https://www.instagram.com/bloomsbymarra/?hl=en" class="mr-6 text-[#ECDCE4]">
+      <a href="https://www.instagram.com/bloomsbymarra/?hl=en" target="_blank" rel="noopener noreferrer" class="mr-6 text-[#ECDCE4]">
         <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram"
-          class="w-3.5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          class="w-7" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
           <path fill="currentColor"
             d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
           </path>
@@ -37,50 +37,46 @@ const Footer = () => {
             flex-1
             items-center
             justify-center
-            md:justify-start
+            md:justify-start font-[Poppins] tracking-[3px]
           ">
           BLOOMS BY MARRA FLOWER SHOP
         </h6>
-        <p>
+        <p class="font-[Poppins] tracking-[2px] no-underline">
           Flower Delivery Manila | Express love through flowers. Visit us now!
         </p>
       </div>
       <div class="">
-        <h6 class="uppercase font-semibold mb-4 justify-center md:justify-start flex-1">
+        <h6 class="uppercase font-semibold mb-4 justify-center md:justify-start flex-1 font-[Poppins] tracking-[5px]">
           INFORMATION
         </h6>
         <p class="mb-4">
-          <a href="#!" class="text-[#ECDCE4]">About Us</a>
+          <a href="/aboutus" class="text-[#ECDCE4] font-[Poppins] tracking-[2px] no-underline">About Us</a>
         </p>
         <p class="mb-4">
-          <a href="#!" class="text-[#ECDCE4]">Policies</a>
+          <a href="#!" class="text-[#ECDCE4] font-[Poppins] tracking-[2px] no-underline">Policies</a>
         </p>
         <p class="mb-4">
-          <a href="#!" class="text-[#ECDCE4]">Reviews</a>
+          <a href="#!" class="text-[#ECDCE4] font-[Poppins] tracking-[2px] no-underline">Reviews</a>
         </p>
       </div>
       <div class="">
-        <h6 class="uppercase font-semibold mb-4 justify-center md:justify-start flex-1">
+        <h6 class="uppercase font-semibold mb-4 justify-center md:justify-start flex-1 font-[Poppins] tracking-[5px]">
           ACCOUNT
         </h6>
+
         <p class="mb-4">
-          <a href="#!" class="text-[#ECDCE4]">Login</a>
-        </p>
-        <p class="mb-4">
-          <a href="#!" class="text-[#ECDCE4]">My Profile</a>
+          <a href="#!" class="text-[#ECDCE4] font-[Poppins] tracking-[2px] no-underline">My Profile</a>
         </p>
         <p class="mb-4">
-          <a href="#!" class="text-[#ECDCE4]">My Cart</a>
+          <a href="#!" class="text-[#ECDCE4] font-[Poppins] tracking-[2px] no-underline">My Cart</a>
         </p>
-        <p>
-          <a href="#!" class="text-[#ECDCE4]">Track My Order</a>
-        </p>
+
       </div>
       <div class="">
-        <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
+        <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start font-[Poppins] tracking-[5px]">
           Contact 
         </h6>
-        <p class="flex items-center justify-center md:justify-start mb-4">
+        <p class="flex items-center justify-center md:justify-start mb-4 font-[Poppins] tracking-[2px]">
           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home"
             class="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
             <path fill="currentColor"
@@ -89,7 +85,7 @@ const Footer = () => {
           </svg>
           111 MC Highway Marulas, Valenzuela
         </p>
-        <p class="flex items-center justify-center md:justify-start mb-4">
+        <p class="flex items-center justify-center md:justify-start mb-4 font-[Poppins] tracking-[2px]">
           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope"
             class="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512">
@@ -99,7 +95,7 @@ const Footer = () => {
           </svg>
           bloomsbymarra@gmail.com
         </p>
-        <p class="flex items-center justify-center md:justify-start mb-4">
+        <p class="flex items-center justify-center md:justify-start mb-4 font-[Poppins] tracking-[2px]">
           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone"
             class="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512">
@@ -112,9 +108,9 @@ const Footer = () => {
       </div>
     </div>
   </div>
-  <div class="text-center p-6 bg-[#809A6F]">
-    <span>Â© 2021 Copyright:</span>
-    <a class="text-[#ECDCE4] font-semibold" href="https://www.facebook.com/bloomsbymarra"> Blooms By Marra</a>
+  <div class="text-center p-3 bg-gradient-to-r from-[#4d613a] to-[#809A6F] font-[Poppins] tracking-[2px] no-underline">
+    <span>{new Date().getFullYear()}</span>
+    <a class="text-[#ECDCE4] font-semibold no-underline" href="https://www.facebook.com/bloomsbymarra"> Blooms by Marra </a> | All right reserved
   </div>
 </footer>
   )
