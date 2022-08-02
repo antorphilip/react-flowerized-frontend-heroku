@@ -7,7 +7,7 @@ const NavBar = () => {
         <nav class="flex justify-between  items-center bg-gradient-to-r from-[#f5d3e4] to-[#ecdce4] h-20">
             <div class="flex  items-center">
             <img class="h-16 ml-4" src="./image/logo.png" alt="logo"/>
-            <h1 class="font-thin text-[#333f27] tracking-[10px] uppercase text-4xl font-[Poppins] ml-4 mt-2">
+            <h1 class="font-light text-[#333f27] tracking-[10px] uppercase text-4xl font-Cinzel ml-4 mt-2">
                 Flowerized
             </h1>
             </div>
