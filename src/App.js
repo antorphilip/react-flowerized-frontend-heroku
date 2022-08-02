@@ -4,6 +4,7 @@ import NavBar from './components/NavBar'
 import Home from "./pages/Home";
 import Events from "./pages/Events";
 import Login from './pages/Login';
+import AboutUs from './pages/AboutUs';
 
 
 
@@ -28,8 +29,12 @@ function App() {
         }
       />
 
-
-
+      <Route
+        path="/aboutus"
+        element={
+            <AboutUs />
+        }
+      />
 
       <Route
         path="/login"
