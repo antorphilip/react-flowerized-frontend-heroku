@@ -1,6 +1,22 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navLink{
+    @apply text-[#333f27] text-xl uppercase tracking-[1px] px-4 py-6 mt-4 font-[Poppins] no-underline hover:bg-[#333f27] hover:text-white hover:font-bold;
 }
+
+.iconColor{
+    @apply text-[#333f27];
+}
+
+.txt-box{
+    @apply text-center font-[500] text-2xl w-[700px] h-[60px] bg-[#c4c4c4] text-[#333f27] font-[Poppins] rounded-[1.5vh] transition-[0.5s]  mt-[10px];
+}
+
+.btn-style{
+    @apply text-center font-[600] text-2xl w-[700px] h-[60px] bg-[#cdc772] text-[#333f27] font-[Poppins] rounded-[1.5vh] mt-[20px] hover:bg-[#37432b] hover:text-white;
+}
+
 
