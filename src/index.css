@@ -1,26 +1,26 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Ibarra+Real+Nova&family=Nanum+Gothic&family=Nanum+Myeongjo&family=Poppins:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Ibarra+Real+Nova&family=Nanum+Gothic&family=Nanum+Myeongjo&family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.navLink{
-    @apply text-[#333f27] font-bold text-xl uppercase tracking-[1px] px-4 py-6 mt-4 font-NanumGothic no-underline hover:bg-[#e1adc7] hover:text-white hover:font-bold;
+.navsLink {
+  @apply text-[#333f27] font-bold text-xs 2xl:text-xl uppercase tracking-[1px] px-4 py-6 mt-4 font-NanumGothic no-underline hover:bg-[#e1adc7] hover:text-white hover:font-bold;
 }
 
-.iconColor{
-    @apply text-[#333f27];
+.moblink {
+  @apply no-underline text-[#333f27] text-2xl uppercase;
 }
 
-.txt-box{
-    @apply text-center font-[500] text-2xl w-[460px] md:w-[700px] h-[60px] bg-[#c4c4c4] text-[#333f27] font-NanumGothic rounded-[1.5vh] transition-[0.5s];
+.iconColor {
+  @apply text-[#333f27];
 }
 
-.btn-style{
-    @apply tracking-[2.5px] text-center font-[600] text-2xl w-[460px] md:w-[700px] h-[60px] bg-[#cdc772] text-[#333f27] font-NanumGothic rounded-[1.5vh] mt-[20px] hover:bg-[#37432b] hover:text-white transition-[0.5s];
+.txt-box {
+  @apply text-center font-[500] text-2xl w-[460px] md:w-[700px] h-[60px] bg-[#c4c4c4] text-[#333f27] font-NanumGothic rounded-[1.5vh] transition-[0.5s];
 }
 
-
+.btn-style {
+  @apply tracking-[2.5px] text-center font-[600] text-2xl w-[460px] md:w-[700px] h-[60px] bg-[#cdc772] text-[#333f27] font-NanumGothic rounded-[1.5vh] mt-[20px] hover:bg-[#37432b] hover:text-white transition-[0.5s];
+}
