@@ -9,7 +9,7 @@ const Login = () => {
 
            <div class="flex justify-center items-center flex-col h-[45vh] bg-[#ecdce4]">
               <div>
-              <h1 class="tracking-[10px] font-[Poppins] text-4xl font-[600]">CUSTOMER LOGIN</h1>
+              <h1 class="tracking-[10px] font-NanumGothic text-4xl font-[600]">CUSTOMER LOGIN</h1>
               </div>
               <form> 
                 <input
@@ -21,14 +21,14 @@ const Login = () => {
               <input
                   type="password"
                   name="password"
-                  placeholder="Password"
+                  placeholder="Password"  
                   class="txt-box mt-[10px]"
               />
               </form>
               
 
              <button class="btn-style">Login</button>
-             <p class="mt-[30px] no-underline tracking-[1.5px] font-[Poppins]">Not a member? <Link to='/signup'  class="no-underline font-[Poppins]">Signup</Link></p>
+             <p class="mt-[30px] no-underline tracking-[1.5px] font-NanumGothic">Not a member? <Link to='/signup'  class="no-underline font-NanumGothic">Signup</Link></p>
 
             </div>
 

@@ -14,11 +14,11 @@
 }
 
 .txt-box{
-    @apply text-center font-[500] text-2xl w-[700px] h-[60px] bg-[#c4c4c4] text-[#333f27] font-[Poppins] rounded-[1.5vh] transition-[0.5s];
+    @apply text-center font-[500] text-2xl w-[700px] h-[60px] bg-[#c4c4c4] text-[#333f27] font-NanumGothic rounded-[1.5vh] transition-[0.5s];
 }
 
 .btn-style{
-    @apply text-center font-[600] text-2xl w-[700px] h-[60px] bg-[#cdc772] text-[#333f27] font-[Poppins] rounded-[1.5vh] mt-[20px] hover:bg-[#37432b] hover:text-white;
+    @apply tracking-[2.5px] text-center font-[600] text-2xl w-[700px] h-[60px] bg-[#cdc772] text-[#333f27] font-NanumGothic rounded-[1.5vh] mt-[20px] hover:bg-[#37432b] hover:text-white;
 }
 
 
