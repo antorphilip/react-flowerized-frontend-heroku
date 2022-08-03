@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 .navsLink {
-  @apply text-[#333f27] font-bold text-xs 2xl:text-xl uppercase tracking-[1px] px-4 py-6 mt-4 font-NanumGothic no-underline hover:bg-[#e1adc7] hover:text-white hover:font-bold;
+  @apply text-[#333f27] font-bold text-xs 2xl:text-xl uppercase tracking-[1px] px-4 py-8 2xl:py-6 mt-4 font-NanumGothic no-underline hover:bg-[#e1adc7] hover:text-white hover:font-bold;
 }
 
 .moblink {

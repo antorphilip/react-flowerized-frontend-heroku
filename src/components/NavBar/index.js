@@ -24,7 +24,7 @@ const NavBar = () => {
           </h1>
         </div>
 
-        <ul className="md:flex hidden">
+        <ul className="xl:flex hidden">
           {navLinks.map(function (navLink) {
             return (
               <li className="navsLink">
@@ -37,20 +37,20 @@ const NavBar = () => {
         </ul>
 
         <div>
-          <button className="mr-[20px] md:hidden" onClick={() => setNav(!nav)}>
+          <button className="mr-[20px] xl:hidden" onClick={() => setNav(!nav)}>
             {nav ? (
               <i class="fa-solid fa-x fa-2x"></i>
             ) : (
               <i className="fa-solid fa-bars fa-2x"></i>
             )}
           </button>
-          <a href="/login#Login" className="hidden md:block">
+          <a href="/login#Login" className="hidden xl:block">
             <i className="fa-regular fa-circle-user fa-2x iconColor mr-[30px]"></i>
           </a>
         </div>
       </nav>
       <ul
-        className={`text-center pl-0 md:hidden bg-[#f5d3e4]/[0.6] ${
+        className={`text-center pl-0 xl:hidden bg-[#f5d3e4]/[0.6] ${
           nav ? "fixed w-full" : "hidden"
         }`}
       >
