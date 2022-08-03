@@ -10,7 +10,7 @@ const Signup = () => {
 
            <div class="flex justify-center items-center flex-col h-[55vh] bg-[#ecdce4]">
               <div>
-              <h1 class="tracking-[10px] font-NanumGothic text-4xl font-[600]">SIGNUP NOW</h1>
+              <h1 class="tracking-[6px] md:tracking-[10px] font-NanumGothic text-3xl md:text-4xl font-[600]">SIGNUP NOW</h1>
               </div>
               
               <form> 

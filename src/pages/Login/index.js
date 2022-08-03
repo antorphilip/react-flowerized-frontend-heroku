@@ -7,9 +7,9 @@ const Login = () => {
       <div>
           <HeroSection />
 
-           <div class="flex justify-center items-center flex-col h-[45vh] bg-[#ecdce4]">
+           <div id="Login" class="flex justify-center items-center flex-col h-[45vh] bg-[#ecdce4]">
               <div>
-              <h1 class="tracking-[10px] font-NanumGothic text-4xl font-[600]">CUSTOMER LOGIN</h1>
+              <h1 class="tracking-[6px] font-NanumGothic text-3xl font-[600]">CUSTOMER LOGIN</h1>
               </div>
               <form> 
                 <input

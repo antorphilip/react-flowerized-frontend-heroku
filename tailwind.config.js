@@ -8,7 +8,9 @@ module.exports = {
         Nanum: ["'Nanum Myeongjo', 'serif'" ],
         NanumGothic: ["'Nanum Gothic', 'sans-serif'" ],
         Cinzel: ["'Cinzel', 'serif'" ],
+        Roboto: ["'Roboto', 'sans-serif'" ],
        },
+      
     },
   },
   plugins: [],

@@ -9,6 +9,7 @@ const HeroSection = () => {
       <p class="text-center">Find the perfect flower for that important day!</p>
 
     </div>
+    
   )
 }
 
