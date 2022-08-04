@@ -16,7 +16,7 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className="flex justify-between  items-center bg-gradient-to-r from-[#f5d3e4] to-[#ecdce4] h-20">
+      <nav className="fixed w-[100%] z-[999] top-0 flex justify-between  items-center bg-gradient-to-r from-[#f5d3e4] to-[#ecdce4] h-20">
         <div className="flex items-center">
           <img className="h-16" src="./image/logo.png" alt="logo" />
           <h1 className="font-light text-[#333f27] tracking-[10px] uppercase text-3xl xl:text-4xl font-Cinzel mt-2">
@@ -50,19 +50,22 @@ const NavBar = () => {
         </div>
       </nav>
       <ul
-        className={`text-center pl-0 xl:hidden bg-[#f5d3e4]/[0.6] ${
+        className={` text-center pl-0 xl:hidden bg-[#f5d3e4] ${
           nav ? "fixed w-full" : "hidden"
         }`}
       >
         {navLinks.map(function (navLink) {
           return (
-            <li className="py-[4vh] hover:bg-[#f5d3e4]">
+            <li className=" py-[3vh] hover:bg-[#e1adc7]">
               <Link to={navLink.path} className="moblink">
                 {navLink.title}
               </Link>
             </li>
           );
         })}
+        <button className="moblink py-[3vh] hover:bg-[#f5d3e4]">Login</button>
+        <br />
+        <button className="moblink py-[3vh] hover:bg-[#f5d3e4]">Signup</button>
       </ul>
     </>
   );

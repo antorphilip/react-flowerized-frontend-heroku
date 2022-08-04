@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Ibarra+Real+Nova&family=Nanum+Gothic&family=Nanum+Myeongjo&family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Kaushan+Script&family=Merriweather+Sans&family=Square+Peg&display=swap%27");
 
 @tailwind base;
 @tailwind components;
@@ -10,7 +11,7 @@
 }
 
 .moblink {
-  @apply no-underline text-[#333f27] text-2xl uppercase;
+  @apply no-underline text-[#333f27] text-xl uppercase;
 }
 
 .iconColor {
@@ -23,4 +24,21 @@
 
 .btn-style {
   @apply tracking-[2.5px] text-center font-[600] text-2xl w-[460px] md:w-[700px] h-[60px] bg-[#cdc772] text-[#333f27] font-NanumGothic rounded-[1.5vh] mt-[20px] hover:bg-[#37432b] hover:text-white transition-[0.5s];
+}
+
+.titleClass {
+  @apply my-16 mx-auto relative text-center tracking-[13px] text-4xl lg:text-5xl uppercase font-[Poppins] font-bold;
+  max-width: 1000px;
+}
+
+.titleClass:before {
+  @apply bg-black block h-[2px] absolute left-0 rounded-lg ml-2 w-[85px] sm:w-[165px] md:w-[235px] lg:w-[285px] xl:w-[305px] z-[-2];
+  content: "";
+  top: 50%;
+}
+
+.titleClass:after {
+  @apply bg-black block h-[2px] absolute right-0 rounded-lg mr-2 w-[100px] sm:w-[180px] md:w-[250px] lg:w-[300px] xl:w-[320px] z-[-2];
+  content: "";
+  top: 50%;
 }

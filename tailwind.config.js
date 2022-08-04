@@ -4,14 +4,15 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Ibarra: ["'Ibarra Real Nova', 'serif'" ],
-        Nanum: ["'Nanum Myeongjo', 'serif'" ],
-        NanumGothic: ["'Nanum Gothic', 'sans-serif'" ],
-        Cinzel: ["'Cinzel', 'serif'" ],
-        Roboto: ["'Roboto', 'sans-serif'" ],
-       },
-      
+        Ibarra: ["'Ibarra Real Nova', 'serif'"],
+        Nanum: ["'Nanum Myeongjo', 'serif'"],
+        NanumGothic: ["'Nanum Gothic', 'sans-serif'"],
+        Cinzel: ["'Cinzel', 'serif'"],
+        Roboto: ["'Roboto', 'sans-serif'"],
+        KaushanScript: ["'Kaushan Script', 'cursive'"],
+        MerriweatherSans: ["'Merriweather Sans', sans-serif;'"],
+      },
     },
   },
   plugins: [],
-}
+};

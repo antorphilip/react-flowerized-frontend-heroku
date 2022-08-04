@@ -1,25 +1,26 @@
 import React from "react";
 import Footer from "../../components/Footer";
 
+
 const AboutUs = () => {
   return (
     <div>
-      <div>
-        <h1 class="sm:text-6xl sm:tracking-[20px] font-thin text-[#333f27] tracking-[13px] text-5xl uppercase font-NanumGothic ml-4 mt-5 text-center">
+      <div className="h-[25vh] text-center">
+        <h1 class="text-[#333f27] tracking-[13px] text-5xl uppercase font-NanumGothic mt-[10vh]">
           ABOUT US
         </h1>
-        <p class="text-center mt-5 italic text-5xl sm:tracking-[2px] tracking-[1px] font-SquarePeg text-[#333f27]">
+        <p class="mt-5 italic text-2xl tracking-[1px] font-KaushanScript text-[#333f27]">
           “Love is the flower you’ve got to let grow.” - John Lennon
         </p>
       </div>
 
-      <div class="flex justify-center bg-[#ECDCE4]">
+      <div className="bg-[#ECDCE4] text-center block xl:flex ">
         <img
-          class="sm:w-[80%] object-contain w-[85%] mt-4 mb-4 ml-20"
+          class="w-[95%] mx-[auto] xl:my-5 xl:mx-5"
           src="./image/aboutus-banner.png"
           alt="logo"
         />
-        <p class="sm:w-[70%] w-[90%] mx-[auto] font-NanumGothic text-justify text-lg indent-12 mt-10 leading-loose mr-20 ml-20">
+        <p class="w-[95%] font-NanumGothic text-justify text-lg indent-12 my-[auto]  mx-[auto] xl:mx-10 leading-loose xl:leading-[2.5rem] py-4 ">
           The Blooms by Marra was started 8 years ago with their online Facebook
           Page. In addition, the shop was founded by Marra's mother-in-law. Ms.
           Marra Borres is the owner of the Blooms by Marra, that was named after
@@ -31,6 +32,8 @@ const AboutUs = () => {
           Marra Shop is located at 111 Mc Arthur Highway Marulas Valenzuela.
         </p>
       </div>
+      <div className="h-[30px]"></div>
+
       <Footer />
     </div>
   );
