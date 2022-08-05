@@ -7,6 +7,7 @@ import Login from "./pages/Login";
 import AboutUs from "./pages/AboutUs";
 import Signup from "./pages/Signup";
 import ContactUs from "./pages/ContactUs";
+import Reviews from "./components/Reviews";
 import Feature from "./components/Feature";
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
         <Route path="/feature" element={<Feature />} />
 
         <Route path="/events" element={<Events />} />
+
+        <Route path="/reviews" element={<Reviews />} />
 
         <Route path="/aboutus" element={<AboutUs />} />
 
