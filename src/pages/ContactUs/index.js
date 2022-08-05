@@ -45,7 +45,7 @@ const ContactUs = () => {
             </p>
             <div class="flex justify-center">
               <img
-                class="sm:w-[40%] object-contain w-[85%] mb-4 ml-3"
+                class="sm:w-[40%] object-contain w-[85%] mb-4 ml-3 hover:scale-[2] transition-[2.5]"
                 src="./image/maps.png"
                 alt="Map"
               />

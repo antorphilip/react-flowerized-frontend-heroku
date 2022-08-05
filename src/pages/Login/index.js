@@ -30,9 +30,10 @@ const Login = () => {
             placeholder="Password"
             class="txt-box mt-[10px]"
           />
+          <br />
+          <button class="btn-style">Login</button>
         </form>
 
-        <button class="btn-style">Login</button>
         <p class="mt-[30px] no-underline tracking-[1.5px] font-NanumGothic">
           Not a member?{" "}
           <Link to="/signup" class="no-underline font-NanumGothic">
