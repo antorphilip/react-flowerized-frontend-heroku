@@ -4,19 +4,19 @@ const Feature = () => {
   return (
     <>
       <div>
-        <span className="bg-[#fff]">
+        <span className="bg-[#fff] ">
           <h1 className="titleClass">Featured</h1>
         </span>
       </div>
-      <span className="text-center grid grid-rows-4 sm:grid-rows-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mx-[40px] my-[70px]">
+      <span className="text-center grid grid-rows-4 sm:grid-rows-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mx-[40px] my-[70px] ">
         <span className="">
-          <div className="w-[100%]">
+          <div className="w-[100%] ">
             <img
               src="./image/5k-bouquets.png"
               className="rounded border-[10px] border-[#333f27] hover:scale-[1.04] transition-[2.5]"
               alt="featured"
             ></img>
-            <div className="flex place-content-between text-left">
+            <div className="flex place-content-between text-left ">
               <div className="text-2xl font-[Poppins] font-bold mt-[5px] ml-[8px]">
                 <p className="">Money Bouquets</p>
                 <p className=" mt-[-15px]">₱99.99</p>

@@ -3,8 +3,8 @@ import Footer from "../../components/Footer";
 
 const AboutUs = () => {
   return (
-    <div className="">
-      <div className="h-[25vh] text-center  mt-[150px]">
+    <div className="mt-[80px] pt-[10px]">
+      <div className="h-[25vh] text-center ">
         <h1 className="titleClass text-[#333f27] tracking-[13px] text-5xl uppercase font-NanumGothic mt-[10vh]">
           ABOUT US
         </h1>

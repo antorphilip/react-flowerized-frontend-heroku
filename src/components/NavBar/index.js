@@ -56,7 +56,7 @@ const NavBar = () => {
       >
         {navLinks.map(function (navLink) {
           return (
-            <li className=" py-[3vh] hover:bg-[#e1adc7]">
+            <li className=" py-[3vh] hover:bg-[#e1adc7] ">
               <Link to={navLink.path} className="moblink">
                 {navLink.title}
               </Link>

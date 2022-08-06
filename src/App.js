@@ -9,6 +9,7 @@ import Signup from "./pages/Signup";
 import ContactUs from "./pages/ContactUs";
 import Reviews from "./components/Reviews";
 import Feature from "./components/Feature";
+import MyAccount from "./pages/MyAccount";
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
         <Route path="/aboutus" element={<AboutUs />} />
 
         <Route path="/contactus" element={<ContactUs />} />
+
+        <Route path="/myaccount" element={<MyAccount />} />
 
         <Route path="/login" element={<Login />} />
 

@@ -27,7 +27,7 @@
 }
 
 .titleClass {
-  @apply my-16 mx-auto relative text-center tracking-[13px] text-4xl lg:text-5xl uppercase font-[Poppins] font-bold;
+  @apply my-16 mx-auto relative text-center tracking-[13px] text-4xl lg:text-5xl uppercase font-[Poppins] font-bold z-[-2];
   max-width: 1000px;
 }
 
