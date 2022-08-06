@@ -2,13 +2,13 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer class="text-center lg:text-left bg-gradient-to-r from-[#37432b] to-[#4d613a] text-[#ECDCE4]">
+    <footer class="text-center lg:text-left bg-gradient-to-r from-[#694E4E] to-[#886F6F] text-[#F3C5C5]">
   <div class="flex justify-center items-center lg:justify-between p-3 border-b border-gray-300">
     <div class="mr-11 hidden lg:block">
-      <span class="font-[Poppins] tracking-[2px] no-underline">Get connected with us on social networks:</span>
+      <span class="text-[#fff] font-[Alata] tracking-[2px] no-underline">Get connected with us on social networks:</span>
     </div>
     <div class="flex justify-center">
-      <a href="https://www.facebook.com/bloomsbymarra" target="_blank" rel="noopener noreferrer" class="mr-6 text-[#ECDCE4]">
+      <a href="https://www.facebook.com/bloomsbymarra" target="_blank" rel="noopener noreferrer" class="mr-6 text-[#fff] hover:text-[#F3C5C5]">
         <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f"
           class="w-5" role="img" xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 320 512">
@@ -17,7 +17,7 @@ const Footer = () => {
           </path>
         </svg>
       </a>
-      <a href="https://www.instagram.com/bloomsbymarra/?hl=en" target="_blank" rel="noopener noreferrer" class="mr-6 text-[#ECDCE4]">
+      <a href="https://www.instagram.com/bloomsbymarra/?hl=en" target="_blank" rel="noopener noreferrer" class="mr-6 text-[#fff] hover:text-[#F3C5C5]">
         <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram"
           class="w-7" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
           <path fill="currentColor"
@@ -31,52 +31,53 @@ const Footer = () => {
     <div class="grid grid-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
       <div class="">
         <h6 class="
+            text-[#fff]
             uppercase
             font-semibold
             mb-4
             flex-1
             items-center
             justify-center
-            md:justify-start font-[Poppins] tracking-[3px]
+            md:justify-start font-[Alata] tracking-[3px]
           ">
           BLOOMS BY MARRA FLOWER SHOP
         </h6>
-        <p class="font-[Poppins] tracking-[2px] no-underline">
+        <p class="text-[#fff] font-[Alata] tracking-[2px] no-underline">
           Flower Delivery Manila | Express love through flowers. Visit us now!
         </p>
       </div>
       <div class="">
-        <h6 class="uppercase font-semibold mb-4 justify-center md:justify-start flex-1 font-[Poppins] tracking-[5px]">
+        <h6 class="text-[#fff] uppercase font-semibold mb-4 justify-center md:justify-start flex-1 font-[Alata] tracking-[5px]">
           INFORMATION
         </h6>
         <p class="mb-4">
-          <a href="/aboutus" class="text-[#ECDCE4] font-[Poppins] tracking-[2px] no-underline">About Us</a>
+          <a href="/aboutus" class="text-[#fff] font-[Alata] tracking-[2px] no-underline hover:text-[#F3C5C5]">About Us</a>
         </p>
         <p class="mb-4">
-          <a href="#!" class="text-[#ECDCE4] font-[Poppins] tracking-[2px] no-underline">Policies</a>
+          <a href="#!" class="text-[#fff] font-[Alata] tracking-[2px] no-underline hover:text-[#F3C5C5]">Policies</a>
         </p>
         <p class="mb-4">
-          <a href="#!" class="text-[#ECDCE4] font-[Poppins] tracking-[2px] no-underline">Reviews</a>
+          <a href="#!" class="text-[#fff] font-[Alata] tracking-[2px] no-underline hover:text-[#F3C5C5]">Reviews</a>
         </p>
       </div>
       <div class="">
-        <h6 class="uppercase font-semibold mb-4 justify-center md:justify-start flex-1 font-[Poppins] tracking-[5px]">
+        <h6 class="text-[#fff] uppercase font-semibold mb-4 justify-center md:justify-start flex-1 font-[Alata] tracking-[5px]">
           ACCOUNT
         </h6>
 
         <p class="mb-4">
-          <a href="#!" class="text-[#ECDCE4] font-[Poppins] tracking-[2px] no-underline">My Profile</a>
+          <a href="#!" class="text-[#fff] font-[Alata] tracking-[2px] no-underline hover:text-[#F3C5C5]">My Profile</a>
         </p>
         <p class="mb-4">
-          <a href="#!" class="text-[#ECDCE4] font-[Poppins] tracking-[2px] no-underline">My Cart</a>
+          <a href="#!" class="text-[#fff] font-[Alata] tracking-[2px] no-underline hover:text-[#F3C5C5]">My Cart</a>
         </p>
 
       </div>
       <div class="">
-        <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start font-[Poppins] tracking-[5px]">
+        <h6 class="text-[#fff] uppercase font-semibold mb-4 flex justify-center md:justify-start font-[Alata] tracking-[5px]">
           Contact 
         </h6>
-        <p class="flex items-center justify-center md:justify-start mb-4 font-[Poppins] tracking-[2px]">
+        <p class="text-[#fff] flex items-center justify-center md:justify-start mb-4 font-[Alata] tracking-[2px]">
           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home"
             class="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
             <path fill="currentColor"
@@ -85,7 +86,7 @@ const Footer = () => {
           </svg>
           111 MC Highway Marulas, Valenzuela
         </p>
-        <p class="flex items-center justify-center md:justify-start mb-4 font-[Poppins] tracking-[2px]">
+        <p class="text-[#fff] flex items-center justify-center md:justify-start mb-4 font-[Alata] tracking-[2px]">
           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope"
             class="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512">
@@ -95,7 +96,7 @@ const Footer = () => {
           </svg>
           bloomsbymarra@gmail.com
         </p>
-        <p class="flex items-center justify-center md:justify-start mb-4 font-[Poppins] tracking-[2px]">
+        <p class="text-[#fff] flex items-center justify-center md:justify-start mb-4 font-[Alata] tracking-[2px]">
           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone"
             class="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512">
@@ -108,9 +109,9 @@ const Footer = () => {
       </div>
     </div>
   </div>
-  <div class="text-center p-3 bg-gradient-to-r from-[#4d613a] to-[#809A6F] font-[Poppins] tracking-[2px] no-underline">
+  <div class="text-center p-3 bg-[#886F6F] font-[Alata] tracking-[2px] no-underline text-[#fff]">
     <span>{new Date().getFullYear()}</span>
-    <a class="text-[#ECDCE4] font-semibold no-underline" href="https://www.facebook.com/bloomsbymarra"> Blooms by Marra </a> | All right reserved
+    <a class="text-[#fff] font-semibold no-underline hover:text-[#F3C5C5]" href="https://www.facebook.com/bloomsbymarra text-[#fff]"> Blooms by Marra </a> | All right reserved
   </div>
 </footer>
   )

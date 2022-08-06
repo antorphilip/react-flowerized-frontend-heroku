@@ -10,7 +10,10 @@ module.exports = {
         Cinzel: ["'Cinzel', 'serif'"],
         Roboto: ["'Roboto', 'sans-serif'"],
         KaushanScript: ["'Kaushan Script', 'cursive'"],
-        MerriweatherSans: ["'Merriweather Sans', sans-serif;'"],
+        MerriweatherSans: ["'Merriweather Sans', sans-serif'"],
+        Lora: ["'Lora', 'serif'"],
+        ElMessiri: ["'El Messiri', 'sans-serif;'"],
+        Alata: ["'Alata', sans-serif'"]
       },
     },
   },

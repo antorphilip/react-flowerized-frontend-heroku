@@ -14,33 +14,33 @@ const ContactUs = () => {
         </div>
 
         <div className="basis-1/2">
-          <h1 className="text-[#333f27] tracking-[13px] text-5xl uppercase font-NanumGothic mt-[8vh] text-center">
+          <h1 className="text-[#694E4E] tracking-[13px] text-5xl uppercase font-ElMessiri font-bold mt-[8vh] text-center">
             CONTACT US
           </h1>
-          <p className="text-center mt-5 text-3xl text-[#333f27] tracking-[1px] font-NanumGothic mb-3">
+          <p className="text-center mt-5 text-3xl text-[#694E4E] tracking-[1px] font-Alata mb-3">
             Want to stay connected?
           </p>
-          <p className="text-center mt-3 text-3xl text-[#333f27] tracking-[1px] font-NanumGothic mb-5">
+          <p className="text-center mt-3 text-3xl text-[#694E4E] tracking-[1px] font-Alata mb-5">
             Reach out to us!
           </p>
           <div className="flex-col text-center">
             <a href="https://www.facebook.com/bloomsbymarra">
-              <i className="fa-brands fa-facebook text-6xl mb-3 text-[#333f27]"></i>
+              <i className="fa-brands fa-facebook text-6xl mb-3 text-[#694E4E]"></i>
             </a>
-            <p className="font-NanumGothic text-[#333f27] tracking-[1px] text-2xl mb-5">
+            <p className="font-Alata text-[#694E4E] tracking-[1px] text-2xl mb-5">
               Chat with us to our Official Facebook Page
             </p>
             <a href="https://www.facebook.com/bloomsbymarra">
-              <i className="fa-brands fa-instagram text-6xl mb-3 text-[#333f27]"></i>
+              <i className="fa-brands fa-instagram text-6xl mb-3 text-[#694E4E]"></i>
             </a>
-            <p className="font-NanumGothic text-[#333f27] tracking-[1px] text-2xl mb-5">
+            <p className="font-Alata text-[#694E4E] tracking-[1px] text-2xl mb-5">
               Slides thru DM to our Official Instagram Account
             </p>
-            <i className="fa-solid fa-phone text-6xl mb-3 text-[#333f27]"></i>
-            <p className="font-NanumGothic text-[#333f27] tracking-[1px] text-2xl">
+            <i className="fa-solid fa-phone text-6xl mb-3 text-[#694E4E]"></i>
+            <p className="font-Alata text-[#694E4E] tracking-[1px] text-2xl">
               Give us a call/text: +639996040668
             </p>
-            <p className="font-NanumGothic text-[#333f27] tracking-[1px] text-2xl mt-5">
+            <p className="font-Alata text-[#694E4E] tracking-[1px] text-2xl mt-5">
               Or you can visit us at our physical store located at:
             </p>
             <div className="flex justify-center">

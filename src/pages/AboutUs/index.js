@@ -5,21 +5,21 @@ const AboutUs = () => {
   return (
     <div className="mt-[80px] pt-[10px]">
       <div className="h-[25vh] text-center ">
-        <h1 className="titleClass text-[#333f27] tracking-[13px] text-5xl uppercase font-NanumGothic mt-[10vh]">
+        <h1 className="titleClass text-[#694E4E] tracking-[13px] text-5xl uppercase mt-[10vh]">
           ABOUT US
         </h1>
-        <p className="mt-5 italic text-2xl tracking-[1px] font-KaushanScript text-[#333f27]">
+        <p className="mt-5 italic text-2xl tracking-[1px] font-KaushanScript text-[#694E4E]">
           “Love is the flower you’ve got to let grow.” - John Lennon
         </p>
       </div>
 
-      <div className="bg-[#ECDCE4] text-center block xl:flex ">
+      <div className="bg-gradient-to-r from-[#F3C5C5] to-[#C1A3A3] text-center block xl:flex ">
         <img
           className="w-[95%] mx-[auto] xl:my-5 xl:mx-5"
-          src="./image/aboutus-banner.png"
+          src="./image/aboutus.png"
           alt="logo"
         />
-        <p className="w-[95%] font-NanumGothic text-justify text-lg indent-12 my-[auto]  mx-[auto] xl:mx-10 leading-loose xl:leading-[2.5rem] py-4 ">
+        <p className="w-[95%] font-Alata text-justify text-lg indent-12 my-[auto]  mx-[auto] xl:mx-10 leading-loose xl:leading-[2.5rem] py-4 text-[#fff]">
           The Blooms by Marra was started 8 years ago with their online Facebook
           Page. In addition, the shop was founded by Marra's mother-in-law. Ms.
           Marra Borres is the owner of the Blooms by Marra, that was named after

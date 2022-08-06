@@ -8,9 +8,9 @@ const Signup = () => {
     <div>
           <HeroSection />
 
-           <div class="flex justify-center items-center flex-col h-[55vh] bg-[#ecdce4]">
+           <div class="flex justify-center items-center flex-col h-[55vh]">
               <div>
-              <h1 class="tracking-[6px] md:tracking-[10px] font-NanumGothic text-3xl md:text-4xl font-[600]">SIGNUP NOW</h1>
+              <h1 class="tracking-[6px] md:tracking-[10px] font-ElMessiri text-3xl md:text-4xl font-[600] text-[#694E4E]">SIGNUP NOW</h1>
               </div>
               
               <form> 
@@ -37,7 +37,7 @@ const Signup = () => {
              
              
              <button class="btn-style">Signup</button>
-             <p class="mt-[30px] no-underline tracking-[1.5px] font-NanumGothic">Already have an account? <Link to='/login' class="no-underline font-NanumGothic">Login</Link></p>
+             <p class="mt-[30px] no-underline tracking-[1.5px] font-Alata">Already have an account? <Link to='/login' class="no-underline font-NanumGothic">Login</Link></p>
 
             </div>
 
