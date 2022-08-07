@@ -36,7 +36,7 @@ const Signup = () => {
               
              
              
-             <button class="btn-style">Signup</button>
+             <button class="btn-style">SIGNUP</button>
              <p class="mt-[30px] no-underline tracking-[1.5px] font-Alata">Already have an account? <Link to='/login' class="no-underline font-NanumGothic">Login</Link></p>
 
             </div>

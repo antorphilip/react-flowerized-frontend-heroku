@@ -43,7 +43,7 @@ const Footer = () => {
           BLOOMS BY MARRA FLOWER SHOP
         </h6>
         <p class="text-[#fff] font-[Alata] tracking-[2px] no-underline">
-          Flower Delivery Manila | Express love through flowers. Visit us now!
+          Flower Delivery Manila | Express love through flowers. Shop with us now!
         </p>
       </div>
       <div class="">

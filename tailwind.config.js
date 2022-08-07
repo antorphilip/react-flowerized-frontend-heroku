@@ -13,7 +13,8 @@ module.exports = {
         MerriweatherSans: ["'Merriweather Sans', sans-serif'"],
         Lora: ["'Lora', 'serif'"],
         ElMessiri: ["'El Messiri', 'sans-serif;'"],
-        Alata: ["'Alata', sans-serif'"]
+        Alata: ["'Alata', sans-serif'"],
+        Courgette: ["'Courgette', 'cursive'"]
       },
     },
   },

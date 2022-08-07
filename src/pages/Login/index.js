@@ -31,7 +31,7 @@ const Login = () => {
             class="txt-box mt-[10px]"
           />
           <br />
-          <button class="btn-style">Login</button>
+          <button class="btn-style">LOGIN</button>
         </form>
 
         <p class="mt-[30px] no-underline tracking-[1.5px] font-Alata">

@@ -10,6 +10,7 @@ import ContactUs from "./pages/ContactUs";
 import Reviews from "./components/Reviews";
 import Feature from "./components/Feature";
 import MyAccount from "./pages/MyAccount";
+import Payment from "./pages/Payment";
 
 function App() {
   return (
@@ -33,6 +34,8 @@ function App() {
         <Route path="/login" element={<Login />} />
 
         <Route path="/signup" element={<Signup />} />
+
+        <Route path="/payment" element={<Payment />} />
       </Routes>
     </div>
   );

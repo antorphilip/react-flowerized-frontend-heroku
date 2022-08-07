@@ -4,13 +4,14 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Kaushan+Script&family=Lora&family=Merriweather+Sans&family=Square+Peg&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=El+Messiri&family=Kaushan+Script&family=Lora&family=Merriweather+Sans&family=Poppins&family=Square+Peg&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=EB+Garamond&family=El+Messiri&family=Kaushan+Script&family=Lora&family=Merriweather+Sans&family=Poppins&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Courgette&family=EB+Garamond&family=El+Messiri&family=Kaushan+Script&family=Lora&family=Merriweather+Sans&family=Poppins&family=Square+Peg&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .navsLink {
-  @apply text-[#fff] font-semibold text-xs 2xl:text-xl uppercase tracking-[1px] px-4 py-8 2xl:py-6 mt-4 font-Alata no-underline hover:bg-[#F3C5C5] hover:text-[#694E4E] hover:font-bold;
+  @apply text-[#fff] font-semibold text-xs 2xl:text-xl uppercase tracking-[1px] px-4 py-8 2xl:py-6 mt-4 font-Alata no-underline hover:bg-[#694E4E] hover:text-[#F3C5C5] hover:font-bold;
 }
 
 .moblink {

@@ -8,7 +8,7 @@ const AboutUs = () => {
         <h1 className="titleClass text-[#694E4E] tracking-[13px] text-5xl uppercase mt-[10vh]">
           ABOUT US
         </h1>
-        <p className="mt-5 italic text-2xl tracking-[1px] font-KaushanScript text-[#694E4E]">
+        <p className="mt-5 text-3xl tracking-[1px] font-[Courgette] text-[#694E4E]">
           “Love is the flower you’ve got to let grow.” - John Lennon
         </p>
       </div>

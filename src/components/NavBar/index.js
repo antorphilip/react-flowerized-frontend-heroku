@@ -18,8 +18,8 @@ const NavBar = () => {
     <>
       <nav className="fixed w-[100%] z-[999] top-0 flex justify-between  items-center bg-[#C1A3A3] h-20">
         <div className="flex items-center">
-          <img className="h-16" src="./image/logo.png" alt="logo " />
-          <h1 className="font-light text-[#fff] tracking-[10px] uppercase text-3xl xl:text-4xl font-ElMessiri mt-3 ml-2">
+          <img className="h-16 ml-3" src="./image/logo4.png" alt="logo " />
+          <h1 className="font-extrabold text-[#fff] tracking-[10px] uppercase text-3xl xl:text-4xl font-ElMessiri mt-3 ml-2">
             Flowerized
           </h1>
         </div>

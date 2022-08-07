@@ -10,11 +10,7 @@ const index = () => {
             What Our Customer are saying
           </h3>
 
-          <p class="mb-6 pb-2 md:mb-12 md:pb-0 font-[Alata] text-[#694E4E]">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
-            error amet numquam iure provident voluptate esse quasi, veritatis
-            totam voluptas nostrum quisquam eum porro a pariatur veniam.
-          </p>
+          
         </div>
 
         <div class="grid md:grid-cols-4 gap-6 text-center">
