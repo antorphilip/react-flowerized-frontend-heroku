@@ -23,7 +23,7 @@ const NavBar = () => {
           </a>
 
           <a href="/" className="no-underline">
-            <h1 className="font-extrabold text-[#fff] tracking-[10px] uppercase text-3xl xl:text-4xl font-ElMessiri mt-3 ml-2">
+            <h1 className="font-extrabold text-[#fff] tracking-[8px] uppercase text-3xl xl:text-4xl font-ElMessiri mt-3 ml-2">
               Flowerized
             </h1>
           </a>
