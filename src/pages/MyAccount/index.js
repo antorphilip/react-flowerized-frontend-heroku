@@ -6,7 +6,7 @@ const MyAccount = () => {
     <>
       <div className="mt-[80px] h-[10px]"></div>
       <div className="md:flex md:w-[70%] md:w-[70%] mx-[auto] mb-[20px]">
-        <div className="bg-blue-500 w-[95%] md:w-[30%] md:h-[75vh] mt-[10px] pt-[40px] pb-[20px] mx-[auto]">
+        <div className="bg-blue-500 w-[95%] md:w-[30%] md:h-[450px] mt-[10px] pt-[40px] pb-[20px] mx-[auto]">
           <div className="flex justify-center">
             <img
               src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
@@ -16,8 +16,8 @@ const MyAccount = () => {
           </div>
         </div>
 
-        <div className="bg-blue-300 w-[95%] md:w-[70%] md:h-[75vh] mx-[auto] mt-[10px] py-[20px] text-center">
-          <h1 className="md:text-left md:ml-[50px] md:mt-[20px] md:mb-[50px]">
+        <div className="bg-blue-300 w-[95%] md:w-[70%] md:h-[450px] mx-[auto] mt-[10px] py-[20px] text-center">
+          <h1 className="text-3xl md:text-left md:ml-[50px] md:mt-[10px] md:mb-[30px]">
             INFORMATION
           </h1>
           <div className="text-center">
@@ -63,8 +63,8 @@ const MyAccount = () => {
               </div>
 
               <div className="mt-[10px] md:text-right md:mr-[150px] md:mt-[30px]">
-                <i className="fa-solid fa-user-pen fa-3x md:mr-[20px]"></i>
-                <i className="fa-solid fa-floppy-disk fa-3x"></i>
+                <i className="fa-solid fa-user-pen fa-2x md:mr-[20px]"></i>
+                <i className="fa-solid fa-floppy-disk fa-2x"></i>
               </div>
             </form>
           </div>

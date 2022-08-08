@@ -52,13 +52,13 @@
 }
 
 .accounttxtBox {
-  @apply w-[85%] h-[40px] rounded md:w-[60%] md:mr-[10%] bg-[#DFDFDE];
+  @apply w-[440px] h-[45px] rounded md:w-[500px] md:mr-[10%] bg-[#DFDFDE] rounded-[1.5vh] transition-[0.5s];
 }
 
 .accountLabel {
-  @apply md:ml-[10%];
+  @apply md:ml-[10%] text-2xl;
 }
 
 .accountdiv {
-  @apply md:flex md:mt-[30px] md:justify-between;
+  @apply md:flex md:mt-[20px] md:justify-between;
 }
