@@ -2,6 +2,9 @@
   "name": "flowerized_frontend",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "16.x"
+  },
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
@@ -47,8 +50,6 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.1.7"
-  },
-  "engines": {
-    "node": "16.x"
   }
+  
 }
