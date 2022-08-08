@@ -14,7 +14,7 @@ module.exports = {
         Lora: ["'Lora', 'serif'"],
         ElMessiri: ["'El Messiri', 'sans-serif;'"],
         Alata: ["'Alata', sans-serif'"],
-        Courgette: ["'Courgette', 'cursive'"]
+        Courgette: ["'Courgette', 'cursive'"],
       },
     },
   },

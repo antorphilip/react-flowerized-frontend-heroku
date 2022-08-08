@@ -10,7 +10,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .navsLink {
   @apply text-[#fff] font-semibold text-xs 2xl:text-xl uppercase tracking-[1px] px-4 py-8 2xl:py-6 mt-4 font-Alata no-underline hover:bg-[#694E4E] hover:text-[#F3C5C5];
 }
@@ -50,4 +49,16 @@
 
 .accountStyle {
   @apply py-[10px] font-Alata tracking-[2px] text-2xl text-[#694E4E];
+}
+
+.accounttxtBox {
+  @apply w-[95%] h-[50px] rounded md:w-[550px] md:mr-[100px];
+}
+
+.accountLabel {
+  @apply md:ml-[100px];
+}
+
+.accountdiv {
+  @apply md:flex md:mt-[30px] md:justify-between;
 }
