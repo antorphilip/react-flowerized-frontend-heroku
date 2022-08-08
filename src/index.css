@@ -23,11 +23,11 @@
 }
 
 .txt-box {
-  @apply text-center font-[500] text-2xl w-[460px] md:w-[700px] h-[60px] bg-[#DFDFDE] text-[#694E4E] font-Alata rounded-[1.5vh] transition-[0.5s];
+  @apply text-center font-[500] text-2xl w-[460px] md:w-[500px] h-[45px] bg-[#DFDFDE] text-[#694E4E] font-Alata rounded-[1.5vh] transition-[0.5s];
 }
 
 .btn-style {
-  @apply tracking-[2.5px] text-center font-[600] text-2xl w-[460px] md:w-[700px] h-[60px] bg-[#C1A3A3] text-[#333f27] font-Alata rounded-[1.5vh] mt-[20px] hover:bg-[#694E4E] hover:text-white transition-[0.5s];
+  @apply tracking-[2.5px] text-center font-[600] text-2xl w-[460px] md:w-[500px] h-[50px] bg-[#C1A3A3] text-[#333f27] font-Alata rounded-[1.5vh] mt-[20px] hover:bg-[#694E4E] hover:text-white transition-[0.5s];
 }
 
 .titleClass {
@@ -52,7 +52,7 @@
 }
 
 .accounttxtBox {
-  @apply w-[95%] h-[50px] rounded md:w-[60%] md:mr-[10%] bg-[#DFDFDE];
+  @apply w-[85%] h-[40px] rounded md:w-[60%] md:mr-[10%] bg-[#DFDFDE];
 }
 
 .accountLabel {
