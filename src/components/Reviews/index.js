@@ -3,15 +3,15 @@ import React from "react";
 const index = () => {
   return (
     <>
-      <div className="h-[80px] mt-[80px]"></div>
+      <div className="h-[20px] mt-[80px]"></div>
       <section class="mb-20 text-gray-700 mx-[40px]">
         <div class="text-center md:max-w-xl lg:max-w-3xl mx-auto">
-          <h3 class="text-5xl font-bold tracking-[13px] mb-6 text-[#694E4E] uppercase font-ElMessiri">
+          <h3 class="text-4xl md:text-5xl font-bold tracking-[10px] mb-6 text-[#694E4E] uppercase font-ElMessiri">
             What Our Customer are saying
           </h3>
         </div>
 
-        <div class="grid md:grid-cols-4 gap-6 text-center">
+        <div class="grid md:grid-cols-4 gap-6 text-center ">
           <div>
             <div class="block rounded-lg shadow-lg bg-white">
               <div

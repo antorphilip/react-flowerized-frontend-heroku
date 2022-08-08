@@ -12,10 +12,10 @@ const Home = () => {
         <Feature />
         <div
           id="carouselExampleCrossfade"
-          class="carousel slide carousel-fade relative w-[95%] m-[auto] shadow-xl"
+          class="carousel slide carousel-fade relative w-[95%] m-[auto] shadow-xl z-[-2]"
           data-bs-ride="carousel"
         >
-          <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4 hover:scale-[1.5] transition-[2.5]">
+          <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4 hover:scale-[1.5] transition-[2.5] ">
             <button
               type="button"
               data-bs-target="#carouselExampleCrossfade"
@@ -61,7 +61,7 @@ const Home = () => {
             <div class="carousel-item float-left w-full">
               <img
                 src="./image/carousel-3.png"
-                class="block w-full"
+                class="block w-full h-[full]"
                 alt="Exotic Fruits"
               />
             </div>

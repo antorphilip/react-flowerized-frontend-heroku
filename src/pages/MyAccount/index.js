@@ -10,7 +10,7 @@ const MyAccount = () => {
           <div className="flex justify-center">
             <img
               src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-              class="rounded-full w-40 md:w-60"
+              class="rounded-full w-40 xl:w-60"
               alt="Avatar"
             />
           </div>

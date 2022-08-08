@@ -17,7 +17,7 @@ const Feature = () => {
               alt="featured"
             ></img>
             <div className="flex place-content-between text-left ">
-              <div className="text-2xl font-[Alata] font-light mt-[5px] ml-[8px]">
+              <div className="text-xl font-[Alata] font-light mt-[5px] ml-[8px]">
                 <p className="text-[#694E4E]">Money Bouquets</p>
                 <p className=" mt-[-15px] text-[#886F6F]">₱99.99</p>
               </div>
@@ -37,7 +37,7 @@ const Feature = () => {
               alt="featured"
             ></img>
             <div className="flex place-content-between text-left">
-              <div className="text-2xl font-[Alata] font-light mt-[5px] ml-[8px]">
+              <div className="text-xl font-[Alata] font-light mt-[5px] ml-[8px]">
                 <p className="text-[#694E4E]">Coffee</p>
                 <p className="mt-[-15px] text-[#886F6F]">₱99.99</p>
               </div>
@@ -57,7 +57,7 @@ const Feature = () => {
               alt="featured"
             ></img>
             <div className="flex place-content-between text-left">
-              <div className="text-2xl font-[Alata] font-light mt-[5px] ml-[8px]">
+              <div className="text-xl font-[Alata] font-light mt-[5px] ml-[8px]">
                 <p className="text-[#694E4E]">Luna</p>
                 <p className="mt-[-15px] text-[#886F6F]">₱99.99</p>
               </div>
@@ -77,7 +77,7 @@ const Feature = () => {
               alt="featured"
             ></img>
             <div className="flex place-content-between text-left">
-              <div className="text-2xl font-[Alata] font-light mt-[5px] ml-[8px]">
+              <div className="text-xl font-[Alata] font-light mt-[5px] ml-[8px]">
                 <p className="text-[#694E4E]">Naomi</p>
                 <p className="mt-[-15px] text-[#886F6F]">₱99.99</p>
               </div>
