@@ -18,10 +18,15 @@ const NavBar = () => {
     <>
       <nav className="fixed w-[100%] z-[999] top-0 flex justify-between  items-center bg-[#C1A3A3] h-20">
         <div className="flex items-center">
-          <img className="h-16 ml-3" src="./image/logo4.png" alt="logo " />
-          <h1 className="font-extrabold text-[#fff] tracking-[10px] uppercase text-3xl xl:text-4xl font-ElMessiri mt-3 ml-2">
-            Flowerized
-          </h1>
+          <a href="/">
+            <img className="h-16 ml-3" src="./image/logo4.png" alt="logo " />
+          </a>
+
+          <a href="/" className="no-underline">
+            <h1 className="font-extrabold text-[#fff] tracking-[10px] uppercase text-3xl xl:text-4xl font-ElMessiri mt-3 ml-2">
+              Flowerized
+            </h1>
+          </a>
         </div>
 
         <ul className="xl:flex hidden">
@@ -37,9 +42,12 @@ const NavBar = () => {
         </ul>
 
         <div>
-          <button className="mr-[20px] xl:hidden" onClick={() => setNav(!nav)}>
+          <button
+            className="text-[#fff] hover:text-[#694E4E] mr-[20px] xl:hidden"
+            onClick={() => setNav(!nav)}
+          >
             {nav ? (
-              <i class="fa-solid fa-x fa-2x"></i>
+              <i className="fa-solid fa-x fa-2x"></i>
             ) : (
               <i className="fa-solid fa-bars fa-2x"></i>
             )}
@@ -63,9 +71,15 @@ const NavBar = () => {
             </li>
           );
         })}
-        <button className="moblink py-[3vh] hover:bg-[#886F6F]">Login</button>
+        <a href="/login#Login">
+          <button className="moblink py-[3vh] hover:bg-[#886F6F]">Login</button>
+        </a>
         <br />
-        <button className="moblink py-[3vh] hover:bg-[#886F6F]">Signup</button>
+        <a href="/signup#Signup">
+          <button className="moblink py-[3vh] hover:bg-[#886F6F]">
+            Signup
+          </button>
+        </a>
       </ul>
     </>
   );

@@ -1,21 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Ibarra+Real+Nova&family=Nanum+Gothic&family=Nanum+Myeongjo&family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Kaushan+Script&family=Merriweather+Sans&family=Square+Peg&display=swap%27");
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Kaushan+Script&family=Lora&family=Merriweather+Sans&family=Square+Peg&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=El+Messiri&family=Kaushan+Script&family=Lora&family=Merriweather+Sans&family=Poppins&family=Square+Peg&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=EB+Garamond&family=El+Messiri&family=Kaushan+Script&family=Lora&family=Merriweather+Sans&family=Poppins&family=Square+Peg&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Courgette&family=EB+Garamond&family=El+Messiri&family=Kaushan+Script&family=Lora&family=Merriweather+Sans&family=Poppins&family=Square+Peg&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Kaushan+Script&family=Lora&family=Merriweather+Sans&family=Square+Peg&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=El+Messiri&family=Kaushan+Script&family=Lora&family=Merriweather+Sans&family=Poppins&family=Square+Peg&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=EB+Garamond&family=El+Messiri&family=Kaushan+Script&family=Lora&family=Merriweather+Sans&family=Poppins&family=Square+Peg&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Courgette&family=EB+Garamond&family=El+Messiri&family=Kaushan+Script&family=Lora&family=Merriweather+Sans&family=Poppins&family=Square+Peg&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 .navsLink {
-  @apply text-[#fff] font-semibold text-xs 2xl:text-xl uppercase tracking-[1px] px-4 py-8 2xl:py-6 mt-4 font-Alata no-underline hover:bg-[#694E4E] hover:text-[#F3C5C5] hover:font-bold;
+  @apply text-[#fff] font-semibold text-xs 2xl:text-xl uppercase tracking-[1px] px-4 py-8 2xl:py-6 mt-4 font-Alata no-underline hover:bg-[#694E4E] hover:text-[#F3C5C5];
 }
 
 .moblink {
-  @apply no-underline text-[#694E4E] text-xl uppercase font-Alata font-semibold text-[#fff];
+  @apply no-underline text-[#694E4E] text-xl uppercase font-Alata font-semibold text-[#fff] hover:text-[#F3C5C5];
 }
 
 .iconColor {
@@ -45,4 +46,8 @@
   @apply bg-[#694E4E] block h-[2px] absolute right-0 rounded-lg mr-2 w-[100px] sm:w-[180px] md:w-[250px] lg:w-[300px] xl:w-[320px] z-[-2];
   content: "";
   top: 50%;
+}
+
+.accountStyle {
+  @apply py-[10px] font-Alata tracking-[2px] text-2xl text-[#694E4E];
 }

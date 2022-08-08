@@ -22,8 +22,8 @@ const Feature = () => {
                 <p className=" mt-[-15px] text-[#886F6F]">₱99.99</p>
               </div>
               <div className="mt-[12px] mr-[6px]">
-                <i className="fa-solid fa-cart-plus fa-3x mr-[20px] text-[#694E4E]"></i>
-                <i className="fa-solid fa-pen-to-square fa-3x text-[#694E4E]"></i>
+                <i className="fa-solid fa-cart-plus fa-3x mr-[20px] text-[#694E4E] hover:scale-[1.1] transition-[2.5]"></i>
+                <i className="fa-solid fa-pen-to-square fa-3x text-[#694E4E] hover:scale-[1.1] transition-[2.5]"></i>
               </div>
             </div>
           </div>
@@ -42,8 +42,8 @@ const Feature = () => {
                 <p className="mt-[-15px] text-[#886F6F]">₱99.99</p>
               </div>
               <div className="mt-[12px] mr-[6px]">
-                <i className="fa-solid fa-cart-plus fa-3x mr-[20px] text-[#694E4E]"></i>
-                <i className="fa-solid fa-pen-to-square fa-3x text-[#694E4E]"></i>
+                <i className="fa-solid fa-cart-plus fa-3x mr-[20px] text-[#694E4E] hover:scale-[1.1] transition-[2.5]"></i>
+                <i className="fa-solid fa-pen-to-square fa-3x text-[#694E4E] hover:scale-[1.1] transition-[2.5]"></i>
               </div>
             </div>
           </div>
@@ -62,8 +62,8 @@ const Feature = () => {
                 <p className="mt-[-15px] text-[#886F6F]">₱99.99</p>
               </div>
               <div className="mt-[12px] mr-[6px]">
-                <i className="fa-solid fa-cart-plus fa-3x mr-[20px] text-[#694E4E]"></i>
-                <i className="fa-solid fa-pen-to-square fa-3x text-[#694E4E]"></i>
+                <i className="fa-solid fa-cart-plus fa-3x mr-[20px] text-[#694E4E] hover:scale-[1.1] transition-[2.5]"></i>
+                <i className="fa-solid fa-pen-to-square fa-3x text-[#694E4E] hover:scale-[1.1] transition-[2.5]"></i>
               </div>
             </div>
           </div>
@@ -82,8 +82,8 @@ const Feature = () => {
                 <p className="mt-[-15px] text-[#886F6F]">₱99.99</p>
               </div>
               <div className="mt-[12px] mr-[6px]">
-                <i className="fa-solid fa-cart-plus fa-3x mr-[20px] text-[#694E4E]"></i>
-                <i className="fa-solid fa-pen-to-square fa-3x text-[#694E4E]"></i>
+                <i className="fa-solid fa-cart-plus fa-3x mr-[20px] text-[#694E4E] hover:scale-[1.1] transition-[2.5]"></i>
+                <i className="fa-solid fa-pen-to-square fa-3x text-[#694E4E] hover:scale-[1.1] transition-[2.5]"></i>
               </div>
             </div>
           </div>
