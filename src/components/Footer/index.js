@@ -66,7 +66,7 @@ const Footer = () => {
         </h6>
 
         <p class="mb-4">
-          <a href="#!" class="text-[#fff] font-[Alata] tracking-[2px] no-underline hover:text-[#F3C5C5]">My Profile</a>
+          <a href="/myaccount" class="text-[#fff] font-[Alata] tracking-[2px] no-underline hover:text-[#F3C5C5]">My Profile</a>
         </p>
         <p class="mb-4">
           <a href="#!" class="text-[#fff] font-[Alata] tracking-[2px] no-underline hover:text-[#F3C5C5]">My Cart</a>

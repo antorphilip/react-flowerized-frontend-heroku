@@ -1,29 +1,29 @@
 import React from "react";
 import Footer from "../../components/Footer";
+import styles from "../../contact.module.css";
 
 const MyAccount = () => {
   return (
     <>
-      <div className="mt-[80px] h-[10px]"></div>
-      <div className="md:flex md:w-[70%] md:w-[70%] mx-[auto] mb-[20px]">
-        <div className="bg-blue-500 w-[95%] md:w-[30%] md:h-[450px] mt-[10px] pt-[40px] pb-[20px] mx-[auto]">
-          <div className="flex justify-center">
+      <div className="h-[1px] mt-[80px]"></div>
+      <div className="">
+        <div
+          className={`flex items-center justify-center ${styles.bgimage3}`}
+        >
+          <div className="w-[90%] lg:w-2/3 flex my-28 rounded-xl shadow-xl overflow-hidden">
             <img
-              src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-              class="rounded-full w-40 xl:w-60"
-              alt="Avatar"
+              className="lg:block hidden max-w-[500px]"
+              src="./image/myaccount.jpg"
+              alt="logo"
             />
-          </div>
-        </div>
 
-        <div className="bg-blue-300 w-[95%] md:w-[70%] md:h-[450px] mx-[auto] mt-[10px] py-[20px] text-center">
-          <h1 className="text-3xl md:text-left md:ml-[50px] md:mt-[10px] md:mb-[30px]">
-            INFORMATION
-          </h1>
-          <div className="text-center">
-            <form>
+            <div className="px-7 py-14 w-full text-center bg-white">
+              <h1 className="text-[#694E4E] tracking-[10px] text-3xl md:text-4xl uppercase font-ElMessiri font-bold ">
+                MY PROFILE
+              </h1>
+              <form>
               <div className="accountdiv">
-                <h3 className="accountLabel">Name</h3>
+                <h3 className="accountLabel font-[Alata] text-[#694E4E]">Name</h3>
                 <input
                   className="accounttxtBox"
                   type="text"
@@ -31,9 +31,8 @@ const MyAccount = () => {
                   placeholder=""
                 ></input>
               </div>
-
               <div className="accountdiv">
-                <h3 className="accountLabel">Email</h3>
+                <h3 className="accountLabel font-[Alata] text-[#694E4E]">Email</h3>
                 <input
                   className="accounttxtBox"
                   type="text"
@@ -41,9 +40,8 @@ const MyAccount = () => {
                   placeholder=""
                 ></input>
               </div>
-
               <div className="accountdiv">
-                <h3 className="accountLabel">Contact</h3>
+                <h3 className="accountLabel font-[Alata] text-[#694E4E]">Contact</h3>
                 <input
                   className="accounttxtBox"
                   type="text"
@@ -51,9 +49,8 @@ const MyAccount = () => {
                   placeholder=""
                 ></input>
               </div>
-
               <div className="accountdiv">
-                <h3 className="accountLabel">Password</h3>
+                <h3 className="accountLabel font-[Alata] text-[#694E4E]">Password</h3>
                 <input
                   className="accounttxtBox"
                   type="password"
@@ -61,17 +58,16 @@ const MyAccount = () => {
                   placeholder=""
                 ></input>
               </div>
-
-              <div className="mt-[10px] md:text-right md:mr-[150px] md:mt-[30px]">
-                <i className="fa-solid fa-user-pen fa-2x md:mr-[20px]"></i>
-                <i className="fa-solid fa-floppy-disk fa-2x"></i>
+              </form>
+             
+              
               </div>
-            </form>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <Footer />
+
+        <Footer />
+      </div>
     </>
   );
 };
