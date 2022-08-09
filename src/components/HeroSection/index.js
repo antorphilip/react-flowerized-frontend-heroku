@@ -4,15 +4,15 @@ const HeroSection = () => {
   return (
     <>
       <div className="mt-[80px]"></div>
-      <div className="w-[100%] h-[80vh]">
+      <div className="w-[100%] h-[70vh] xl:h-[80vh]">
         <video
-          className="w-[100%] h-[80%] object-cover	z-[-1] absolute"
+          className="w-[100%] h-[70%] xl:h-[80%] object-cover	z-[-1] absolute"
           src="/videos/vid-1.mp4"
           autoPlay
           loop
           muted
         />
-        <h1 className="text-center font-KaushanScript text-5xl md:text-6xl xl:text-8xl text-[#fff] tracking-[2px] pt-[60px] lg:pt-[100px] xl:pt-[200px]">
+        <h1 className="text-center font-KaushanScript text-5xl md:text-6xl xl:text-8xl text-[#fff] tracking-[2px] pt-[60px] lg:pt-[100px] xl:pt-[130px]">
           "You bring the love, We'll bring the flowers."
         </h1>
         <p className="text-center font-Cinzel text-2xl xl:text-5xl text-[#fff] pt-[40px]">

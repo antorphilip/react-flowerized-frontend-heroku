@@ -32,19 +32,19 @@
 
 .titleClass {
   @apply my-16 mx-auto relative text-center tracking-[8px] text-4xl lg:text-5xl uppercase font-ElMessiri font-bold z-[-2];
-  max-width: 1000px;
+  /* max-width: 1000px; */
 }
 
 .titleClass:before {
   @apply bg-[#694E4E] block h-[2px] absolute left-0 rounded-lg ml-2 w-[60px] sm:w-[165px] md:w-[235px] lg:w-[285px] xl:w-[305px] z-[-2];
-  content: "";
-  top: 35%;
+  /* content: "";
+  top: 35%; */
 }
 
 .titleClass:after {
   @apply bg-[#694E4E] block h-[2px] absolute right-0 rounded-lg mr-2 w-[65px] sm:w-[180px] md:w-[250px] lg:w-[300px] xl:w-[320px] z-[-2];
-  content: "";
-  top: 35%;
+  /* content: "";
+  top: 35%; */
 }
 
 .accountStyle {
