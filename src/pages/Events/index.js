@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Events = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <>
+      <div className="mt-[80px]"></div>
+    </>
+  );
+};
 
-export default Events
+export default Events;
