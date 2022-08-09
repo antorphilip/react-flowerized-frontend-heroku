@@ -1,48 +1,56 @@
 import React from "react";
 import Footer from "../../components/Footer";
+import bgimage from "../../bgimage.png";
 
 const ContactUs = () => {
   return (
     <>
-      <div className="h-[1px] md:h-[0px] mt-[80px]"></div>
-      <div className="mt-[80px]">
-        <div className="flex justify-center">
-          <div className="basis-1/2 lg:block hidden">
+      <div className="h-[1px] mt-[80px]"></div>
+      <div className="">
+        <div className="flex items-center justify-center">
+          <div className="w-[90%] lg:w-2/3 flex my-28 rounded-xl shadow-xl overflow-hidden">
             <img
-              className="rounded border-[7px] border-[#C1A3A3] w-[95%] mx-[auto] xl:m-5 flex"
-              src="./image/contact.jpg"
+              className="lg:block hidden max-w-[500px]"
+              // src="./image/contact.jpg"
+              src={bgimage}
               alt="logo"
-            />
-          </div>
+            />      
 
-          <div className="basis-1/2 md:mt-[40px]">
-            <h1 className="text-[#694E4E] tracking-[10px] text-5xl md:text-6xl uppercase font-ElMessiri font-bold text-center">
+          <div className="px-7 py-14 w-full text-center">
+            <h1 className="text-[#694E4E] tracking-[10px] text-3xl md:text-4xl uppercase font-ElMessiri font-bold ">
               CONTACT US
             </h1>
-            <p className="text-center mt-5 text-3xl text-[#694E4E] tracking-[1px] font-Courgette mb-3">
-              Want to stay connected?
+            <p className=" text-2xl text-[#694E4E] tracking-[1px] font-Courgette">
+              Want to stay connected? Reach out to us!
             </p>
-            <p className="text-center mt-3 text-3xl text-[#694E4E] tracking-[1px] font-Courgette mb-5">
+            {/* <p className=" text-2xl text-[#694E4E] tracking-[1px] font-Courgette">
               Reach out to us!
-            </p>
-            <div className="flex-col text-center">
+            </p> */}
+            <div className="mt-14 space-y-7">
+              <div className="flex space-x-5 items-center">
               <a href="https://www.facebook.com/bloomsbymarra">
                 <i className="fa-brands fa-facebook text-6xl mb-3 text-[#694E4E] hover:text-[#C1A3A3] hover:scale-[1.1] transition-[2.5]"></i>
               </a>
-              <p className="font-Alata text-[#694E4E] tracking-[1px] text-2xl mb-5">
+              <p className="font-Alata text-[#694E4E] tracking-[1px] text-xl">
                 Chat with us to our Official Facebook Page
               </p>
+              </div>
+              <div className="flex space-x-5 items-center">
               <a href="https://www.facebook.com/bloomsbymarra">
-                <i className="fa-brands fa-instagram text-6xl mb-3 text-[#694E4E] hover:text-[#C1A3A3] hover:scale-[1.1] transition-[2.5]"></i>
+                <i className="fa-brands fa-instagram text-6xl text-[#694E4E] hover:text-[#C1A3A3] hover:scale-[1.1] transition-[2.5]"></i>
               </a>
-              <p className="font-Alata text-[#694E4E] tracking-[1px] text-2xl mb-5">
+              <p className="font-Alata text-[#694E4E] tracking-[1px] text-xl">
                 Slides thru DM to our Official Instagram Account
               </p>
-              <i className="fa-solid fa-phone text-6xl mb-3 text-[#694E4E] hover:text-[#C1A3A3] hover:scale-[1.1] transition-[2.5]"></i>
-              <p className="font-Alata text-[#694E4E] tracking-[1px] text-2xl">
+              </div>
+              <div className="flex space-x-5 items-center">
+              <i className="fa-solid fa-phone text-6xl text-[#694E4E] hover:text-[#C1A3A3] hover:scale-[1.1] transition-[2.5]"></i>
+              <p className="font-Alata text-[#694E4E] tracking-[1px] text-xl">
                 Give us a call/text: +639996040668
               </p>
-              <p className="font-Alata text-[#694E4E] tracking-[1px] text-2xl mt-5">
+              </div>
+              
+              <p className="font-Alata text-[#694E4E] tracking-[1px] text-xl">
                 Or you can visit us at our physical store located at:
               </p>
               <div className="flex justify-center">
@@ -53,6 +61,7 @@ const ContactUs = () => {
                 />
               </div>
             </div>
+          </div>
           </div>
         </div>
 
