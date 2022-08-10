@@ -1,8 +1,9 @@
-import React from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import logo from "../../assets/image/logo4.png";
 
 const NavBar = () => {
+  const navigate = useNavigate();
   const navLinks = [
     { path: "/", title: "Home" },
     { path: "/events", title: "Events" },
@@ -18,21 +19,21 @@ const NavBar = () => {
     <>
       <nav className="fixed w-[100%] z-[999] top-0 flex justify-between  items-center bg-[#C1A3A3] h-20">
         <div className="flex items-center">
-          <a href="/">
-            <img className="h-16 ml-3" src="./image/logo4.png" alt="logo " />
-          </a>
+          <button onClick={() => navigate("/")}>
+            <img className="h-16 ml-3" src={logo} alt="logo " />
+          </button>
 
-          <a href="/" className="no-underline">
-            <h1 className="font-extrabold text-[#fff] tracking-[8px] uppercase text-3xl xl:text-4xl font-ElMessiri mt-3 ml-2">
+          <button onClick={() => navigate("/")}>
+            <h1 className="font-extrabold text-[#fff] tracking-[8px] hidden md:block uppercase text-3xl xl:text-4xl font-ElMessiri ml-2">
               Flowerized
             </h1>
-          </a>
+          </button>
         </div>
 
         <ul className="xl:flex hidden">
           {navLinks.map(function (navLink) {
             return (
-              <li className="navsLink" key={navLink.title}>
+              <li className="" key={navLink.title}>
                 <Link to={navLink.path} className="navsLink">
                   {navLink.title}
                 </Link>

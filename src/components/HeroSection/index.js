@@ -25,7 +25,7 @@ const HeroSection = () => {
             className="text-center text-[#fff] hover:text-[#694E4E]"
           >
             <button className="text-xl text-center w-[200px] md:w-[300px] h-[40px] md:h-[60px] bg-[#C1A3A3] font-[Alata] font-thin">
-              CUSTOMIZED NOW!
+              CUSTOMIZE NOW!
             </button>
           </a>
         </div>
@@ -35,4 +35,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-

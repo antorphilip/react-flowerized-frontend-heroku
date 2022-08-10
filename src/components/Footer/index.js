@@ -3,8 +3,8 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="text-center lg:text-left bg-gradient-to-r from-[#694E4E] to-[#886F6F] text-[#F3C5C5]">
-      <div className="flex justify-center items-center lg:justify-between p-3 border-b border-gray-300">
-        <div className="mr-11 hidden lg:block">
+      <div className="flex items-center justify-center p-3 border-b border-gray-300 lg:justify-between">
+        <div className="hidden mr-11 lg:block">
           <span className="text-[#fff] font-[Alata] tracking-[2px] no-underline">
             Get connected with us on social networks:
           </span>
@@ -56,7 +56,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="mx-6 py-10 text-center md:text-left">
+      <div className="py-10 mx-6 text-center md:text-left">
         <div className="grid grid-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="">
             <h6

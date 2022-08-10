@@ -1,5 +1,6 @@
-import React from "react";
-import styles from "../../contact.module.css";
+import aboutus from "../../assets/image/aboutus.png";
+import aboutus1 from "../../assets/image/aboutus1.jpg";
+import styles from "../../styles/image.module.css";
 
 const AboutUs = () => {
   return (
@@ -10,7 +11,7 @@ const AboutUs = () => {
           <div className="w-[90%] lg:w-2/3 flex my-28 rounded-xl shadow-xl overflow-hidden">
             <img
               className="lg:block hidden max-w-[500px]"
-              src="./image/aboutus1.jpg"
+              src={aboutus1}
               alt="logo"
             />
 
@@ -18,9 +19,6 @@ const AboutUs = () => {
               <h1 className="text-[#694E4E] tracking-[10px] text-3xl md:text-4xl uppercase font-ElMessiri font-bold ">
                 ABOUT US
               </h1>
-              {/* <p className=" text-2xl text-[#694E4E] tracking-[1px] font-Courgette">
-                Want to stay connected? Reach out to us!
-              </p> */}
               <div className="mt-14 space-y-20">
                 <p className="font-[Alata] text-[#694E4E] text-xl">
                   The Blooms by Marra was started 8 years ago with their online
@@ -38,7 +36,7 @@ const AboutUs = () => {
 
                 <img
                   className="w-[95%] mx-[auto] xl:my-5 xl:mx-5"
-                  src="./image/aboutus.png"
+                  src={aboutus}
                   alt="logo"
                 />
               </div>
