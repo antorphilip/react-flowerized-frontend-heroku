@@ -4,7 +4,7 @@ import luna from "../../assets/image/luna.png";
 import naomi from "../../assets/image/naomi.png";
 import FeaturedItem from "./FeaturedItem";
 
-const Feature = () => {
+const Featured = () => {
   const featuredItems = [
     { image: bouquet5k, title: "Money Bouquets", price: 99.99 },
     { image: coffee, title: "Coffee", price: 99.99 },
@@ -22,6 +22,7 @@ const Feature = () => {
       <span className="text-center grid grid-rows-4 sm:grid-rows-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mx-[40px] my-[70px] ">
         {featuredItems.map((featuredItem, index) => (
           <FeaturedItem
+            key={featuredItem.title}
             image={featuredItem.image}
             title={featuredItem.title}
             price={featuredItem.price}
@@ -33,4 +34,4 @@ const Feature = () => {
   );
 };
 
-export default Feature;
+export default Featured;

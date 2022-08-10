@@ -32,7 +32,7 @@ const NavBar = () => {
         <ul className="xl:flex hidden">
           {navLinks.map(function (navLink) {
             return (
-              <li className="navsLink">
+              <li className="navsLink" key={navLink.title}>
                 <Link to={navLink.path} className="navsLink">
                   {navLink.title}
                 </Link>
@@ -64,7 +64,7 @@ const NavBar = () => {
       >
         {navLinks.map(function (navLink) {
           return (
-            <li className=" py-[3vh] hover:bg-[#886F6F] ">
+            <li className=" py-[3vh] hover:bg-[#886F6F]" key={navLink.title}>
               <Link to={navLink.path} className="moblink">
                 {navLink.title}
               </Link>
