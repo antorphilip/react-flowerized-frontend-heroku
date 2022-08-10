@@ -1,74 +1,132 @@
-import React from "react";
-
+import { useState } from "react";
+import aboutus1 from "../../assets/image/aboutus1.jpg";
+import styles from "../../styles/image.module.css";
 
 const Payment = () => {
+  const [activeButton, setActiveButton] = useState("credit");
+
+  const renderDetails = () => {
+    if (activeButton === "credit") {
+      return (
+        <div>
+          <h2 className="text-2xl uppercase tracking-widest text-[#694e4e] font-bold mb-2">
+            UNION BANK ACCOUNT
+          </h2>
+          <p className="text-[#694e4e]">
+            <strong className="font-semibold">Account Number:</strong>{" "}
+            12345678901
+          </p>
+          <p className="text-[#694e4e]">
+            <strong className="font-semibold">Account Name:</strong> Cardo
+            Dalisay
+          </p>
+        </div>
+      );
+    } else {
+      return (
+        <div className="space-y-5">
+          <div>
+            <h2 className="text-2xl uppercase tracking-widest text-[#694e4e] font-bold mb-2">
+              GCASH ACCOUNT
+            </h2>
+            <p className="text-[#694e4e]">
+              <strong className="font-semibold">GCash Number:</strong>{" "}
+              09123456789
+            </p>
+            <p className="text-[#694e4e]">
+              <strong className="font-semibold">GCash Name:</strong> Cardo
+              Dalisay
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl uppercase tracking-widest text-[#694e4e] font-bold mb-2">
+              MAYA ACCOUNT
+            </h2>
+            <p className="text-[#694e4e]">
+              <strong className="font-semibold">Maya Number:</strong>{" "}
+              09123456789
+            </p>
+            <p className="text-[#694e4e]">
+              <strong className="font-semibold">Maya Name:</strong> Cardo
+              Dalisay
+            </p>
+          </div>
+        </div>
+      );
+    }
+  };
+
   return (
-   <div className="mt-[20vh]">
-  <ul class="nav nav-pills nav-justified flex flex-col md:flex-row flex-wrap list-none pl-0 mb-4"
-  id="pills-tabJustify" role="tablist">
-  <li class="nav-item flex-grow text-center my-2 md:mr-2" role="presentation">
-    <a href="#pills-homeJustify" class="
-      nav-link
-      w-full
-      block
-      font-medium
-      text-xs
-      leading-tight
-      uppercase
-      rounded
-      px-6
-      py-3
-      focus:outline-none focus:ring-0
-      active
-    " id="pills-home-tabJustify" data-bs-toggle="pill" data-bs-target="#pills-homeJustify" role="tab"
-      aria-controls="pills-homeJustify" aria-selected="true">CREDIT CARD PAYMENT</a>
-  </li>
-  <li class="nav-item flex-grow text-center my-2 md:mx-2" role="presentation">
-    <a href="#pills-profileJustify" class="
-      nav-link
-      w-full
-      block
-      font-medium
-      text-xs
-      leading-tight
-      uppercase
-      rounded
-      px-6
-      py-3
-      focus:outline-none focus:ring-0
-    " id="pills-profile-tabJustify" data-bs-toggle="pill" data-bs-target="#pills-profileJustify" role="tab"
-      aria-controls="pills-profileJustify" aria-selected="false">GCASH PAYMENT</a>
-  </li>
-  <li class="nav-item flex-grow text-center my-2 md:ml-2" role="presentation">
-    <a href="#pills-contactJustify" class="
-      nav-link
-      w-full
-      block
-      font-medium
-      text-xs
-      leading-tight
-      uppercase
-      rounded
-      px-6
-      py-3
-      focus:outline-none focus:ring-0
-    " id="pills-contact-tabJustify" data-bs-toggle="pill" data-bs-target="#pills-contactJustify" role="tab"
-      aria-controls="pills-contactJustify" aria-selected="false">Contact</a>
-  </li>
-</ul>
-<div class="tab-content" id="pills-tabContentJustify">
-  <div class="tab-pane fade show active" id="pills-homeJustify" role="tabpanel"
-    aria-labelledby="pills-home-tabJustify">
-    Tab 1 content justify
-  </div>
-  <div class="tab-pane fade" id="pills-profileJustify" role="tabpanel" aria-labelledby="pills-profile-tabJustify">
-    Tab 2 content justify
-  </div>
-  <div class="tab-pane fade" id="pills-contactJustify" role="tabpanel" aria-labelledby="pills-contact-tabJustify">
-    Tab 3 content justify
-  </div>
-</div>
-   </div>
+    <>
+      <div className="h-[1px] mt-[80px]"></div>
+      <div className="">
+        <div className={`flex items-center justify-center ${styles.bgimage2}`}>
+          <div className="w-[90%] lg:w-2/3 flex my-28 rounded-xl shadow-xl overflow-hidden">
+            <img
+              className="lg:block hidden max-w-[500px]"
+              src={aboutus1}
+              alt="logo"
+            />
+
+            <div className="px-7 py-14 w-full bg-white">
+              <h1 className="text-[#694E4E] tracking-[10px] text-3xl md:text-4xl uppercase font-ElMessiri font-bold text-center">
+                Payment section
+              </h1>
+              <div className="mt-14 space-x-5">
+                <button
+                  className={
+                    activeButton === "credit"
+                      ? "px-12 py-2 transition ease-in bg-[#694e4e] text-white uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
+                      : "px-12 py-2 transition ease-in bg-white text-[#694e4e] uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
+                  }
+                  onClick={() => setActiveButton("credit")}
+                >
+                  Credit Card
+                </button>
+                <button
+                  className={
+                    activeButton === "gcash"
+                      ? "px-12 py-2 transition ease-in bg-[#694e4e] text-white uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
+                      : "px-12 py-2 transition ease-in bg-white text-[#694e4e] uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
+                  }
+                  onClick={() => setActiveButton("gcash")}
+                >
+                  GCash/Maya
+                </button>
+
+                <div className="mt-10 text-[#694e4e]">
+                  {renderDetails()}
+
+                  <div className="mt-10 space-y-5">
+                    <h2 className="text-2xl font-bold font-ElMessiri uppercase tracking-widest">
+                      Upload mo here fileabels mo
+                    </h2>
+                    <input
+                      type="file"
+                      className="file:bg-[#694e4e] file:rounded-xl file:text-white file:border-none file:px-7 file:py-1 file:mr-4 file:cursor-pointer"
+                    />
+                    <div className="flex items-center justify-between">
+                      <button className="px-3 py-2 transition ease-in bg-white text-[#694e4e] uppercase tracking-widest rounded-xl border-2 border-[#694e4e]">
+                        Back to Flowerized
+                      </button>
+                      <div className="flex items-center space-x-3">
+                        <p className="uppercase underline cursor-pointer">
+                          Back to shipping
+                        </p>
+                        <button className="px-3 py-2 transition ease-in bg-[#694e4e] text-white uppercase tracking-widest rounded-xl border-2 border-[#694e4e]">
+                          Proceed
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 
