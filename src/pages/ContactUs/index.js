@@ -8,7 +8,7 @@ const ContactUs = () => {
       <div className="h-[1px] mt-[80px]"></div>
       <div className="">
         <div
-          className={`flex items-center justify-center bg-blue-300 ${styles.bgimage}`}
+          className={`flex items-center justify-center ${styles.bgimage}`}
         >
           <div className="w-[90%] lg:w-2/3 flex my-28 rounded-xl shadow-xl overflow-hidden">
             <img
