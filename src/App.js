@@ -8,7 +8,7 @@ import AboutUs from "./pages/AboutUs";
 import Signup from "./pages/Signup";
 import ContactUs from "./pages/ContactUs";
 import Reviews from "./components/Reviews";
-import Feature from "./components/Feature";
+import Featured from "./pages/Home/Featured";
 import MyAccount from "./pages/MyAccount";
 import Payment from "./pages/Payment";
 
@@ -19,7 +19,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
 
-        <Route path="/feature" element={<Feature />} />
+        {/* NOTE: Where is this? */}
+        <Route path="/feature" element={<Featured />} />
 
         <Route path="/events" element={<Events />} />
 
