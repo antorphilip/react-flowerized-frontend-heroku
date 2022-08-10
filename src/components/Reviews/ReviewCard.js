@@ -3,7 +3,7 @@ const ReviewCard = ({ image, name, remarks, bg }) => {
     <div className="block rounded-lg shadow-lg bg-white">
       <div className={`overflow-hidden rounded-t-lg h-28 bg-[${bg}]`}></div>
       <div className="w-24 -mt-12 overflow-hidden border border-2 border-white rounded-full mx-auto bg-white">
-        <img src={image} alt="img" />
+        <img src={image} alt="img" loading="lazy" />
       </div>
       <div className="p-6">
         <h4 className="text-2xl font-semibold mb-4 font-[Alata] text-[#694E4E]">

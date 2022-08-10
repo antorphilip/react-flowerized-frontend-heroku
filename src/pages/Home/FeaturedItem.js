@@ -5,6 +5,7 @@ const FeaturedItem = ({ image, title, price, border }) => {
         src={image}
         className={`rounded border-[10px] border-[${border}] hover:scale-[1.04] transition-[2.5]`}
         alt="featured"
+        loading="lazy"
       />
       <div className="flex place-content-between text-left ">
         <div className="text-xl font-[Alata] font-light mt-[5px] ml-[8px]">
