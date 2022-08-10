@@ -26,7 +26,6 @@ const Featured = () => {
             image={featuredItem.image}
             title={featuredItem.title}
             price={featuredItem.price}
-            border={index % 2 === 0 ? "#886F6F" : "#C1A3A3"}
           />
         ))}
       </span>

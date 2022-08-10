@@ -1,16 +1,16 @@
-const FeaturedItem = ({ image, title, price, border }) => {
+const FeaturedItem = ({ image, title, price }) => {
   return (
     <div className="w-[100%] ">
       <img
         src={image}
-        className={`rounded border-[10px] border-[${border}] hover:scale-[1.04] transition-[2.5]`}
+        className={`rounded border-[10px] border-[#886F6F] hover:scale-[1.04] transition-[2.5]`}
         alt="featured"
         loading="lazy"
       />
       <div className="flex place-content-between text-left ">
         <div className="text-xl font-[Alata] font-light mt-[5px] ml-[8px]">
           <p className="text-[#694E4E]">{title}</p>
-          <p className=" mt-[-15px] text-[#886F6F]">
+          <p className="text-[#886F6F]">
             {Intl.NumberFormat("ph-PH", {
               style: "currency",
               currency: "PHP",

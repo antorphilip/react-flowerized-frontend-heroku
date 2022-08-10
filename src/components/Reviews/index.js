@@ -12,7 +12,7 @@ const index = () => {
       name: "Rhena Mengote",
       remarks:
         "Highly recommended! I ordered a bouquet for my boss’s wife. They’re super happy with it. Price is not that expensive yet the quality of the bouquet pang worth 5k+ sa ibang shops. 😊 Delivery, nasunod talaga yung around 9AM na arrival. Will order again next time. 🎉 Thanks sa Seller for the prompt response. God Bless.",
-      bg: "#F3C5C5",
+      bg: "#886F6F",
     },
     {
       image: mj,
@@ -33,7 +33,7 @@ const index = () => {
       name: "Philip Antor",
       remarks:
         "Fast replies, fast transaction, madali kausap, swak na swak sa same day delivery. This shop didn't disappoint. Tapos kudos din sa nagdeliver, buong buo yung flowers!",
-      bg: "#694E4E",
+      bg: "#C1A3A3",
     },
   ];
 
