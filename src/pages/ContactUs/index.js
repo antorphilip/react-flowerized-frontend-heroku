@@ -1,6 +1,6 @@
-import React from "react";
-import Footer from "../../components/Footer";
-import styles from "../../contact.module.css";
+import contact from "../../assets/image/contact.jpg";
+import maps from "../../assets/image/maps.png";
+import styles from "../../styles/image.module.css";
 
 const ContactUs = () => {
   return (
@@ -13,7 +13,7 @@ const ContactUs = () => {
           <div className="w-[90%] lg:w-2/3 flex my-28 rounded-xl shadow-xl overflow-hidden">
             <img
               className="lg:block hidden max-w-[500px]"
-              src="./image/contact.jpg"
+              src={contact}
               alt="logo"
             />
 
@@ -54,7 +54,7 @@ const ContactUs = () => {
                 <div className="flex justify-center">
                   <img
                     className="rounded border-[7px] border-[#C1A3A3] sm:w-[40%] object-contain w-[85%] mb-4 ml-3 hover:scale-[1.5] transition-[2.5]"
-                    src="./image/maps.png"
+                    src={maps}
                     alt="Map"
                   />
                 </div>
@@ -62,8 +62,6 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-
-        <Footer />
       </div>
     </>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import heroVid from "../../assets/videos/vid-1.mp4";
 
 const HeroSection = () => {
   return (
@@ -7,7 +8,7 @@ const HeroSection = () => {
       <div className="w-[100%] h-[70vh] xl:h-[80vh]">
         <video
           className="w-[100%] h-[70%] xl:h-[80%] object-cover	z-[-1] absolute"
-          src="/videos/vid-1.mp4"
+          src={heroVid}
           autoPlay
           loop
           muted
@@ -24,7 +25,7 @@ const HeroSection = () => {
             className="text-center text-[#fff] hover:text-[#694E4E]"
           >
             <button className="text-xl text-center w-[200px] md:w-[300px] h-[40px] md:h-[60px] bg-[#C1A3A3] font-[Alata] font-thin">
-              CUSTOMIZED NOW!
+              CUSTOMIZE NOW!
             </button>
           </a>
         </div>

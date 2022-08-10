@@ -1,5 +1,5 @@
 import React from "react";
-import "tw-elements";
+import fakecarousel from "../../assets/image/fakecarousel.png";
 
 const Events = () => {
   return (
@@ -9,7 +9,7 @@ const Events = () => {
       {/* carousel */}
       <div
         id="carouselExampleCrossfade"
-        className="carousel slide carousel-fade relative w-[100%] m-[auto] shadow-xl z-[-2]"
+        className="carousel slide carousel-fade relative w-[100%] m-[auto] shadow-xl"
         data-bs-ride="carousel"
       >
         <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-0 transition-[1.5s] ">
@@ -43,28 +43,24 @@ const Events = () => {
         <div className="carousel-inner relative w-full overflow-hidden">
           <div className="carousel-item active float-left w-full">
             <img
-              src="./image/fakecarousel.png"
+              src={fakecarousel}
               className="block w-full"
               alt="Wild Landscape"
             />
           </div>
           <div className="carousel-item float-left w-full">
-            <img
-              src="./image/fakecarousel.png"
-              className="block w-full"
-              alt="Camera"
-            />
+            <img src={fakecarousel} className="block w-full" alt="Camera" />
           </div>
           <div className="carousel-item float-left w-full">
             <img
-              src="./image/fakecarousel.png"
+              src={fakecarousel}
               className="block w-full h-[full]"
               alt="Exotic Fruits"
             />
           </div>
           <div className="carousel-item float-left w-full">
             <img
-              src="./image/fakecarousel.png"
+              src={fakecarousel}
               className="block w-full"
               alt="Exotic Fruits"
             />
