@@ -1,4 +1,5 @@
 import React from "react";
+import heroVid from "../../assets/videos/vid-1.mp4";
 
 const HeroSection = () => {
   return (
@@ -7,7 +8,7 @@ const HeroSection = () => {
       <div className="w-[100%] h-[70vh] xl:h-[80vh]">
         <video
           className="w-[100%] h-[70%] xl:h-[80%] object-cover	z-[-1] absolute"
-          src="/videos/vid-1.mp4"
+          src={heroVid}
           autoPlay
           loop
           muted
@@ -34,3 +35,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
