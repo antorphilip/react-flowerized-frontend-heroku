@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../../components/Footer";
 import styles from "../../contact.module.css";
 
 const ContactUs = () => {
@@ -62,8 +61,6 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-
-        <Footer />
       </div>
     </>
   );

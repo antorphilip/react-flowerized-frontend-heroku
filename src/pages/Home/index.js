@@ -2,7 +2,6 @@ import carousel1 from "../../assets/image/carousel-1.png";
 import carousel2 from "../../assets/image/carousel-2.png";
 import carousel3 from "../../assets/image/carousel-3.png";
 import carousel4 from "../../assets/image/carousel-4.png";
-import Footer from "../../components/Footer";
 import HeroSection from "../../components/HeroSection";
 import Reviews from "../../components/Reviews";
 import Featured from "./Featured";
@@ -71,7 +70,6 @@ const Home = () => {
       </div>
 
       <Reviews />
-      <Footer />
     </div>
   );
 };
