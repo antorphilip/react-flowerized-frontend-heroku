@@ -1,5 +1,8 @@
 import React from "react";
-import fakecarousel from "../../assets/image/fakecarousel.png";
+import carousel1 from "../../assets/image/EventsCarousel1.png";
+import carousel2 from "../../assets/image/EventsCarousel2.png";
+import carousel3 from "../../assets/image/EventsCarousel3.png";
+import carousel4 from "../../assets/image/EventsCarousel4.png";
 
 const Events = () => {
   return (
@@ -9,10 +12,10 @@ const Events = () => {
       {/* carousel */}
       <div
         id="carouselExampleCrossfade"
-        className="carousel slide carousel-fade relative w-[100%] m-[auto] shadow-xl"
+        className="carousel slide carousel-fade relative w-[100%] m-[auto]"
         data-bs-ride="carousel"
       >
-        <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-0 transition-[1.5s] ">
+        <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4 transition-[2.5]">
           <button
             type="button"
             data-bs-target="#carouselExampleCrossfade"
@@ -40,33 +43,30 @@ const Events = () => {
             aria-label="Slide 4"
           ></button>
         </div>
-        <div className="carousel-inner relative w-full overflow-hidden">
+        <div className="carousel-inner relative w-full overflow-hidden h-[full]">
           <div className="carousel-item active float-left w-full">
             <img
-              src={fakecarousel}
+              src={carousel1}
               className="block w-full"
               alt="Wild Landscape"
             />
           </div>
           <div className="carousel-item float-left w-full">
-            <img src={fakecarousel} className="block w-full" alt="Camera" />
+            <img src={carousel2} className="block w-full" alt="Camera" />
           </div>
           <div className="carousel-item float-left w-full">
             <img
-              src={fakecarousel}
+              src={carousel3}
               className="block w-full h-[full]"
               alt="Exotic Fruits"
             />
           </div>
           <div className="carousel-item float-left w-full">
-            <img
-              src={fakecarousel}
-              className="block w-full"
-              alt="Exotic Fruits"
-            />
+            <img src={carousel4} className="block w-full" alt="Exotic Fruits" />
           </div>
         </div>
       </div>
+
       {/* carousel end */}
 
       <div className="bg-[#CBA99E] w-[100%] h-[80px]"></div>

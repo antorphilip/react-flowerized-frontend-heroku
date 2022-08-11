@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, NavLink } from "react-router-dom";
 import logo from "../../assets/image/logo4.png";
 
 const NavBar = () => {
@@ -24,7 +24,7 @@ const NavBar = () => {
           </button>
 
           <button onClick={() => navigate("/")}>
-            <h1 className="font-extrabold text-[#fff] tracking-[8px] hidden md:block uppercase text-3xl xl:text-4xl font-ElMessiri ml-2">
+            <h1 className="font-extrabold text-[#fff] tracking-[8px] md:block uppercase text-[25px] md:text-3xl xl:text-4xl font-ElMessiri ml-2">
               Flowerized
             </h1>
           </button>
@@ -58,29 +58,46 @@ const NavBar = () => {
           </a>
         </div>
       </nav>
+
+      {/* mobile view */}
       <ul
-        className={` text-center pl-0 xl:hidden bg-gradient-to-r from-[#F3C5C5] to-[#C1A3A3] ${
+        className={`z-[99] text-center pl-0 xl:hidden bg-gradient-to-r from-[#F3C5C5] to-[#C1A3A3] ${
           nav ? "fixed w-full" : "hidden"
         }`}
       >
         {navLinks.map(function (navLink) {
           return (
-            <li className=" py-[3vh] hover:bg-[#886F6F]" key={navLink.title}>
-              <Link to={navLink.path} className="moblink">
+            <li
+              className="w-full py-[3vh] hover:bg-[#886F6F]"
+              key={navLink.title}
+            >
+              <Link to={navLink.path} className="moblink ">
                 {navLink.title}
               </Link>
             </li>
           );
         })}
-        <a href="/login#Login">
-          <button className="moblink py-[3vh] hover:bg-[#886F6F]">Login</button>
-        </a>
-        <br />
-        <a href="/signup#Signup">
-          <button className="moblink py-[3vh] hover:bg-[#886F6F]">
+
+        <NavLink
+          to="/login"
+          className={({ isActive }) =>
+            isActive ? "bg-[#886F6F] py-[3vh] w-full]" : "undefined]"
+          }
+        >
+          <button className="moblink py-[3vh] hover:bg-[#886F6F] w-full">
+            Login
+          </button>
+        </NavLink>
+        <NavLink
+          to="/signup"
+          className={({ isActive }) =>
+            isActive ? "bg-[#886F6F] py-[3vh] w-full" : "undefined]"
+          }
+        >
+          <button className="moblink py-[3vh] hover:bg-[#886F6F] w-full">
             Signup
           </button>
-        </a>
+        </NavLink>
       </ul>
     </>
   );
