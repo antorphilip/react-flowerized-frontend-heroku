@@ -1,5 +1,5 @@
 import { useState } from "react";
-import aboutus1 from "../../assets/image/aboutus1.jpg";
+import payment from "../../assets/image/payment.jpg";
 import styles from "../../styles/image.module.css";
 
 const Payment = () => {
@@ -65,7 +65,7 @@ const Payment = () => {
           <div className="w-[90%] lg:w-2/3 flex my-28 rounded-xl shadow-xl overflow-hidden">
             <img
               className="lg:block hidden max-w-[500px]"
-              src={aboutus1}
+              src={payment}
               alt="logo"
             />
 

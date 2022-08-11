@@ -11,6 +11,7 @@ import Login from "./pages/Login";
 import MyAccount from "./pages/MyAccount";
 import Payment from "./pages/Payment";
 import Signup from "./pages/Signup";
+import MyCart from "./pages/MyCart";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/myaccount" element={<MyAccount />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/mycart" element={<MyCart />} />
         <Route path="/payment" element={<Payment />} />
 
         {/* NOTE: Where is this? */}

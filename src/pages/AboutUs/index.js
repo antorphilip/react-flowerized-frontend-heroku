@@ -19,8 +19,11 @@ const AboutUs = () => {
               <h1 className="text-[#694E4E] tracking-[10px] text-3xl md:text-4xl uppercase font-ElMessiri font-bold ">
                 ABOUT US
               </h1>
-              <div className="mt-14 space-y-20">
-                <p className="font-[Alata] text-[#694E4E] text-xl">
+              <div className="mt-14 space-y-20 text-justify">
+                <p className="font-[Alata] text-[#694E4E] text-xl
+                first-line:uppercase first-line:tracking-widest
+                first-letter:text-7xl first-letter:font-bold first-letter:text-[#694E4E]
+                first-letter:mr-3 first-letter:float-left">
                   The Blooms by Marra was started 8 years ago with their online
                   Facebook Page. In addition, the shop was founded by Marra's
                   mother-in-law. Ms. Marra Borres is the owner of the Blooms by

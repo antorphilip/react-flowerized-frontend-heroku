@@ -1,9 +1,10 @@
-import React from "react";
-import Footer from "../../components/Footer";
+import {useState} from "react";
 import myaccount from "../../assets/image/myaccount.jpg";
 import styles from "../../styles/image.module.css";
 
 const MyAccount = () => {
+  const [activeButton, setActiveButton] = useState("edit");
+
   return (
     <>
       <div className="h-[1px] mt-[80px]"></div>
@@ -63,14 +64,27 @@ const MyAccount = () => {
                     type="password"
                     name="Password"
                     placeholder=""
-                  ></input>
+                  ></input>             
+                </div>
+                <div className="mt-14 space-x-5">
+                <button
+                  className={
+                    activeButton === "edit"
+                      ? "px-12 py-2 transition ease-in bg-[#694e4e] text-white uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
+                      : "px-12 py-2 transition ease-in bg-white text-[#694e4e] uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
+                  }
+                  onClick={() => setActiveButton("edit")}
+                >
+                  EDIT
+                </button>
                 </div>
               </form>
+              
             </div>
           </div>
         </div>
 
-        <Footer />
+
       </div>
     </>
   );
