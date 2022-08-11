@@ -1,9 +1,9 @@
-import {useState} from "react";
+import { useState } from "react";
 import myaccount from "../../assets/image/myaccount.jpg";
 import styles from "../../styles/image.module.css";
 
 const MyAccount = () => {
-  const [activeButton, setActiveButton] = useState("edit");
+  const [readOnly, setReadOnly] = useState(true);
 
   return (
     <>
@@ -30,9 +30,10 @@ const MyAccount = () => {
                     className="accounttxtBox"
                     type="text"
                     name="Name"
-                    placeholder=""
-                  ></input>
+                    readOnly={readOnly}
+                  />
                 </div>
+
                 <div className="accountdiv">
                   <h3 className="accountLabel font-[Alata] text-[#694E4E]">
                     Email
@@ -41,9 +42,10 @@ const MyAccount = () => {
                     className="accounttxtBox"
                     type="text"
                     name="Email"
-                    placeholder=""
-                  ></input>
+                    readOnly={readOnly}
+                  />
                 </div>
+
                 <div className="accountdiv">
                   <h3 className="accountLabel font-[Alata] text-[#694E4E]">
                     Contact
@@ -52,9 +54,10 @@ const MyAccount = () => {
                     className="accounttxtBox"
                     type="text"
                     name="Contact"
-                    placeholder=""
-                  ></input>
+                    readOnly={readOnly}
+                  />
                 </div>
+
                 <div className="accountdiv">
                   <h3 className="accountLabel font-[Alata] text-[#694E4E]">
                     Password
@@ -63,31 +66,29 @@ const MyAccount = () => {
                     className="accounttxtBox"
                     type="password"
                     name="Password"
-                    placeholder=""
-                  ></input>             
+                    readOnly={readOnly}
+                  />
                 </div>
-                <div className="mt-14 space-x-5">
-                <button
-                  className={
-                    activeButton === "edit"
-                      ? "px-12 py-2 transition ease-in bg-[#694e4e] text-white uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
-                      : "px-12 py-2 transition ease-in bg-white text-[#694e4e] uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
-                  }
-                  onClick={() => setActiveButton("edit")}
-                >
-                  EDIT
-                </button>
+
+                <div className="mt-14">
+                  <button
+                    className="px-12 py-2 transition ease-in bg-[#694e4e] text-white uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
+                    onClick={(event) => {
+                      event.preventDefault();
+                      setReadOnly(!readOnly);
+                    }}
+                  >
+                    EDIT
+                  </button>
                 </div>
               </form>
-              
             </div>
           </div>
         </div>
-
-
       </div>
     </>
   );
 };
 
 export default MyAccount;
+
