@@ -100,7 +100,7 @@ const Footer = () => {
             </p>
             <p className="mb-4">
               <a
-                href="#!"
+                href="reviews"
                 className="text-[#fff] font-[Alata] tracking-[2px] no-underline hover:text-[#F3C5C5]"
               >
                 Reviews

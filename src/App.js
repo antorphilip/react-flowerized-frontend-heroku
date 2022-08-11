@@ -12,6 +12,7 @@ import MyAccount from "./pages/MyAccount";
 import Payment from "./pages/Payment";
 import Signup from "./pages/Signup";
 import MyCart from "./pages/MyCart";
+import Greetings from "./pages/Greetings";
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
         <Route path="/myaccount" element={<MyAccount />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+
+        <Route path="/greetings" element={<Greetings />} />
         <Route path="/mycart" element={<MyCart />} />
         <Route path="/payment" element={<Payment />} />
 

@@ -8,7 +8,7 @@ const MyAccount = () => {
   return (
     <>
       <div className="h-[1px] mt-[80px]"></div>
-      <div className="">
+      
         <div className={`flex items-center justify-center ${styles.bgimage3}`}>
           <div className="w-[90%] lg:w-2/3 flex my-28 rounded-xl shadow-xl overflow-hidden">
             <img
@@ -17,7 +17,7 @@ const MyAccount = () => {
               alt="logo"
             />
 
-            <div className="px-7 py-14 w-full text-center bg-white">
+            <div className="px-7 py-44 w-full text-center bg-white">
               <h1 className="text-[#694E4E] tracking-[10px] text-3xl md:text-4xl uppercase font-ElMessiri font-bold ">
                 MY PROFILE
               </h1>
@@ -85,7 +85,7 @@ const MyAccount = () => {
             </div>
           </div>
         </div>
-      </div>
+     
     </>
   );
 };
