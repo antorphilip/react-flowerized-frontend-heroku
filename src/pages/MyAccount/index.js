@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../../components/Footer";
+import myaccount from "../../assets/image/myaccount.jpg";
 import styles from "../../styles/image.module.css";
 
 const MyAccount = () => {
@@ -11,7 +12,7 @@ const MyAccount = () => {
           <div className="w-[90%] lg:w-2/3 flex my-28 rounded-xl shadow-xl overflow-hidden">
             <img
               className="lg:block hidden max-w-[500px]"
-              src="./image/myaccount.jpg"
+              src={myaccount}
               alt="logo"
             />
 
