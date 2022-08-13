@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import greetings from "../../assets/image/greetings.jpg";
 import styles from "../../styles/image.module.css";
 
 const Greetings = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="h-[1px] mt-[80px]"></div>
@@ -68,8 +71,11 @@ const Greetings = () => {
                 QR CODE GENERATOR
               </p>
 
-              <button className="px-3 py-2 transition ease-in bg-white text-[#694e4e] uppercase tracking-widest rounded-xl border-2 border-[#694e4e]">
-                Proceed to Greetings
+              <button
+                onClick={() => navigate("/payment")}
+                className="px-3 py-2 transition ease-in bg-white text-[#694e4e] uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
+              >
+                Proceed to Payment
               </button>
             </div>
           </div>

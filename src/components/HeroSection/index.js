@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import React from "react";
 import heroVid from "../../assets/videos/vid-1.mp4";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+  
   return (
     <>
       <div className="mt-[80px]"></div>
@@ -21,15 +24,10 @@ const HeroSection = () => {
             Find the perfect flower for that important day!
           </p>
           <div className="flex justify-center md:mt-[30px] xl:mt-[50px] ">
-            <a
-              href="/customize"
-              className="text-center text-[#fff] hover:text-[#694E4E]"
-            >
-              <button
-              className="text-xl text-center w-[200px] md:w-[300px] h-[40px] md:h-[60px] bg-[#C1A3A3] font-[Alata] font-thin">
+              <button onClick={() => navigate("/customize")}
+              className="text-xl text-[#fff] hover:text-[#694E4E] text-center w-[200px] md:w-[300px] h-[40px] md:h-[60px] bg-[#C1A3A3] font-[Alata] font-thin">
                 CUSTOMIZE NOW!
               </button>
-            </a>
           </div>
         </div>
       </div>

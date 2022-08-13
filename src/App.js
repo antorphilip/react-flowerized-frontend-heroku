@@ -13,6 +13,7 @@ import Payment from "./pages/Payment";
 import Signup from "./pages/Signup";
 import MyCart from "./pages/MyCart";
 import Greetings from "./pages/Greetings";
+import Confirmation from "./pages/Confirmation";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/greetings" element={<Greetings />} />
         <Route path="/mycart" element={<MyCart />} />
         <Route path="/payment" element={<Payment />} />
+        <Route path="/confirmation" element={<Confirmation />} />
 
         {/* NOTE: Where is this? */}
         <Route path="/feature" element={<Featured />} />

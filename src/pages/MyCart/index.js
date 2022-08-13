@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import styles from "../../styles/image.module.css";
 
 const MyCart = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="h-[1px] mt-[80px]"></div>
@@ -69,15 +72,20 @@ const MyCart = () => {
                     </div>
                   </form>
                   <div className="flex items-center justify-between">
-                      <button className="px-3 py-2 transition ease-in bg-white text-[#694e4e] uppercase tracking-widest rounded-xl border-2 border-[#694e4e]">
-                        Proceed to Greetings
-                      </button>
-                      <div className="flex items-center space-x-3">
-                        <p className="uppercase underline cursor-pointer">
-                          Continue to shopping
-                        </p>
-                      </div>
-                    </div>
+                    <button
+                      onClick={() => navigate("/events")}
+                      className="px-3 py-2 transition ease-in bg-white text-[#694e4e] uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
+                    >
+                      Continue to Shopping
+                    </button>
+                    <button
+                      onClick={() => navigate("/greetings")}
+                      className="px-3 py-2 transition ease-in bg-white text-[#694e4e] uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
+                    >
+                      Proceed to Greetings
+                    </button>
+                    <div className="flex items-center space-x-3"></div>
+                  </div>
                 </div>
               </div>
             </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import HeroSection from "../../components/HeroSection";
-import Footer from "../../components/Footer";
 import { Link } from "react-router-dom";
 
 const Signup = () => {
@@ -52,7 +51,7 @@ const Signup = () => {
           </div>
         </div>
 
-        <Footer />
+        
       </div>
     </>
   );

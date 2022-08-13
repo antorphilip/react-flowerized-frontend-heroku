@@ -2,7 +2,7 @@ import aboutus from "../../assets/image/aboutus.png";
 import aboutus1 from "../../assets/image/aboutus1.jpg";
 import styles from "../../styles/image.module.css";
 
-const AboutUs = () => {
+const AboutUs = () => { 
   return (
     <>
       <div className="h-[1px] mt-[80px]"></div>

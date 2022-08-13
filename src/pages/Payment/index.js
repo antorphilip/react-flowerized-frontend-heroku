@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import payment from "../../assets/image/payment.jpg";
 import styles from "../../styles/image.module.css";
 
 const Payment = () => {
+  const navigate = useNavigate();
   const [activeButton, setActiveButton] = useState("credit");
 
   const renderDetails = () => {
@@ -107,15 +109,19 @@ const Payment = () => {
                       className="file:bg-[#694e4e] file:rounded-xl file:text-white file:border-none file:px-7 file:py-1 file:mr-4 file:cursor-pointer"
                     />
                     <div className="flex items-center justify-between">
-                      <button className="px-3 py-2 transition ease-in bg-white text-[#694e4e] uppercase tracking-widest rounded-xl border-2 border-[#694e4e]">
-                        Back to Flowerized
+                      <button
+                        onClick={() => navigate("/")}
+                        className="px-3 py-2 transition ease-in bg-white text-[#694e4e] uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
+                      >
+                        Home
                       </button>
                       <div className="flex items-center space-x-3">
-                        <p className="uppercase underline cursor-pointer">
-                          Back to shipping
-                        </p>
-                        <button className="px-3 py-2 transition ease-in bg-[#694e4e] text-white uppercase tracking-widest rounded-xl border-2 border-[#694e4e]">
-                          Proceed
+                        
+                        <button
+                          onClick={() => navigate("/confirmation")}
+                          className="px-3 py-2 transition ease-in bg-[#694e4e] text-white uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
+                        >
+                          Confirm
                         </button>
                       </div>
                     </div>
