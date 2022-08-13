@@ -46,8 +46,8 @@
   @apply md:flex md:mt-[20px] md:justify-between;
 }
 
-.titleClass {
-  @apply my-16 mx-auto relative text-center tracking-[8px] text-4xl lg:text-5xl uppercase font-ElMessiri font-bold z-[-2] max-w-[1000px];
+/* .titleClass {
+  @apply my-16 mx-auto relative text-center tracking-[8px] text-4xl lg:text-5xl uppercase font-ElMessiri font-bold z-[-2];
 }
 
 .titleClass:before {
@@ -56,7 +56,7 @@
 
 .titleClass:after {
   @apply bg-[#694E4E] block h-[2px] absolute right-0 rounded-lg mr-2 w-[65px] sm:w-[180px] md:w-[250px] lg:w-[300px] xl:w-[320px] z-[-2] top-[35%];
-}
+} */
 
 .carttxtBox {
   @apply text-center font-[500] text-xl w-[90%] md:w-[500px] h-[45px] bg-[#DFDFDE] text-[#694E4E] font-Alata rounded-[1.5vh] transition-[0.5s];
