@@ -18,7 +18,7 @@ const Greetings = () => {
             />
 
             <div className="px-7 py-14 w-full text-center bg-white">
-              <h1 className="text-[#694E4E] tracking-[5px] text-3xl md:text-4xl uppercase font-ElMessiri font-bold ">
+              <h1 className="text-[#694E4E] tracking-[5px] text-2xl md:text-4xl uppercase font-ElMessiri font-bold ">
                 MAKE A HEARTFUL MESSAGE TO YOUR LOVED ONES
               </h1>
               <p className="py-7 text-xl font-[Alata] text-[#694E4E]">
@@ -37,8 +37,9 @@ const Greetings = () => {
                   <textarea
                     class="
         form-control
+        w-[330px]
+        md:w-[100%]
         block
-        w-full
         px-3
         py-1.5
         text-base

@@ -75,27 +75,32 @@ const Payment = () => {
               <h1 className="text-[#694E4E] tracking-[10px] text-3xl md:text-4xl uppercase font-ElMessiri font-bold text-center">
                 Payment section
               </h1>
+
               <div className="mt-14 space-x-5">
-                <button
-                  className={
-                    activeButton === "credit"
-                      ? "px-12 py-2 transition ease-in bg-[#694e4e] text-white uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
-                      : "px-12 py-2 transition ease-in bg-white text-[#694e4e] uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
-                  }
-                  onClick={() => setActiveButton("credit")}
-                >
-                  Credit Card
-                </button>
-                <button
-                  className={
-                    activeButton === "gcash"
-                      ? "px-12 py-2 transition ease-in bg-[#694e4e] text-white uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
-                      : "px-12 py-2 transition ease-in bg-white text-[#694e4e] uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
-                  }
-                  onClick={() => setActiveButton("gcash")}
-                >
-                  GCash/Maya
-                </button>
+                <div className="flex">
+                  <button
+                    className={
+                      activeButton === "credit"
+                        ? "text-sm w-[50%] h-[50px] md:text-xl transition ease-in bg-[#694e4e] text-white uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
+                        : "text-sm w-[50%] h-[50px] md:text-xl transition ease-in bg-white text-[#694e4e] uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
+                    }
+                    // ? "px-12 py-2 transition ease-in bg-[#694e4e] text-white uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
+                    //     : "px-12 py-2 transition ease-in bg-white text-[#694e4e] uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
+                    onClick={() => setActiveButton("credit")}
+                  >
+                    Credit Card
+                  </button>
+                  <button
+                    className={
+                      activeButton === "gcash"
+                        ? "text-sm w-[50%] h-[50px] md:text-xl transition ease-in bg-[#694e4e] text-white uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
+                        : "text-sm w-[50%] h-[50px] md:text-xl transition ease-in bg-white text-[#694e4e] uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
+                    }
+                    onClick={() => setActiveButton("gcash")}
+                  >
+                    GCash/Maya
+                  </button>
+                </div>
 
                 <div className="mt-10 text-[#694e4e]">
                   {renderDetails()}
@@ -116,7 +121,6 @@ const Payment = () => {
                         Home
                       </button>
                       <div className="flex items-center space-x-3">
-                        
                         <button
                           onClick={() => navigate("/confirmation")}
                           className="px-3 py-2 transition ease-in bg-[#694e4e] text-white uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"

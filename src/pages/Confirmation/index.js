@@ -18,11 +18,11 @@ const Confirmation = () => {
               alt="logo"
             />
 
-            <div className="px-7 py-14 w-full text-center bg-white">
-              <h1 className="text-[#694E4E] tracking-[10px] text-3xl md:text-4xl uppercase font-ElMessiri font-bold ">
+            <div className="py-14 w-full text-center bg-white">
+              <h1 className="text-[#694E4E] tracking-[8px] text-3xl md:text-4xl uppercase font-ElMessiri font-bold ">
                 CONFIRMATION
               </h1>
-              <p className="py-7 text-2xl text-[#694E4E] tracking-[1px] font-[Alata]">
+              <p className="py-7 px-4 text-xl md:text-2xl text-[#694E4E] tracking-[1px] font-[Alata]">
                 The order has been received. You can expect to receive a SMS
                 Notification from us confirming your order and informing the
                 status of your order. Thank you so much!
@@ -30,7 +30,7 @@ const Confirmation = () => {
               <div className="mt-4 space-y-7">
                 <div className="flex justify-center">
                   <img
-                    className="rounded border-[7px] border-[#C1A3A3] sm:w-[70%] object-contain w-[75%] mb-4 ml-1 hover:scale-[1.5] transition-[2.5]"
+                    className="rounded border-[7px] border-[#C1A3A3] sm:w-[70%] object-contain w-[75%] mb-4 ml-1 hover:scale-[1.05] transition-[2.5]"
                     src={thankyou}
                     alt="thanks"
                   />

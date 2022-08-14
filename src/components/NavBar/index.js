@@ -24,7 +24,7 @@ const NavBar = () => {
           </button>
 
           <button onClick={() => navigate("/")}>
-            <h1 className="font-extrabold text-[#fff] tracking-[8px] md:block uppercase text-[25px] md:text-3xl xl:text-4xl font-ElMessiri ml-2">
+            <h1 className="font-extrabold text-[#fff] tracking-[8px] md:block uppercase text-[29px] md:text-3xl xl:text-4xl font-ElMessiri ml-2">
               Flowerized
             </h1>
           </button>
