@@ -15,7 +15,7 @@ const Featured = () => {
   return (
     <>
       <div>
-        <h1 className="before:content-[''] after:content-[''] titleClass text-[#694E4E]">
+        <h1 className="tracking-[10px] font-ElMessiri text-4xl md:text-5xl font-bold text-[#694E4E] mt-[50px] uppercase text-center">
           Featured
         </h1>
       </div>
