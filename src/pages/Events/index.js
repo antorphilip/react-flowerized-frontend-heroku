@@ -70,7 +70,21 @@ const Events = () => {
 
       {/* carousel end */}
 
-      <div className="bg-[#CBA99E] w-[100%] h-[80px]"></div>
+      <div className="bg-[#CBA99E] w-[100%] h-[50px] lg:h-[80px] sticky top-[80px] z-[9]">
+        <div className="flex justify-between w-[100%] px-[15px] text-[11px]">
+          <input
+            type="text"
+            placeholder="Select an Occasion"
+            className="h-[30px] w-[35%] pl-[3px]"
+          ></input>
+          <input
+            type="text"
+            placeholder="Select a Bouquet"
+            className="h-[30px] w-[35%] pl-[3px]"
+          ></input>
+          <button className="h-[30px] w-[20%] bg-[#fff]">Find Flower</button>
+        </div>
+      </div>
       <Product />
     </>
   );
