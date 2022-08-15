@@ -3,6 +3,7 @@ import carousel1 from "../../assets/image/EventsCarousel1.png";
 import carousel2 from "../../assets/image/EventsCarousel2.png";
 import carousel3 from "../../assets/image/EventsCarousel3.png";
 import carousel4 from "../../assets/image/EventsCarousel4.png";
+import Product from "./Product";
 
 const Events = () => {
   return (
@@ -70,6 +71,7 @@ const Events = () => {
       {/* carousel end */}
 
       <div className="bg-[#CBA99E] w-[100%] h-[80px]"></div>
+      <Product />
     </>
   );
 };

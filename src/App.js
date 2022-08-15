@@ -6,7 +6,6 @@ import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import Events from "./pages/Events";
 import Home from "./pages/Home";
-import Featured from "./pages/Home/Featured";
 import Login from "./pages/Login";
 import MyAccount from "./pages/MyAccount";
 import Payment from "./pages/Payment";
@@ -34,9 +33,6 @@ function App() {
         <Route path="/mycart" element={<MyCart />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/confirmation" element={<Confirmation />} />
-
-        {/* NOTE: Where is this? */}
-        <Route path="/feature" element={<Featured />} />
       </Routes>
       <Footer />
     </div>

@@ -14,7 +14,7 @@ const MyCart = () => {
               <h1 className="text-[#694E4E] tracking-[10px] text-3xl md:text-4xl uppercase font-ElMessiri font-bold ">
                 CHECK OUT
               </h1>
-              <div class="py-14 grid grid-cols-2 divide-x">
+              <div class="py-14 grid grid-cols-0   xl:grid-cols-2  divide-x">
                 <div>
                   <h1 className="text-[#694E4E] tracking-[5px] text-3xl md:text-xl uppercase font-[Alata] font-bold">
                     ORDER SUMMARY
