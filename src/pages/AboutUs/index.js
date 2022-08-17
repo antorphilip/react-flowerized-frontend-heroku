@@ -2,13 +2,13 @@ import aboutus from "../../assets/image/aboutus.png";
 import aboutus1 from "../../assets/image/aboutus1.jpg";
 import styles from "../../styles/image.module.css";
 
-const AboutUs = () => { 
+const AboutUs = () => {
   return (
     <>
-      <div className="h-[1px] mt-[80px]"></div>
+      <div className="h-[0px] mt-[80px]"></div>
       <div className="">
         <div className={`flex items-center justify-center ${styles.bgimage2}`}>
-          <div className="w-[90%] lg:w-2/3 flex my-28 rounded-xl shadow-xl overflow-hidden">
+          <div className="w-[90%] lg:w-2/3 flex my-16 rounded-xl shadow-xl overflow-hidden">
             <img
               className="lg:block hidden max-w-[500px]"
               src={aboutus1}
@@ -20,10 +20,12 @@ const AboutUs = () => {
                 ABOUT US
               </h1>
               <div className="mt-14 space-y-20 text-justify">
-                <p className="font-[Alata] text-[#694E4E] text-xl
+                <p
+                  className="font-[Alata] text-[#694E4E] text-xl
                 first-line:uppercase first-line:tracking-widest
                 first-letter:text-7xl first-letter:font-bold first-letter:text-[#694E4E]
-                first-letter:mr-3 first-letter:float-left">
+                first-letter:mr-3 first-letter:float-left"
+                >
                   The Blooms by Marra was started 8 years ago with their online
                   Facebook Page. In addition, the shop was founded by Marra's
                   mother-in-law. Ms. Marra Borres is the owner of the Blooms by
