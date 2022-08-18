@@ -69,9 +69,14 @@ const index = () => {
 
       {/* carousel end */}
       <div>
-        <h1 className="tracking-[10px] font-ElMessiri text-4xl md:text-5xl font-bold text-[#694E4E] mt-[50px] uppercase text-center">
+        <h1 className="tracking-[8px] font-ElMessiri text-2xl md:text-5xl font-bold text-[#694E4E] mt-[50px] uppercase text-center px-[5px]">
           Select a Bouquet to customize
         </h1>
+      </div>
+      <div className="w-[100%] h-[40px] bg-[#CBA99E] my-4 py-[8px]">
+        <h6 className="text-[#fff] font-ElMessiri uppercase text-center text-xl ">
+          Our most Popular bouquets
+        </h6>
       </div>
       <CustomizeProduct />
     </>

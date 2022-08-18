@@ -20,7 +20,7 @@ const CustomizeProduct = () => {
   ];
   return (
     <>
-      <span className="text-center grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mx-[20px] my-[50px] ">
+      <span className="text-center grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mx-[20px] my-[15px] ">
         {featuredItems.map((featuredItem, index) => (
           <CustomizeItem
             key={featuredItem.title}
