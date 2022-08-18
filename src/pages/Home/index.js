@@ -17,7 +17,7 @@ const Home = () => {
         className="carousel slide carousel-fade relative w-[95%] m-[auto] shadow-xl"
         data-bs-ride="carousel"
       >
-        <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4 transition-[2.5]">
+        <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-0 transition-[2.5]">
           <button
             type="button"
             data-bs-target="#carouselExampleCrossfade"
