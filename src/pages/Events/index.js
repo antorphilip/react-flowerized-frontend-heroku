@@ -70,7 +70,7 @@ const Events = () => {
 
       {/* carousel end */}
 
-      <div className="bg-[#fff] border-2 w-[90%] lg:w-[70%] mx-[auto] h-[41 0px] lg:h-[165px] top-[80px] z-[9] my-2 lg:my-14">
+      <div className="bg-[#fff] border-2 w-[90%] lg:w-[70%] mx-[auto] h-[410px] lg:h-[165px] top-[80px] z-[9] my-7">
         <div className="flex-col">
           <div className="flex flex-col lg:flex-row justify-between px-[30px] py-[30px]">
             <div className="w-[90%] lg:w-[15%] mx-[auto] lg:mx-0 h-[30px] text-md lg:text-4xl  text-center">
