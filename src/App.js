@@ -13,6 +13,7 @@ import Signup from "./pages/Signup";
 import MyCart from "./pages/MyCart";
 import Greetings from "./pages/Greetings";
 import Confirmation from "./pages/Confirmation";
+import Customization from "./pages/Customization";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/events" element={<Events />} />
+        <Route path="/customization" element={<Customization />} />
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/contactus" element={<ContactUs />} />
