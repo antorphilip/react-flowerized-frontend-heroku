@@ -3,6 +3,7 @@ import carousel1 from "../../assets/image/EventsCarousel1.png";
 import carousel2 from "../../assets/image/EventsCarousel2.png";
 import carousel3 from "../../assets/image/EventsCarousel3.png";
 import carousel4 from "../../assets/image/EventsCarousel4.png";
+import CustomizeProduct from "./CustomizeProduct";
 
 const index = () => {
   return (
@@ -67,6 +68,12 @@ const index = () => {
       </div>
 
       {/* carousel end */}
+      <div>
+        <h1 className="tracking-[10px] font-ElMessiri text-4xl md:text-5xl font-bold text-[#694E4E] mt-[50px] uppercase text-center">
+          Select a Bouquet to customize
+        </h1>
+      </div>
+      <CustomizeProduct />
     </>
   );
 };
