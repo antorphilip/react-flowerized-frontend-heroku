@@ -70,39 +70,97 @@ const Events = () => {
 
       {/* carousel end */}
 
-      <div className="bg-[#CBA99E] w-[100%] h-[50px] lg:h-[80px] sticky top-[80px] z-[9] py-[10px] lg:py-[20px] lg:pl-[20px]">
-        <div className="flex justify-between w-[100%] lg:w-[50%] px-[15px] text-[11px]">
-          <select
-            placeholder="Select an Occasion"
-            className="h-[30px] w-[35%] pl-[3px] lg:h-[40px] text-md lg:text-lg"
-          >
-            <option value="" disabled selected hidden>
-              Select an Occasion
-            </option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-          </select>
-          <select
-            placeholder="Select an Occasion"
-            className="h-[30px] w-[35%] pl-[3px] lg:h-[40px] text-md lg:text-lg"
-          >
-            <option value="" disabled selected hidden>
-              Select a Bouquet
-            </option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-          </select>
+      <div className="bg-[#fff] border-2 w-[90%] lg:w-[70%] mx-[auto] h-[41 0px] lg:h-[165px] top-[80px] z-[9] my-2 lg:my-14">
+        <div className="flex-col">
+          <div className="flex flex-col lg:flex-row justify-between px-[30px] py-[30px]">
+            <div className="w-[90%] lg:w-[15%] mx-[auto] lg:mx-0 h-[30px] text-md lg:text-4xl  text-center">
+              <h1 className="uppercase">Quick Find</h1>
+            </div>
+            {/* Occasion */}
+            <div className="w-[100%] lg:w-[20%] h-[30px] text-md lg:text-lg mx-[auto] lg:mx-0 ">
+              <h1>Occasion</h1>
+              <select
+                placeholder="Select an Occasion"
+                className="w-[100%] h-[100%] border-2 mt-[5px] lg:mt-0"
+              >
+                <option value="" disabled selected hidden>
+                  All
+                </option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+            {/* Package */}
+            <div className="w-[100%] lg:w-[20%] h-[30px] text-md lg:text-lg mt-[30px] lg:mt-0">
+              <h1>Package</h1>
+              <select
+                placeholder="Select an Occasion"
+                className="w-[100%] h-[100%] border-2 mt-[5px] lg:mt-0"
+              >
+                <option value="" disabled selected hidden>
+                  All
+                </option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+            {/* Flower per pc */}
+            <div className="w-[100%] lg:w-[20%] h-[30px] text-md lg:text-lg mt-[30px] lg:mt-0">
+              <h1>Flower (per pc)</h1>
+              <select
+                placeholder="Select an Occasion"
+                className="w-[100%] h-[100%] border-2 mt-[5px] lg:mt-0"
+              >
+                <option value="" disabled selected hidden>
+                  All
+                </option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+            {/* Price Range */}
+            <div class="relative w-[100%] lg:w-[20%] mt-[30px] lg:mt-0">
+              <label className="text-md lg:text-lg">Price Range</label>
+              <input
+                type="range"
+                className="
+      form-range
+      appearance-none
+      w-full
+      h-6
+      p-0
+      bg-transparent
+      focus:outline-none focus:ring-0 focus:shadow-none
+    "
+                min="0"
+                max="5000"
+                step="0.5"
+              />
+              <div className="flex justify-between text-md">
+                <h1>0</h1>
+                <h1>5000</h1>
+              </div>
+            </div>
+            {/* end price range */}
+          </div>
 
-          <button className="h-[30px] w-[20%] bg-[#fff] lg:h-[40px] text-md lg:text-lg">
-            Find Flower
-          </button>
+          <div className="text-center">
+            <button className="w-[90%] lg:w-[20%] bg-[#fff] h-[50px] text-md lg:text-lg border-2">
+              Find Flower
+            </button>
+          </div>
         </div>
       </div>
-      <Product />
+
+      <div className="w-[100%] lg:w-[80%] mx-[auto] ">
+        <Product />
+      </div>
     </>
   );
 };
