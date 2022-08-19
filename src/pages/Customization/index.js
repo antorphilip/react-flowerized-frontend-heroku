@@ -78,7 +78,9 @@ const index = () => {
           Our most Popular bouquets
         </h6>
       </div>
-      <CustomizeProduct />
+      <div className="w-[100%] lg:w-[80%] mx-[auto] ">
+        <CustomizeProduct />
+      </div>
     </>
   );
 };

@@ -46,18 +46,6 @@
   @apply md:flex md:mt-[20px] md:justify-between;
 }
 
-/* .titleClass {
-  @apply my-16 mx-auto relative text-center tracking-[8px] text-4xl lg:text-5xl uppercase font-ElMessiri font-bold z-[-2];
-}
-
-.titleClass:before {
-  @apply bg-[#694E4E] block h-[2px] absolute left-0 rounded-lg ml-2 w-[60px] sm:w-[165px] md:w-[235px] lg:w-[285px] xl:w-[305px] z-[-2] top-[35%];
-}
-
-.titleClass:after {
-  @apply bg-[#694E4E] block h-[2px] absolute right-0 rounded-lg mr-2 w-[65px] sm:w-[180px] md:w-[250px] lg:w-[300px] xl:w-[320px] z-[-2] top-[35%];
-} */
-
 .carttxtBox {
-  @apply text-center font-[400] text-xl w-[100%] md:w-[300px] h-[35px] bg-[#DFDFDE] text-[#694E4E] font-Alata transition-[0.5s];
+  @apply text-center mt-[5px] font-[400] text-xl w-[100%] md:w-[90%] h-[40px] bg-[#DFDFDE] text-[#694E4E] font-Alata transition-[0.5s];
 }
