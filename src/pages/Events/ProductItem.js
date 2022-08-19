@@ -4,7 +4,7 @@ const ProductItem = ({ image, title, price }) => {
       <div className="w-[100%]">
         <img
           src={image}
-          className={`rounded border-[5px] lg:border-[6px] border-[#886F6F] hover:scale-[1.01] transition-[2.5]`}
+          className={`rounded hover:scale-[1.01] transition-[2.5]`}
           alt="featured"
           loading="lazy"
         />

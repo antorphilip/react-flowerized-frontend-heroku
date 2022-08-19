@@ -3,7 +3,7 @@ const FeaturedItem = ({ image, title, price }) => {
     <div className="w-[100%] ">
       <img
         src={image}
-        className={`rounded border-[10px] border-[#886F6F] hover:scale-[1.04] transition-[2.5]`}
+        className={`rounded drop-shadow-xl hover:scale-[1.04] transition-[2.5]`}
         alt="featured"
         loading="lazy"
       />

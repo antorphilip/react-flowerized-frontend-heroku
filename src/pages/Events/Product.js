@@ -22,7 +22,7 @@ const Product = () => {
   ];
   return (
     <>
-      <span className="text-center grid gap-4 ld:gap-14 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 mx-[20px] my-[20px] lg:my-[40px] ">
+     <span className="text-center grid gap-x-4 lg:gap-x-16 gap-y-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 mx-[20px] my-[20px] lg:my-[40px] drop-shadow-2xl">
         {featuredItems.map((featuredItem, index) => (
           <ProductItem
             key={featuredItem.title}

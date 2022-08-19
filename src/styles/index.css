@@ -39,7 +39,7 @@
 }
 
 .accountLabel {
-  @apply md:ml-[30px] lg:ml-[30px] xl:ml-[100px]  text-xl;
+  @apply md:ml-[30px] lg:ml-[30px] xl:ml-[100px]  text-base;
 }
 
 .accountdiv {
@@ -59,5 +59,5 @@
 } */
 
 .carttxtBox {
-  @apply text-center font-[500] text-xl w-[90%] md:w-[500px] h-[45px] bg-[#DFDFDE] text-[#694E4E] font-Alata rounded-[1.5vh] transition-[0.5s];
+  @apply text-center font-[400] text-xl w-[100%] md:w-[300px] h-[35px] bg-[#DFDFDE] text-[#694E4E] font-Alata transition-[0.5s];
 }

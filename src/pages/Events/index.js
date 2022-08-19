@@ -70,63 +70,80 @@ const Events = () => {
 
       {/* carousel end */}
 
-      <div className="bg-[#fff] border-2 w-[90%] lg:w-[70%] mx-[auto] h-[410px] lg:h-[165px] top-[80px] z-[9] my-7">
+      <div className="bg-[#fff] border-2 border-[#694E4E] w-[90%] lg:w-[70%] mx-[auto] h-[410px] lg:h-[165px] top-[80px] z-[9] my-7">
         <div className="flex-col">
           <div className="flex flex-col lg:flex-row justify-between px-[30px] py-[30px]">
             <div className="w-[90%] lg:w-[15%] mx-[auto] lg:mx-0 h-[30px] text-md lg:text-4xl  text-center">
-              <h1 className="uppercase">Quick Find</h1>
+              <h1 className="uppercase font-[Alata] text-[#694E4E]">
+                Quick Find
+              </h1>
             </div>
             {/* Occasion */}
             <div className="w-[100%] lg:w-[20%] h-[30px] text-md lg:text-lg mx-[auto] lg:mx-0 ">
-              <h1>Occasion</h1>
+              <h1 className="font-[Alata] text-[#694E4E] font-semibold">
+                Occasion
+              </h1>
               <select
                 placeholder="Select an Occasion"
-                className="w-[100%] h-[100%] border-2 mt-[5px] lg:mt-0"
+                className="w-[100%] h-[100%] border-2 mt-[5px] lg:mt-0 font-[Alata] text-[#886F6F]"
               >
                 <option value="" disabled selected hidden>
                   All
                 </option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
+                <option>Anniversary</option>
+                <option>Birthday</option>
+                <option>Bridal</option>
+                <option>Holiday</option>
+                <option>Sympathy</option>
+                <option>Valentines</option>
               </select>
             </div>
             {/* Package */}
             <div className="w-[100%] lg:w-[20%] h-[30px] text-md lg:text-lg mt-[30px] lg:mt-0">
-              <h1>Package</h1>
+              <h1 className="font-[Alata] text-[#694E4E] font-semibold">
+                Package
+              </h1>
               <select
                 placeholder="Select an Occasion"
-                className="w-[100%] h-[100%] border-2 mt-[5px] lg:mt-0"
+                className="w-[100%] h-[100%] border-2 mt-[5px] lg:mt-0 font-[Alata] text-[#886F6F]"
               >
                 <option value="" disabled selected hidden>
                   All
                 </option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
+                <option>Basket Arrangement</option>
+                <option>Big Bundle</option>
+                <option>Car Trunk Surprise</option>
+                <option>Flower Bouquets</option>
+                <option>Surprise Bundle</option>
               </select>
             </div>
             {/* Flower per pc */}
             <div className="w-[100%] lg:w-[20%] h-[30px] text-md lg:text-lg mt-[30px] lg:mt-0">
-              <h1>Flower (per pc)</h1>
+              <h1 className="font-[Alata] text-[#694E4E] font-semibold">
+                Flower (per pc)
+              </h1>
               <select
                 placeholder="Select an Occasion"
-                className="w-[100%] h-[100%] border-2 mt-[5px] lg:mt-0"
+                className="w-[100%] h-[100%] border-2 mt-[5px] lg:mt-0 font-[Alata] text-[#886F6F]  "
               >
                 <option value="" disabled selected hidden>
                   All
                 </option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
+                <option>Casa Blanca</option>
+                <option>Carnation</option>
+                <option>Ecuadorian Roses</option>
+                <option>Gerbera</option>
+                <option>Holland Tulips</option>
+                <option>Lisianthus</option>
+                <option>Roses</option>
+                <option>Sunflower</option>
               </select>
             </div>
             {/* Price Range */}
             <div class="relative w-[100%] lg:w-[20%] mt-[30px] lg:mt-0">
-              <label className="text-md lg:text-lg">Price Range</label>
+              <label className="text-md lg:text-lg font-[Alata] text-[#694E4E] font-semibold">
+                Price Range
+              </label>
               <input
                 type="range"
                 className="
@@ -143,15 +160,15 @@ const Events = () => {
                 step="0.5"
               />
               <div className="flex justify-between text-md">
-                <h1>0</h1>
-                <h1>5000</h1>
+                <h1 className="font-[Alata] text-[#694E4E] font-normal">0</h1>
+                <h1 className="font-[Alata] text-[#694E4E] font-normal">5000</h1>
               </div>
             </div>
             {/* end price range */}
           </div>
 
           <div className="text-center">
-            <button className="w-[90%] lg:w-[20%] bg-[#fff] h-[50px] text-md lg:text-lg border-2">
+            <button className="w-[90%] lg:w-[20%] bg-[#fff] h-[50px] text-md lg:text-lg border-2 border-[#694E4E] hover:border-[#C1A3A3] font-[Alata] text-[#694E4E] font-semibold">
               Find Flower
             </button>
           </div>

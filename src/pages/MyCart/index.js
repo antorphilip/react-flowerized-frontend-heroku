@@ -14,7 +14,7 @@ const MyCart = () => {
               <h1 className="text-[#694E4E] tracking-[10px] text-3xl md:text-4xl uppercase font-ElMessiri font-bold ">
                 CHECK OUT
               </h1>
-              <div class="py-14 grid grid-cols-0   xl:grid-cols-2  divide-x">
+              <div class="py-14 grid grid-cols-0   xl:grid-cols-2  divide-x ">
                 <div>
                   <h1 className="text-[#694E4E] tracking-[5px] text-3xl md:text-xl uppercase font-[Alata] font-bold">
                     ORDER SUMMARY
@@ -29,7 +29,7 @@ const MyCart = () => {
                     className="bg-[#C1A3A3] p-2 font-[Alata] uppercase rounded"
                   />
                   <form>
-                    <div className="cartdiv py-2">
+                    <div className="cartdiv">
                       <h3 className="accountLabel font-[Alata] text-[#694E4E] text-left">
                         Sender's Name
                       </h3>
@@ -80,7 +80,7 @@ const MyCart = () => {
                     </button>
                     <button
                       onClick={() => navigate("/greetings")}
-                      className="px-3 py-2 transition ease-in bg-white text-[#694e4e] uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
+                      className="px-2 py-2 transition ease-in bg-white text-[#694e4e] uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
                     >
                       Proceed to Greetings
                     </button>
