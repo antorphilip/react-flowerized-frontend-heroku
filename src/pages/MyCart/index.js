@@ -9,7 +9,7 @@ const MyCart = () => {
       <div className="h-[0px] mt-[80px]"></div>
 
       <div className={`flex items-center justify-center ${styles.bgimage5}`}>
-        <div className="w-[95%] lg:w-[100%] lg:w-2/3 flex my-14 rounded-xl shadow-xl overflow-hidden">
+        <div className=" w-[95%] lg:w-2/3 flex my-14 rounded-xl shadow-xl overflow-hidden">
           <div className="px-4 py-7  w-full text-center bg-white">
             <h1 className="text-[#694E4E] tracking-[10px] text-4xl uppercase font-ElMessiri font-bold mt-[20px]">
               CHECK OUT
