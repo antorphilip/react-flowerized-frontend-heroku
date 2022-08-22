@@ -1,5 +1,5 @@
-import contact from "../../assets/image/contact.jpg";
-import maps from "../../assets/image/maps.png";
+import contact from "../../assets/image/contact.webp";
+import maps from "../../assets/image/maps.webp";
 import styles from "../../styles/image.module.css";
 
 const ContactUs = () => {

@@ -1,27 +1,27 @@
 .bgimage {
-  background-image: url('../assets/image/bgimage.png');
+  background-image: url("../assets/image/bgimage.webp");
 }
 
 .bgimage2 {
-  background-image: url('../assets/image/bgimage2.png');
+  background-image: url("../assets/image/bgimage2.webp");
 }
 
 .bgimage3 {
-  background-image: url('../assets/image/bgimage3.png');
+  background-image: url("../assets/image/bgimage3.png");
 }
 
 .bgimage4 {
-  background-image: url('../assets/image/bgimage4.png');
+  background-image: url("../assets/image/bgimage4.png");
 }
 
 .bgimage5 {
-  background-image: url('../assets/image/bgimage5.png');
+  background-image: url("../assets/image/bgimage5.png");
 }
 
 .bgimage6 {
-  background-image: url('../assets/image/bgimage6.png');
+  background-image: url("../assets/image/bgimage6.png");
 }
 
 .bgimage7 {
-  background-image: url('../assets/image/bgimage7.png');
+  background-image: url("../assets/image/bgimage7.png");
 }

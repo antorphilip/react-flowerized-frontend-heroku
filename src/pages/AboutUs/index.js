@@ -1,5 +1,5 @@
-import aboutus from "../../assets/image/aboutus.png";
-import aboutus1 from "../../assets/image/aboutus1.jpg";
+import aboutus from "../../assets/image/aboutus.webp";
+import aboutus1 from "../../assets/image/aboutus1.webp";
 import styles from "../../styles/image.module.css";
 
 const AboutUs = () => {
