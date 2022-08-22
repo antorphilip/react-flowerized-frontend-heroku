@@ -3,7 +3,7 @@ import carousel1 from "../../assets/image/EventsCarousel1.png";
 import carousel2 from "../../assets/image/EventsCarousel2.png";
 import carousel3 from "../../assets/image/EventsCarousel3.png";
 import carousel4 from "../../assets/image/EventsCarousel4.png";
-import imageme from "../../assets/image/coffee.png";
+import imageme from "../../assets/image/coffee.webp";
 
 const Customize = () => {
   return (
@@ -68,8 +68,10 @@ const Customize = () => {
       </div>
 
       {/* carousel end */}
-      <div className="w-[100%]  text-center justify-center py-7 bg-[#C1A3A3] mt-7">
-        <h1 className="mb-4">Customize your chosen Bouquet!</h1>
+      <div className="w-[100%]  text-center justify-center py-7 bg-[#C1A3A3]/80 mt-7">
+        <h1 className="mb-4 font-[Alata] text-2xl text-white">
+          CUSTOMIZE A BOUQUET
+        </h1>
         <img
           src={imageme}
           className={`rounded shadow-xl w-[300px] mx-[auto]`}

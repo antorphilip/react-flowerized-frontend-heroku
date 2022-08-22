@@ -1,8 +1,8 @@
 import React from "react";
-import rhena from "../../assets/image/rhena.jpg";
-import mj from "../../assets/image/mj.jpg";
-import kian from "../../assets/image/kian.jpg";
-import antor from "../../assets/image/antor.jpg";
+import rhena from "../../assets/image/rhena.webp";
+import mj from "../../assets/image/mj.webp";
+import kian from "../../assets/image/kian.webp";
+import antor from "../../assets/image/antor.webp";
 import ReviewCard from "./ReviewCard";
 
 const index = () => {

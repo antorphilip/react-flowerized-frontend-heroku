@@ -1,7 +1,6 @@
-import carousel1 from "../../assets/image/carousel-1.png";
-import carousel2 from "../../assets/image/carousel-2.png";
-import carousel3 from "../../assets/image/carousel-3.png";
-import carousel4 from "../../assets/image/carousel-4.png";
+import carousel1 from "../../assets/image/carousel-1.webp";
+import carousel2 from "../../assets/image/carousel-2.webp";
+import carousel3 from "../../assets/image/carousel-3.webp";
 import HeroSection from "../../components/HeroSection";
 import Reviews from "../../components/Reviews";
 import Featured from "./Featured";
@@ -62,9 +61,6 @@ const Home = () => {
               className="block w-full h-[full]"
               alt="Exotic Fruits"
             />
-          </div>
-          <div className="carousel-item float-left w-full">
-            <img src={carousel4} className="block w-full" alt="Exotic Fruits" />
           </div>
         </div>
       </div>

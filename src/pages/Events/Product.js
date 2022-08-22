@@ -1,7 +1,7 @@
 import React from "react";
-import bouquet5k from "../../assets/image/5k-bouquets.png";
-import coffee from "../../assets/image/coffee.png";
-import luna from "../../assets/image/luna.png";
+import bouquet5k from "../../assets/image/5k-bouquets.webp";
+import coffee from "../../assets/image/coffee.webp";
+import luna from "../../assets/image/luna.webp";
 import naomi from "../../assets/image/naomi.png";
 import ProductItem from "./ProductItem";
 
@@ -22,7 +22,7 @@ const Product = () => {
   ];
   return (
     <>
-     <span className="text-center grid gap-x-4 lg:gap-x-16 gap-y-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 mx-[20px] my-[20px] lg:my-[40px] drop-shadow-2xl">
+      <span className="text-center grid gap-x-4 lg:gap-x-16 gap-y-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 mx-[20px] my-[20px] lg:my-[40px] drop-shadow-2xl">
         {featuredItems.map((featuredItem, index) => (
           <ProductItem
             key={featuredItem.title}

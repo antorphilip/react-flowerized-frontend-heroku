@@ -1,6 +1,6 @@
-import bouquet5k from "../../assets/image/5k-bouquets.png";
-import coffee from "../../assets/image/coffee.png";
-import luna from "../../assets/image/luna.png";
+import bouquet5k from "../../assets/image/5k-bouquets.webp";
+import coffee from "../../assets/image/coffee.webp";
+import luna from "../../assets/image/luna.webp";
 import naomi from "../../assets/image/naomi.png";
 import FeaturedItem from "./FeaturedItem";
 
