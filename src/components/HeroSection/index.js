@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import React from "react";
-import heroVid from "../../assets/videos/vid-1.mp4";
+import heroVid from "../../assets/videos/vid-1.webm";
 
 const HeroSection = () => {
   const navigate = useNavigate();

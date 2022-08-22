@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import greetings from "../../assets/image/greetings.jpg";
+import greetings from "../../assets/image/greetings.webp";
 import styles from "../../styles/image.module.css";
 
 const Greetings = () => {

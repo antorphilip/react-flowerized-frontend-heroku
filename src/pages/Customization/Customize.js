@@ -1,8 +1,8 @@
 import React from "react";
-import carousel1 from "../../assets/image/EventsCarousel1.png";
-import carousel2 from "../../assets/image/EventsCarousel2.png";
-import carousel3 from "../../assets/image/EventsCarousel3.png";
-import carousel4 from "../../assets/image/EventsCarousel4.png";
+import carousel1 from "../../assets/image/EventsCarousel1.webp";
+import carousel2 from "../../assets/image/EventsCarousel2.webp";
+import carousel3 from "../../assets/image/EventsCarousel3.webp";
+import carousel4 from "../../assets/image/EventsCarousel4.webp";
 import imageme from "../../assets/image/coffee.webp";
 
 const Customize = () => {

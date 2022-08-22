@@ -1,5 +1,5 @@
 import React from "react";
-import HeroSection from "../../components/HeroSection";
+import HeroSection from "../../components/HeroSection2";
 import { Link } from "react-router-dom";
 
 const Signup = () => {
@@ -50,8 +50,6 @@ const Signup = () => {
             </p>
           </div>
         </div>
-
-        
       </div>
     </>
   );

@@ -7,21 +7,25 @@
 }
 
 .bgimage3 {
-  background-image: url("../assets/image/bgimage3.png");
+  background-image: url("../assets/image/bgimage3.webp");
 }
 
 .bgimage4 {
-  background-image: url("../assets/image/bgimage4.png");
+  background-image: url("../assets/image/bgimage4.webp");
 }
 
 .bgimage5 {
-  background-image: url("../assets/image/bgimage5.png");
+  background-image: url("../assets/image/bgimage5.webp");
 }
 
 .bgimage6 {
-  background-image: url("../assets/image/bgimage6.png");
+  background-image: url("../assets/image/bgimage6.webp");
 }
 
 .bgimage7 {
-  background-image: url("../assets/image/bgimage7.png");
+  background-image: url("../assets/image/bgimage7.webp");
+}
+
+.bgimage8 {
+  background-image: url("../assets/image/bgimage8.webp");
 }

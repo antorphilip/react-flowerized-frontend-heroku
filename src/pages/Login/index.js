@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import HeroSection from "../../components/HeroSection";
+import HeroSection from "../../components/HeroSection1";
 
 const Login = () => {
   return (

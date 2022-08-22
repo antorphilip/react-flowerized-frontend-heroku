@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import payment from "../../assets/image/payment.jpg";
+import payment from "../../assets/image/payment.webp";
 import styles from "../../styles/image.module.css";
 
 const Payment = () => {
@@ -63,7 +63,7 @@ const Payment = () => {
     <>
       <div className="h-[1px] mt-[80px]"></div>
       <div className="">
-        <div className={`flex items-center justify-center ${styles.bgimage2}`}>
+        <div className={`flex items-center justify-center ${styles.bgimage8}`}>
           <div className="w-[90%] lg:w-2/3 flex my-28 rounded-xl shadow-xl overflow-hidden">
             <img
               className="lg:block hidden max-w-[500px]"

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate, NavLink } from "react-router-dom";
-import logo from "../../assets/image/logo4.png";
+import logo from "../../assets/image/logo.webp";
 
 const NavBar = () => {
   const navigate = useNavigate();

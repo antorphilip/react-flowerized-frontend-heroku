@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import confirmation from "../../assets/image/confirmation.jpg";
-import thankyou from "../../assets/image/thankyou.png";
+import confirmation from "../../assets/image/confirmation.webp";
+import thankyou from "../../assets/image/thankyou.webp";
 import styles from "../../styles/image.module.css";
 
 const Confirmation = () => {

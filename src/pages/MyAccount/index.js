@@ -1,5 +1,5 @@
 import { useState } from "react";
-import myaccount from "../../assets/image/myaccount.jpg";
+import myaccount from "../../assets/image/myaccount.webp";
 import styles from "../../styles/image.module.css";
 
 const MyAccount = () => {
