@@ -49,6 +49,12 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+  const logout = () => {
+    setTokens(null);
+    setUser(null);
+    localStorage.removeItem("tokens");
+  };
+
   const register = async (e) => {
     e.preventDefault();
 
@@ -77,6 +83,7 @@ export const AuthProvider = ({ children }) => {
     user,
     register,
     login,
+    logout,
   };
 
   return (

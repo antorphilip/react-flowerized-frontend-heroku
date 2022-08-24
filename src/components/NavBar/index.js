@@ -4,7 +4,7 @@ import logo from "../../assets/image/logo.webp";
 import AuthContext from "../../contexts/auth";
 
 const NavBar = () => {
-  const { user } = useContext(AuthContext);
+  const { user, logout } = useContext(AuthContext);
   const navigate = useNavigate();
   const navLinks = [
     { path: "/", title: "Home" },
@@ -57,16 +57,18 @@ const NavBar = () => {
           </button>
 
           {user && (
-            <p className="hidden lg:block text-white mr-3">
-              Hello, {user.email}
-            </p>
+            <div className="hidden lg:flex items-center">
+              <p className="text-white mr-3">Hello, {user.email}</p>
+              <button
+                onClick={logout}
+                className="bg-white px-3 py-1 rounded-lg mr-3 uppercase tracking-wide"
+              >
+                Logout
+              </button>
+            </div>
           )}
 
-          {user ? (
-            <Link to="/myaccount" className="hidden lg:block">
-              <i className="fa-regular fa-circle-user fa-2x iconColor mr-[30px]"></i>
-            </Link>
-          ) : (
+          {!user && (
             <a href="/login#Login" className="hidden xl:block">
               <i className="fa-regular fa-circle-user fa-2x iconColor mr-[30px]"></i>
             </a>
