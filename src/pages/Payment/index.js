@@ -63,7 +63,7 @@ const Payment = () => {
     <>
       <div className="h-[1px] mt-[80px]"></div>
       <div className="">
-        <div className={`flex items-center justify-center ${styles.bgimage8}`}>
+        <div className={`flex items-center justify-center ${styles.bgimage8x}`}>
           <div className="w-[90%] lg:w-2/3 flex my-28 rounded-xl shadow-xl overflow-hidden">
             <img
               className="lg:block hidden max-w-[500px]"
@@ -111,19 +111,19 @@ const Payment = () => {
                     </h2>
                     <input
                       type="file"
-                      className="file:bg-[#694e4e] file:rounded-xl file:text-white file:border-none file:px-7 file:py-1 file:mr-4 file:cursor-pointer"
+                      className="file:bg-[#694e4e] file:rounded-xl file:text-white file:border-none file:px-7 file:py-1 file:mr-4 file:cursor-pointer font-[Alata]"
                     />
                     <div className="flex items-center justify-between">
                       <button
                         onClick={() => navigate("/")}
-                        className="px-3 py-2 transition ease-in bg-white text-[#694e4e] uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
+                        className="px-3 py-2 transition ease-in bg-white text-[#694e4e] uppercase tracking-widest rounded-xl border-2 border-[#694e4e] font-[Alata]"
                       >
                         Home
                       </button>
                       <div className="flex items-center space-x-3">
                         <button
                           onClick={() => navigate("/confirmation")}
-                          className="px-3 py-2 transition ease-in bg-[#694e4e] text-white uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
+                          className="px-3 py-2 transition ease-in bg-[#694e4e] text-white uppercase tracking-widest rounded-xl border-2 border-[#694e4e] font-[Alata]"
                         >
                           Confirm
                         </button>

@@ -61,7 +61,7 @@ const NavBar = () => {
 
       {/* mobile view */}
       <ul
-        className={`z-[99] text-center pl-0 xl:hidden bg-gradient-to-r from-[#F3C5C5] to-[#C1A3A3] ${
+        className={`z-[99] text-center pl-0 xl:hidden bg-[#C1A3A3]/90 ${
           nav ? "fixed w-full" : "hidden"
         }`}
       >

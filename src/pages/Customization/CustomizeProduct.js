@@ -11,12 +11,6 @@ const CustomizeProduct = () => {
     { image: coffee, title: "Coffee", price: 99.99 },
     { image: luna, title: "Luna", price: 99.99 },
     { image: naomi, title: "Naomi", price: 99.99 },
-    { image: naomi, title: "Naomi", price: 99.99 },
-    { image: naomi, title: "Naomi", price: 99.99 },
-    { image: naomi, title: "Naomi", price: 99.99 },
-    { image: naomi, title: "Naomi", price: 99.99 },
-    { image: naomi, title: "Naomi", price: 99.99 },
-    { image: naomi, title: "Naomi", price: 99.99 },
   ];
   return (
     <>

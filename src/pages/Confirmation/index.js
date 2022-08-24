@@ -37,7 +37,7 @@ const Confirmation = () => {
                 </div>
                 <button
                   onClick={() => navigate("/")}
-                  className="px-3 py-2 transition ease-in bg-white text-[#694e4e] uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
+                  className="px-3 py-2 transition ease-in bg-white text-[#694e4e] uppercase tracking-widest rounded-xl border-2 border-[#694e4e] font-[Alata]"
                 >
                   Continue to Shopping
                 </button>

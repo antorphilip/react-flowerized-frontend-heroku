@@ -2,7 +2,16 @@ import React from "react";
 import bouquet5k from "../../assets/image/5k-bouquets.webp";
 import coffee from "../../assets/image/coffee.webp";
 import luna from "../../assets/image/luna.webp";
-import naomi from "../../assets/image/naomi.png";
+import naomi from "../../assets/image/naomi.webp";
+import dahlia from "../../assets/image/dahlia.webp";
+import laura from "../../assets/image/laura.webp";
+import mikaela from "../../assets/image/mikaela.webp";
+import myrtle from "../../assets/image/myrtle.webp";
+import queen from "../../assets/image/queen.webp";
+import stargazer from "../../assets/image/stargazer.webp";
+import summer from "../../assets/image/summer.webp";
+import white from "../../assets/image/white-roses-bouquet.webp";
+import yellow from "../../assets/image/yellow-ecuadorian-roses.webp";
 import ProductItem from "./ProductItem";
 
 const Product = () => {
@@ -11,14 +20,15 @@ const Product = () => {
     { image: coffee, title: "Coffee", price: 99.99 },
     { image: luna, title: "Luna", price: 99.99 },
     { image: naomi, title: "Naomi", price: 99.99 },
-    { image: naomi, title: "Naomi", price: 99.99 },
-    { image: naomi, title: "Naomi", price: 99.99 },
-    { image: naomi, title: "Naomi", price: 99.99 },
-    { image: naomi, title: "Naomi", price: 99.99 },
-    { image: naomi, title: "Naomi", price: 99.99 },
-    { image: naomi, title: "Naomi", price: 99.99 },
-    { image: naomi, title: "Naomi", price: 99.99 },
-    { image: naomi, title: "Naomi", price: 99.99 },
+    { image: dahlia, title: "Dahlia", price: 99.99 },
+    { image: laura, title: "Laura", price: 99.99 },
+    { image: mikaela, title: "Mikaela", price: 99.99 },
+    { image: myrtle, title: "Myrtle", price: 99.99 },
+    { image: queen, title: "Queen", price: 99.99 },
+    { image: stargazer, title: "Naomi", price: 99.99 },
+    { image: summer, title: "Summer", price: 99.99 },
+    { image: white, title: "White Roses Bouquet", price: 99.99 },
+    { image: yellow, title: "Yellow Ecuadorian Roses", price: 99.99 },
   ];
   return (
     <>

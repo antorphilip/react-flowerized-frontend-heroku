@@ -73,7 +73,7 @@ const Events = () => {
       <div className="bg-[#fff] border-2 border-[#694E4E] w-[90%] lg:w-[70%] mx-[auto] h-[410px] lg:h-[165px] top-[80px] z-[9] my-7">
         <div className="flex-col">
           <div className="flex flex-col lg:flex-row justify-between px-[30px] py-[30px]">
-            <div className="w-[90%] lg:w-[15%] mx-[auto] lg:mx-0 h-[30px] text-md lg:text-4xl  text-center">
+            <div className="w-[90%] lg:w-[15%] mx-[auto] lg:mx-0 h-[30px] text-md lg:text-4xl text-center">
               <h1 className="uppercase font-[Alata] text-[#694E4E]">
                 Quick Find
               </h1>

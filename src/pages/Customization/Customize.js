@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import carousel1 from "../../assets/image/EventsCarousel1.webp";
 import carousel2 from "../../assets/image/EventsCarousel2.webp";
 import carousel3 from "../../assets/image/EventsCarousel3.webp";
@@ -6,6 +7,8 @@ import carousel4 from "../../assets/image/EventsCarousel4.webp";
 import imageme from "../../assets/image/coffee.webp";
 
 const Customize = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="mt-[80px]"></div>
@@ -68,10 +71,11 @@ const Customize = () => {
       </div>
 
       {/* carousel end */}
-      <div className="w-[100%]  text-center justify-center py-7 bg-[#C1A3A3]/80 mt-7">
-        <h1 className="mb-4 font-[Alata] text-2xl text-white">
-          CUSTOMIZE A BOUQUET
+      <div className="w-[100%]  text-center justify-center py-7 mt-7">
+        <h1 className="mb-4 font-[Alata] text-2xl text-[#694E4E]">
+          CUSTOMIZE YOUR CHOSEN BOUQUET
         </h1>
+        {/* yung image dito na ididisplay ay yung naclick ni user sa events/customize page */}
         <img
           src={imageme}
           className={`rounded shadow-xl w-[300px] mx-[auto]`}
@@ -81,50 +85,65 @@ const Customize = () => {
       </div>
 
       <div className="w-[95%] lg:w-[90%] flex flex-col lg:flex-row mx-[auto] justify-around lg:px-28 py-14">
-        <div className="w-[100%] lg:w-[60%] h-[300px] lg:h-[auto] shadow-xl "></div>
-        <div className="w-[100%] lg:w-[30%] border-2 mt-7 lg:mt-0 py-7">
+        <div className="w-[100%] lg:w-[60%] h-[300px] lg:h-[auto] shadow-2xl rounded "></div>
+        <div className="w-[100%] lg:w-[30%] border-2 mt-7 lg:mt-0 py-7 border-[#694E4E] rounded">
           <div className="uppercase text-center w-[80%] mx-[auto]">
-            <h1 className="p-4 bg-[#C1A3A3]">Pick focal flower</h1>
-            <div className="grid grid-cols-3 grid-rows-2 gap-4 mt-[10px] ">
-              <div className="border-2 h-[100px]"></div>
-              <div className="border-2 "></div>
-              <div className="border-2 "></div>
-              <div className="border-2"></div>
-              <div className="border-2 "></div>
-              <div className="border-2 "></div>
+            <h1 className="p-4 bg-[#C1A3A3] font-[Alata] text-white">
+              Pick focal flower
+            </h1>
+            <div className="grid grid-cols-3 grid-rows-2 gap-4 mt-[10px] divide-dashed ">
+              <div className="border-2 h-[100px] border-[#694E4E]"></div>
+              <div className="border-2 border-[#694E4E]"></div>
+              <div className="border-2 border-[#694E4E]"></div>
+              <div className="border-2 border-[#694E4E]"></div>
+              <div className="border-2 border-[#694E4E]"></div>
+              <div className="border-2 border-[#694E4E]"></div>
             </div>
           </div>
 
           <div className="uppercase text-center w-[80%] mx-[auto] mt-[20px]">
-            <h1 className="p-4 bg-[#C1A3A3]">Pick accent flower</h1>
-            <div className="grid grid-cols-3 grid-rows-2 gap-4 mt-[10px] ">
-              <div className="border-2 h-[100px]"></div>
-              <div className="border-2 "></div>
-              <div className="border-2 "></div>
-              <div className="border-2"></div>
-              <div className="border-2 "></div>
-              <div className="border-2 "></div>
+            <h1 className="p-4 bg-[#C1A3A3] font-[Alata] text-white">
+              Pick accent flower
+            </h1>
+            <div className="grid grid-cols-3 grid-rows-2 gap-4 mt-[10px] divide-dashed">
+              <div className="border-2 h-[100px] border-[#694E4E]"></div>
+              <div className="border-2 border-[#694E4E]"></div>
+              <div className="border-2 border-[#694E4E]"></div>
+              <div className="border-2 border-[#694E4E]"></div>
+              <div className="border-2 border-[#694E4E]"></div>
+              <div className="border-2 border-[#694E4E]"></div>
             </div>
           </div>
 
-          <div className="uppercase text-center w-[80%] mx-[auto] mt-[20px]">
-            <select className="w-[100%] py-2 bg-[#C1A3A3] uppercase text-center">
+          <div className="uppercase text-center w-[80%] mx-[auto] mt-[20px] space-y-4">
+            <select className="w-[100%] py-2 bg-[#C1A3A3] uppercase text-center font-[Alata] text-white">
               <option value="" disabled selected hidden>
                 Color of wrapper
               </option>
-              <option>1</option>
-              <option>1</option>
-              <option>1</option>
+              <option>Pink</option>
+              <option>White</option>
+              <option>Red</option>
+              <option>Black</option>
+              <option>Gold</option>
+              <option>Brown</option>
+              <option>Cream</option>
             </select>
 
-            <select className="w-[100%] py-2 bg-[#C1A3A3] uppercase text-center mt-[10px]">
+            <select className="w-[100%] py-2 bg-[#C1A3A3] uppercase text-center mt-[10px] font-[Alata] text-white">
               <option value="" disabled selected hidden>
                 ADD-ons
               </option>
-              <option>1</option>
-              <option>1</option>
-              <option>1</option>
+              <option>Chocolate</option>
+              <option>Cake</option>
+              <option>Balloons</option>
+              <option>Teddy Bear</option>
             </select>
+            <button
+              onClick={() => navigate("/payment")}
+              className="px-3 py-1 transition ease-in bg-white text-[#694e4e] uppercase tracking-widest rounded-xl border-2 border-[#694e4e] font-[Alata]"
+            >
+              ADD TO CART
+            </button>
           </div>
         </div>
       </div>

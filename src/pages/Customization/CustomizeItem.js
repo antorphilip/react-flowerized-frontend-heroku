@@ -19,7 +19,7 @@ const CustomizeItem = ({ image, title, price }) => {
             </p>
           </div>
           <div className="mt-[12px] mr-[6px]">
-            <i className="fa-solid fa-cart-plus fa-xl lg:text-[32px]  mr-[5px] lg:mr-[20px] text-[#694E4E] hover:scale-[1.1] transition-[2.5]"></i>
+            <i className="fa-thin fa-cart-plus fa-xl lg:text-[32px]  mr-[5px] lg:mr-[20px] text-[#694E4E] hover:scale-[1.1] transition-[2.5]"></i>
             <i className="fa-solid fa-pen-to-square fa-xl lg:text-[32px]  text-[#694E4E] hover:scale-[1.1] transition-[2.5]"></i>
           </div>
         </div>

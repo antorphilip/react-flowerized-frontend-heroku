@@ -73,8 +73,8 @@ const index = () => {
           Select a Bouquet to customize
         </h1>
       </div>
-      <div className="w-[100%] h-[40px] bg-[#CBA99E] my-4 py-[8px]">
-        <h6 className="text-[#fff] font-ElMessiri uppercase text-center text-xl ">
+      <div className="w-[100%] h-[40px] bg-[#C1A3A3] my-4 py-[8px]">
+        <h6 className="text-[#fff] font-[Alata] uppercase text-center text-xl ">
           Our most Popular bouquets
         </h6>
       </div>
