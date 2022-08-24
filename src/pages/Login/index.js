@@ -1,7 +1,11 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import HeroSection from "../../components/HeroSection1";
+import AuthContext from "../../contexts/auth";
 
 const Login = () => {
+  const { login } = useContext(AuthContext);
+
   return (
     <>
       <HeroSection />
@@ -15,7 +19,7 @@ const Login = () => {
           </h1>
         </div>
         <div className="flex-col text-center">
-          <form>
+          <form onSubmit={login}>
             <input
               type="text"
               name="email"

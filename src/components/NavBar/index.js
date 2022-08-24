@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link, useNavigate, NavLink } from "react-router-dom";
 import logo from "../../assets/image/logo.webp";
+import AuthContext from "../../contexts/auth";
 
 const NavBar = () => {
+  const { user } = useContext(AuthContext);
   const navigate = useNavigate();
   const navLinks = [
     { path: "/", title: "Home" },
@@ -42,7 +44,7 @@ const NavBar = () => {
           })}
         </ul>
 
-        <div>
+        <div className="flex items-center">
           <button
             className="text-[#fff] hover:text-[#694E4E] mr-[20px] xl:hidden"
             onClick={() => setNav(!nav)}
@@ -53,9 +55,22 @@ const NavBar = () => {
               <i className="fa-solid fa-bars fa-2x"></i>
             )}
           </button>
-          <a href="/login#Login" className="hidden xl:block">
-            <i className="fa-regular fa-circle-user fa-2x iconColor mr-[30px]"></i>
-          </a>
+
+          {user && (
+            <p className="hidden lg:block text-white mr-3">
+              Hello, {user.email}
+            </p>
+          )}
+
+          {user ? (
+            <Link to="/myaccount" className="hidden lg:block">
+              <i className="fa-regular fa-circle-user fa-2x iconColor mr-[30px]"></i>
+            </Link>
+          ) : (
+            <a href="/login#Login" className="hidden xl:block">
+              <i className="fa-regular fa-circle-user fa-2x iconColor mr-[30px]"></i>
+            </a>
+          )}
         </div>
       </nav>
 

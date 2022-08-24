@@ -1,8 +1,11 @@
-import React from "react";
-import HeroSection from "../../components/HeroSection2";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import HeroSection from "../../components/HeroSection2";
+import AuthContext from "../../contexts/auth";
 
 const Signup = () => {
+  const { register } = useContext(AuthContext);
+
   return (
     <>
       <div>
@@ -17,11 +20,11 @@ const Signup = () => {
               SIGNUP NOW
             </h1>
           </div>
-          <div className="flex-col text-center">
-            <form>
+          <div className="grid place-items-center text-center">
+            <form onSubmit={register}>
               <input
                 type="text"
-                name="email"
+                name="fullname"
                 placeholder="Fullname"
                 className="txt-box mt-[20px]"
               />
@@ -39,9 +42,9 @@ const Signup = () => {
                 placeholder="Password"
                 className="txt-box mt-[10px]"
               />
+              <button className="btn-style block">SIGNUP</button>
             </form>
 
-            <button className="btn-style">SIGNUP</button>
             <p className="mt-[30px] no-underline tracking-[1.5px] font-Alata">
               Already have an account?{" "}
               <Link to="/login" className="no-underline font-NanumGothic">
