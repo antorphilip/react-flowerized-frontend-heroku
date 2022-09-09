@@ -10,7 +10,7 @@ export const AuthProvider = ({ children }) => {
       ? jwtDecode(localStorage.getItem("tokens"))
       : null
   );
-  const [setTokens] = useState(() =>
+  const [tokens, setTokens] = useState(() =>
     localStorage.getItem("tokens")
       ? JSON.parse(localStorage.getItem("tokens"))
       : null
