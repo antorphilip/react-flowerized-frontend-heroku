@@ -20,7 +20,7 @@ const Signup = () => {
               SIGNUP NOW
             </h1>
           </div>
-          <div className="grid place-items-center text-center">
+          <div className="flex-col text-center">
             <form onSubmit={register}>
               <input
                 type="text"
@@ -42,12 +42,16 @@ const Signup = () => {
                 placeholder="Password"
                 className="txt-box mt-[10px]"
               />
-              <button className="btn-style block">SIGNUP</button>
+              <br />
+              <button className="btn-style">SIGNUP</button>
             </form>
 
             <p className="mt-[30px] no-underline tracking-[1.5px] font-Alata">
               Already have an account?{" "}
-              <Link to="/login" className="no-underline font-NanumGothic">
+              <Link
+                to="/login"
+                className="text-blue-500 hover:underline font-NanumGothic"
+              >
                 Login
               </Link>
             </p>
