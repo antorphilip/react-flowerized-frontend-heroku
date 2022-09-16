@@ -5,7 +5,7 @@ const ProductItem = ({ image, title, price }) => {
         <img
           src={image}
           className={`rounded giu hover:scale-[1.01] transition-[2.5]`}
-          alt="featured"
+          alt="ProductImage"
           loading="lazy"
         />
         <div className="flex place-content-between text-left ">

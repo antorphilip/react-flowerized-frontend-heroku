@@ -95,7 +95,7 @@ const NavBar = () => {
           );
         })}
 
-        <NavLink
+        {/* <NavLink
           to="/login"
           className={({ isActive }) =>
             isActive ? "bg-[#886F6F] py-[3vh] w-full]" : "undefined]"
@@ -114,7 +114,7 @@ const NavBar = () => {
           <button className="moblink py-[3vh] hover:bg-[#886F6F] w-full">
             Signup
           </button>
-        </NavLink>
+        </NavLink> */}
       </ul>
     </>
   );
