@@ -1,9 +1,33 @@
 import { useNavigate } from "react-router-dom";
 import greetings from "../../assets/image/greetings.webp";
 import styles from "../../styles/image.module.css";
+import QRCode from "qrcode";
+import { useState } from "react";
 
 const Greetings = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate("");
+  const [url, setUrl] = useState("");
+  const [qr, setQr] = useState("");
+
+  const GenerateQRCode = () => {
+    QRCode.toDataURL(
+      url,
+      {
+        width: 800,
+        margin: 2,
+        color: {
+          dark: "#335383FF",
+          light: "#EEEEEEFF",
+        },
+      },
+      (err, url) => {
+        if (err) return console.error(err);
+
+        console.log(url);
+        setQr(url);
+      }
+    );
+  };
 
   return (
     <>
@@ -17,15 +41,14 @@ const Greetings = () => {
               alt="logo"
             />
 
-            <div className="px-7 py-14 w-full text-center bg-white">
+            <div className="px-7 py-24 w-full text-center bg-white">
               <h1 className="text-[#694E4E] tracking-[5px] text-2xl md:text-4xl uppercase font-ElMessiri font-bold ">
                 MAKE A HEARTFUL MESSAGE TO YOUR LOVED ONES
               </h1>
-              <p className="py-7 text-xl font-[Alata] text-[#694E4E]">
+              <p className="py-2 text-xl font-[Alata] text-[#694E4E]">
                 You can create a short message through the dropbox below or
                 upload a short video message.
               </p>
-
               <div class="flex justify-center">
                 <div class="mb-3 xl:w-[95%]">
                   <label
@@ -66,12 +89,28 @@ const Greetings = () => {
                 type="file"
                 className="font-[Alata] text-[#694E4E]"
                 accept="video/*,audio/*"
+                value={url}
+                onChange={(e) => setUrl(e.target.value)}
               />
-
+              <br />
+              <div className="app">
+                <button onClick={GenerateQRCode}>Generate</button>
+                {qr && (
+                  <>
+                    <img
+                      src={qr}
+                      alt=""
+                      className="block max-w-[250px] m-[auto]"
+                    />
+                    <a href={qr} download="qrcode.png" className="">
+                      Download
+                    </a>
+                  </>
+                )}
+              </div>
               <p className="py-7 text-xl font-[Alata] text-[#694E4E]">
                 QR CODE GENERATOR
               </p>
-
               <button
                 onClick={() => navigate("/payment")}
                 className="px-3 py-2 transition ease-in bg-white text-[#694e4e] uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
