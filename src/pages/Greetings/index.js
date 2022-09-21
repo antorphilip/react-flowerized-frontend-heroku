@@ -115,13 +115,16 @@ const Greetings = () => {
                 >
                   Generate
                 </button>
+                <div className="w-[260px] h-[260px] border-4 border-sky-500 m-[auto] mb-2">
+                  <img
+                    src={qr}
+                    alt=""
+                    className="block max-w-[250px] m-[auto]"
+                  />
+                </div>
+
                 {qr && (
                   <>
-                    <img
-                      src={qr}
-                      alt=""
-                      className="block max-w-[250px] m-[auto]"
-                    />
                     <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-3 rounded inline-flex items-center my-2 ">
                       <svg
                         class="fill-current w-4 h-4 mr-2"
