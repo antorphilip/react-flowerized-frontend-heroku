@@ -16,8 +16,8 @@ const Greetings = () => {
         width: 800,
         margin: 2,
         color: {
-          dark: "#335383FF",
-          light: "#EEEEEEFF",
+          dark: "#704F4F",
+          light: "#FFFFFF",
         },
       },
       (err, url) => {
@@ -111,11 +111,11 @@ const Greetings = () => {
               <div className="app">
                 <button
                   onClick={GenerateQRCode}
-                  className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-3 rounded inline-flex items-center my-2"
+                  className="bg-[#C1A3A3] hover:bg-[#704F4F] text-white font-bold py-1 px-3 rounded inline-flex items-center my-2"
                 >
                   Generate
                 </button>
-                <div className="w-[260px] h-[260px] border-4 border-sky-500 m-[auto] mb-2">
+                <div className="w-[260px] h-[260px] border-4 border-[#472D2D] m-[auto] mb-2">
                   <img
                     src={qr}
                     alt=""
@@ -125,7 +125,7 @@ const Greetings = () => {
 
                 {qr && (
                   <>
-                    <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-3 rounded inline-flex items-center my-2 ">
+                    <button class="bg-[#C1A3A3] hover:bg-[#704F4F] text-white font-bold py-1 px-3 rounded inline-flex items-center my-2 ">
                       <svg
                         class="fill-current w-4 h-4 mr-2"
                         xmlns="http://www.w3.org/2000/svg"
@@ -136,7 +136,7 @@ const Greetings = () => {
                       <a
                         href={qr}
                         download="qrcode.png"
-                        className="hover:text-gray-800"
+                        className="hover:text-white"
                       >
                         Download
                       </a>

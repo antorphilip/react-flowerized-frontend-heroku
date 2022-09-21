@@ -88,7 +88,7 @@ const Payment = () => {
                     //     : "px-12 py-2 transition ease-in bg-white text-[#694e4e] uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
                     onClick={() => setActiveButton("credit")}
                   >
-                    Credit Card
+                    CARD DETAILS
                   </button>
                   <button
                     className={
@@ -98,7 +98,7 @@ const Payment = () => {
                     }
                     onClick={() => setActiveButton("gcash")}
                   >
-                    GCash/Maya
+                    E-WALLET
                   </button>
                 </div>
 
@@ -107,7 +107,7 @@ const Payment = () => {
 
                   <div className="mt-10 space-y-5">
                     <h2 className="text-2xl font-bold font-ElMessiri uppercase tracking-widest">
-                      Upload mo here fileabels mo
+                      Please upload your proof of payment.
                     </h2>
                     <input
                       type="file"
