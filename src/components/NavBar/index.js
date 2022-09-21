@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link, useNavigate, NavLink } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../../assets/image/logo.webp";
 import AuthContext from "../../contexts/auth";
 
