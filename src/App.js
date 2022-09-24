@@ -18,6 +18,7 @@ import MyAccount from "./pages/MyAccount";
 import MyCart from "./pages/MyCart";
 import Payment from "./pages/Payment";
 import Signup from "./pages/Signup";
+import CheckOut from "./pages/Checkout";
 
 const ProtectedRoute = ({ children }) => {
   const { user } = useContext(AuthContext);
@@ -69,6 +70,7 @@ function App() {
 
         <Route path="/greetings" element={<Greetings />} />
         <Route path="/mycart" element={<MyCart />} />
+        <Route path="/checkout" element={<CheckOut />} />
         <Route path="/payment" element={<Payment />} />
         <Route
           path="/confirmation"
