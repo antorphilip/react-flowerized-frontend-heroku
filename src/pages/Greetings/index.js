@@ -87,7 +87,7 @@ const Greetings = () => {
                 Or you can upload your video greetings here.
               </p>
               <input
-                type="file"
+                type="text"
                 className="form-control
                 block
                 w-[95%]

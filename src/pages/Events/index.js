@@ -90,15 +90,18 @@ const Events = () => {
                 <option value="" disabled selected hidden>
                   All
                 </option>
+                <option>All</option>
                 <option>Anniversary</option>
                 <option>Birthday</option>
                 <option>Bridal</option>
                 <option>Holiday</option>
                 <option>Sympathy</option>
                 <option>Valentines</option>
+                <option>Package</option>
+                <option>Flower (per pc)</option>
               </select>
             </div>
-            {/* Package */}
+            {/* Package
             <div className="w-[100%] lg:w-[20%] h-[30px] text-md lg:text-lg mt-[30px] lg:mt-0">
               <h1 className="font-[Alata] text-[#694E4E] font-semibold">
                 Package
@@ -118,7 +121,7 @@ const Events = () => {
               </select>
             </div>
             {/* Flower per pc */}
-            <div className="w-[100%] lg:w-[20%] h-[30px] text-md lg:text-lg mt-[30px] lg:mt-0">
+            {/* <div className="w-[100%] lg:w-[20%] h-[30px] text-md lg:text-lg mt-[30px] lg:mt-0">
               <h1 className="font-[Alata] text-[#694E4E] font-semibold">
                 Flower (per pc)
               </h1>
@@ -138,7 +141,7 @@ const Events = () => {
                 <option>Roses</option>
                 <option>Sunflower</option>
               </select>
-            </div>
+            </div>  */}
             {/* Price Range */}
             <div class="relative w-[100%] lg:w-[20%] mt-[30px] lg:mt-0">
               <label className="text-md lg:text-lg font-[Alata] text-[#694E4E] font-semibold">

@@ -139,7 +139,7 @@ const Customize = () => {
               <option>Teddy Bear</option>
             </select>
             <button
-              onClick={() => navigate("/payment")}
+              onClick={() => navigate("/mycart")}
               className="px-3 py-1 transition ease-in bg-white text-[#694e4e] uppercase tracking-widest rounded-xl border-2 border-[#694e4e] font-[Alata]"
             >
               ADD TO CART

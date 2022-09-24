@@ -93,7 +93,7 @@ const MyCart = () => {
                     onClick={() => navigate("/greetings")}
                     className="lg:px-2 lg:py-2 transition ease-in bg-white text-[#694e4e] uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
                   >
-                    Proceed to Greetings
+                    Proceed to Payment
                   </button>
                 </div>
                 {/* <div className="flex justify-between px-7">
