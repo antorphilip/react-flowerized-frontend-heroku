@@ -68,22 +68,8 @@ function App() {
         <Route path="/signup" element={<Signup />} />
 
         <Route path="/greetings" element={<Greetings />} />
-        <Route
-          path="/mycart"
-          element={
-            <ProtectedRoute>
-              <MyCart />
-            </ProtectedRoute>
-          }
-        />
-        <Route
-          path="/payment"
-          element={
-            <ProtectedRoute>
-              <Payment />
-            </ProtectedRoute>
-          }
-        />
+        <Route path="/mycart" element={<MyCart />} />
+        <Route path="/payment" element={<Payment />} />
         <Route
           path="/confirmation"
           element={

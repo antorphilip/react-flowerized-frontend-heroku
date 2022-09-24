@@ -94,27 +94,6 @@ const NavBar = () => {
             </li>
           );
         })}
-
-        {/* <NavLink
-          to="/login"
-          className={({ isActive }) =>
-            isActive ? "bg-[#886F6F] py-[3vh] w-full]" : "undefined]"
-          }
-        >
-          <button className="moblink py-[3vh] hover:bg-[#886F6F] w-full">
-            Login
-          </button>
-        </NavLink>
-        <NavLink
-          to="/signup"
-          className={({ isActive }) =>
-            isActive ? "bg-[#886F6F] py-[3vh] w-full" : "undefined]"
-          }
-        >
-          <button className="moblink py-[3vh] hover:bg-[#886F6F] w-full">
-            Signup
-          </button>
-        </NavLink> */}
       </ul>
     </>
   );

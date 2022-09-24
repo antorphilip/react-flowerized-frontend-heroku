@@ -63,7 +63,7 @@ const Payment = () => {
     <>
       <div className="h-[1px] mt-[80px]"></div>
       <div className="">
-        <div className={`flex items-center justify-center ${styles.bgimage8x}`}>
+        <div className={`flex items-center justify-center ${styles.bgimage8}`}>
           <div className="w-[90%] lg:w-2/3 flex my-28 rounded-xl shadow-xl overflow-hidden">
             <img
               className="lg:block hidden max-w-[500px]"

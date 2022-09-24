@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import styles from "../../styles/image.module.css";
+import CartCard from "./cartCard";
 
 const MyCart = () => {
   const navigate = useNavigate();
@@ -19,7 +20,9 @@ const MyCart = () => {
                 <h1 className="text-[#694E4E] tracking-[5px] text-3xl uppercase font-[Alata] font-bold">
                   ORDER SUMMARY
                 </h1>
-                <div className="w-[95%] h-[200px] mx-[auto]"></div>
+                <div className="w-[95%] h-[200px] mx-[auto]">
+                  <CartCard />
+                </div>
               </div>
 
               <div className="space-y-4">

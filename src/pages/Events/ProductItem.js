@@ -1,7 +1,7 @@
 const ProductItem = ({ image, title, price }) => {
   return (
     <>
-      <div className="w-`[100%]">
+      <div className="w-[100%]">
         <img
           src={image}
           className={`rounded giu hover:scale-[1.01] transition-[2.5]`}
