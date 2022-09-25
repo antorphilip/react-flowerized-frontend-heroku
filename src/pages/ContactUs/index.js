@@ -51,7 +51,7 @@ const ContactUs = () => {
                 <div className="flex justify-center">
                   <div className="text-right  h-[372px] w-[665px]">
                     <div className="overflow-none">
-                      <iframe
+                      {/* <iframe
                         title="MapsFrame"
                         className="w-[300px] lg:w-[665px] h-[372px]"
                         id="gmap_canvas"
@@ -60,7 +60,7 @@ const ContactUs = () => {
                         scrolling="no"
                         marginheight="0"
                         marginwidth="0"
-                      ></iframe>
+                      ></iframe> */}
                     </div>
                   </div>
                 </div>
