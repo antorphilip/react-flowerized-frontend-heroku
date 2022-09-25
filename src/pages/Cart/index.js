@@ -1,7 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import styles from "../../styles/image.module.css";
+import CartCard from "./cartCard";
 
-const MyCart = () => {
+const Cart = () => {
   const navigate = useNavigate();
 
   return (
@@ -19,7 +20,9 @@ const MyCart = () => {
                 <h1 className="text-[#694E4E] tracking-[5px] text-3xl uppercase font-[Alata] font-bold">
                   ORDER SUMMARY
                 </h1>
-                <div className="w-[95%] h-[200px] mx-[auto]"></div>
+                <div className="w-[95%] h-[200px] mx-[auto]">
+                  <CartCard />
+                </div>
               </div>
 
               <div className="space-y-4">
@@ -84,7 +87,7 @@ const MyCart = () => {
 
                 <div className="flex justify-between lg:px-7 gap-4">
                   <button
-                    onClick={() => navigate("/mycart")}
+                    onClick={() => navigate("/events")}
                     className="lg:px-2 lg:py-2 transition ease-in bg-white text-[#694e4e] uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
                   >
                     Continue to Shopping
@@ -96,6 +99,21 @@ const MyCart = () => {
                     Proceed to Payment
                   </button>
                 </div>
+                {/* <div className="flex justify-between px-7">
+                  <button
+                    onClick={() => navigate("/events")}
+                    className="px-3 py-2 transition ease-in bg-white text-[#694e4e] uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
+                  >
+                    Continue to Shopping
+                  </button>
+                  <button
+                    onClick={() => navigate("/greetings")}
+                    className="px-2 py-2 transition ease-in bg-white text-[#694e4e] uppercase tracking-widest rounded-xl border-2 border-[#694e4e]"
+                  >
+                    Proceed to Greetings
+                  </button>
+                  <div className="flex items-center space-x-3"></div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -105,4 +123,4 @@ const MyCart = () => {
   );
 };
 
-export default MyCart;
+export default Cart;
