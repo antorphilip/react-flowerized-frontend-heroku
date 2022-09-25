@@ -57,14 +57,7 @@ function App() {
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/contactus" element={<ContactUs />} />
 
-        <Route
-          path="/myaccount"
-          element={
-            <ProtectedRoute>
-              <MyAccount />
-            </ProtectedRoute>
-          }
-        />
+        <Route path="/myaccount" element={<MyAccount />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
 

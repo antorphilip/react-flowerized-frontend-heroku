@@ -1,5 +1,4 @@
 import contact from "../../assets/image/contact.webp";
-import maps from "../../assets/image/maps.webp";
 import styles from "../../styles/image.module.css";
 
 const ContactUs = () => {
@@ -50,11 +49,20 @@ const ContactUs = () => {
                   Or you can visit us at our physical store located at:
                 </p>
                 <div className="flex justify-center">
-                  <img
-                    className="rounded border-[7px] border-[#C1A3A3] sm:w-[40%] object-contain w-[85%] mb-4 ml-3 hover:scale-[1.5] transition-[2.5]"
-                    src={maps}
-                    alt="Map"
-                  />
+                  <div className="text-right  h-[372px] w-[665px]">
+                    <div className="overflow-none">
+                      <iframe
+                        title="MapsFrame"
+                        className="w-[300px] lg:w-[665px] h-[372px]"
+                        id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=blooms%20by%20mara&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0"
+                        scrolling="no"
+                        marginheight="0"
+                        marginwidth="0"
+                      ></iframe>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
