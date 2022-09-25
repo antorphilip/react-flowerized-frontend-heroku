@@ -5,7 +5,7 @@ const cartCard = () => {
   return (
     <>
       <div className="flex w-[100%] lg:w-[90%] bg-blue-200 rounded shadow-md mx-[auto] my-3">
-        <div className="w-[150px]">
+        <div className="w-[150px] py-2 px-2">
           <img
             src={naomi}
             className={`rounded`}
