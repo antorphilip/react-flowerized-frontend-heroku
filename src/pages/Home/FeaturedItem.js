@@ -20,13 +20,9 @@ const FeaturedItem = ({ image, title, price }) => {
             }).format(price)}
           </p>
         </div>
-        <div className="mt-[12px] mr-[6px] flex">
-          <h1 className="text-[42px] lg:text-[42px]  mr-[5px] text-[#694E4E] hover:scale-[1.1] transition-[2.5]">
-            {/* <BsCartPlus /> */}
-          </h1>
-          <h1 className="text-[42px] lg:text-[42px]  mr-[5px] text-[#694E4E] hover:scale-[1.1] transition-[2.5]">
-            {/* <BiCustomize /> */}
-          </h1>
+        <div className="mt-[12px] mr-[6px]">
+          <i className="fa-solid fa-cart-plus fa-3x mr-[20px] text-[#694E4E] hover:scale-[1.1] transition-[2.5]"></i>
+          <i className="fa-solid fa-pen-to-square fa-3x text-[#694E4E] hover:scale-[1.1] transition-[2.5]"></i>
         </div>
       </div>
     </div>
