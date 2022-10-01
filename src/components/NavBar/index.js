@@ -34,11 +34,11 @@ const NavBar = () => {
         </div>
         <div className="flex items-center ml-12">
           <button onClick={() => navigate("/")}>
-            <img className="h-14" src={logo} alt="logo " />
+            <img className="h-14 hidden sm:block" src={logo} alt="logo " />
           </button>
 
           <button onClick={() => navigate("/")}>
-            <h1 className="hidden sm:block font-extrabold text-[#fff] tracking-[8px] text-[29px] md:text-3xl xl:text-4xl font-ElMessiri uppercase ml-2">
+            <h1 className="font-extrabold text-[#fff] tracking-[8px] text-[27px] md:text-3xl xl:text-4xl font-ElMessiri uppercase ml-2">
               Flowerized
             </h1>
           </button>
@@ -57,11 +57,8 @@ const NavBar = () => {
         </ul>
         {!user && (
           <div>
-            <a
-              href="/login#Login"
-              className="block bg-white px-3 py-1 rounded-lg mr-3 uppercase tracking-wide"
-            >
-              Login
+            <a href="/login#Login" className="flex mr-4 sm:mr-7">
+              <i class="fa-solid fa-right-to-bracket fa-2x iconColor"></i>
             </a>
           </div>
         )}

@@ -1,5 +1,3 @@
-// import { BsCartPlus } from "react-icons/bs";
-// import { BiCustomize } from "react-icons/bi";
 const ProductItem = ({ image, title, price }) => {
   return (
     <>
