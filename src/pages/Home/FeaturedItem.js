@@ -1,5 +1,5 @@
-import { BsCartPlus } from "react-icons/bs";
-import { BiCustomize } from "react-icons/bi";
+// import { BsCartPlus } from "react-icons/bs";
+// import { BiCustomize } from "react-icons/bi";
 
 const FeaturedItem = ({ image, title, price }) => {
   return (
@@ -22,10 +22,10 @@ const FeaturedItem = ({ image, title, price }) => {
         </div>
         <div className="mt-[12px] mr-[6px] flex">
           <h1 className="text-[42px] lg:text-[42px]  mr-[5px] text-[#694E4E] hover:scale-[1.1] transition-[2.5]">
-            <BsCartPlus />
+            {/* <BsCartPlus /> */}
           </h1>
           <h1 className="text-[42px] lg:text-[42px]  mr-[5px] text-[#694E4E] hover:scale-[1.1] transition-[2.5]">
-            <BiCustomize />
+            {/* <BiCustomize /> */}
           </h1>
         </div>
       </div>
