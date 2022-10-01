@@ -66,8 +66,11 @@ const NavBar = () => {
           </div>
         )}
         {user && (
-          <div className="flex mr-2 sm:mr-4">
-            <i className="fa-solid fa-cart-shopping mr-4 fa-2x iconColor "></i>
+          <div className="flex mr-4 sm:mr-7">
+            <i
+              className="fa-solid fa-cart-shopping mr-4 fa-2x iconColor hidden xl:block"
+              onClick={() => navigate("/mycart")}
+            ></i>
             <div class="flex justify-center">
               <div>
                 <div class="dropdown relative">
@@ -121,6 +124,27 @@ const NavBar = () => {
                         onClick={() => navigate("/myaccount")}
                       >
                         MyAccount
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        className="
+              xl:hidden
+              dropdown-item
+              text-sm
+              py-2
+              px-4
+              font-normal
+              block
+              w-full
+              whitespace-nowrap
+              bg-transparent
+              text-gray-700
+              hover:bg-gray-100
+            "
+                        onClick={() => navigate("/mycart")}
+                      >
+                        Cart
                       </button>
                     </li>
 
