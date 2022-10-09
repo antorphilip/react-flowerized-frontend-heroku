@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../../assets/image/logo.webp";
 import AuthContext from "../../contexts/auth";
+import { useCart } from "react-use-cart";
 
 const NavBar = () => {
   const { user, logout } = useContext(AuthContext);
@@ -16,6 +17,8 @@ const NavBar = () => {
   ];
 
   const [nav, setNav] = useState(false);
+
+  const { isEmpty, totalItems } = useCart();
 
   return (
     <>
@@ -68,6 +71,12 @@ const NavBar = () => {
               className="fa-solid fa-cart-shopping mr-4 fa-2x iconColor hidden xl:block"
               onClick={() => navigate("/mycart")}
             ></i>
+            {!isEmpty && (
+              <span className="relative left-[-21px] top-[-18px]">
+                {totalItems}
+              </span>
+            )}
+
             <div class="flex justify-center">
               <div>
                 <div class="dropdown relative">

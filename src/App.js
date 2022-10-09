@@ -53,6 +53,7 @@ function App() {
             </ProtectedRoute>
           }
         />
+
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/contactus" element={<ContactUs />} />
@@ -62,9 +63,31 @@ function App() {
         <Route path="/signup" element={<Signup />} />
 
         <Route path="/greetings" element={<Greetings />} />
-        <Route path="/mycart" element={<MyCart />} />
-        <Route path="/checkout" element={<CheckOut />} />
-        <Route path="/payment" element={<Payment />} />
+
+        <Route
+          path="/mycart"
+          element={
+            <ProtectedRoute>
+              <MyCart />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/checkout"
+          element={
+            <ProtectedRoute>
+              <CheckOut />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/payment"
+          element={
+            <ProtectedRoute>
+              <Payment />
+            </ProtectedRoute>
+          }
+        />
         <Route
           path="/confirmation"
           element={
