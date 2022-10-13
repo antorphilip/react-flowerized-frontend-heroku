@@ -1,9 +1,36 @@
-import { useState } from "react";
 import myaccount from "../../assets/image/myaccount.webp";
 import styles from "../../styles/image.module.css";
+import React, { useState, useContext } from "react";
+import AuthContext from "../../contexts/auth";
 
 const MyAccount = () => {
   const [readOnly, setReadOnly] = useState(true);
+  const { user } = useContext(AuthContext);
+
+  const url = "https://flowerized-backend.herokuapp.com/api/users";
+
+  const updateUser = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: e.target.email.value,
+          password: e.pasword.email.value,
+        }),
+      });
+
+      if (response.status === 200) {
+        alert("Update successfully.");
+      }
+    } catch (e) {
+      alert("Network Error");
+    }
+  };
 
   return (
     <>
@@ -21,17 +48,18 @@ const MyAccount = () => {
             <h1 className="text-[#694E4E] tracking-[10px] text-3xl md:text-4xl uppercase font-ElMessiri font-bold ">
               MY PROFILE
             </h1>
-            <form>
+            <form onSubmit={updateUser}>
               <div className="accountdiv">
                 <h3 className="accountLabel font-[Alata] text-[#694E4E]">
                   Name
                 </h3>
                 <input
+                  // value={user.name}
                   className="accounttxtBox"
                   type="text"
                   name="Name"
                   readOnly={readOnly}
-                />
+                ></input>
               </div>
 
               <div className="accountdiv">
@@ -39,6 +67,7 @@ const MyAccount = () => {
                   Email
                 </h3>
                 <input
+                  // value={user.email}
                   className="accounttxtBox"
                   type="text"
                   name="Email"
@@ -79,6 +108,9 @@ const MyAccount = () => {
                   }}
                 >
                   EDIT
+                </button>
+                <button className="px-12 py-2 transition ease-in bg-[#694e4e] text-white uppercase tracking-widest rounded-xl border-2 border-[#694e4e] sm:ml-[100px]">
+                  Save
                 </button>
               </div>
             </form>

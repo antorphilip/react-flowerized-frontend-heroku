@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ProductItem from "./ProductItem";
+import ProductCard from "./ProductCard";
 
 const Product = () => {
   const [productData, setProductData] = useState([]);
@@ -10,22 +10,11 @@ const Product = () => {
       .then((data) => setProductData(data));
   }, []);
 
-  // async function getResponse() {
-  //   const res = await fetch(
-  //     "https://flowerized-backend.herokuapp.com/api/items"
-  //   ).then((res) => res.json());
-  //   setProductData(await res);
-  // }
-
-  // useEffect(() => {
-  //   getResponse();
-  // }, []);
-
   return (
     <>
       <span className="text-center grid gap-x-4 lg:gap-x-16 gap-y-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 mx-[20px] my-[20px] lg:my-[40px] drop-shadow-2xl">
         {productData.map((item) => (
-          <ProductItem
+          <ProductCard
             key={item.id}
             item={item}
             image={item.img_url}

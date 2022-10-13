@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useCart } from "react-use-cart";
-const ProductItem = (props) => {
+const ProductCard = (props) => {
   const { addItem } = useCart();
   const navigate = useNavigate();
 
@@ -39,4 +39,4 @@ const ProductItem = (props) => {
   );
 };
 
-export default ProductItem;
+export default ProductCard;
