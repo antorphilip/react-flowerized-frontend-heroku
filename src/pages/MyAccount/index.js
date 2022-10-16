@@ -7,20 +7,20 @@ const MyAccount = () => {
   const [readOnly, setReadOnly] = useState(true);
   const { user } = useContext(AuthContext);
 
-  const url = "https://flowerized-backend.herokuapp.com/api/users";
+  const url = process.env.REACT_APP_SERVICE_URL;
 
   const updateUser = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await fetch(url, {
-        method: "POST",
+      const response = await fetch(`${url}api/update/`, {
+        method: "PUT",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
+            id: e.target.id.value,
           email: e.target.email.value,
-          password: e.pasword.email.value,
         }),
       });
 
@@ -54,7 +54,7 @@ const MyAccount = () => {
                   Name
                 </h3>
                 <input
-                  // value={user.name}
+                  // value={user.id}
                   className="accounttxtBox"
                   type="text"
                   name="Name"
@@ -67,7 +67,7 @@ const MyAccount = () => {
                   Email
                 </h3>
                 <input
-                  // value={user.email}
+                  placeholder={user.email}
                   className="accounttxtBox"
                   type="text"
                   name="Email"

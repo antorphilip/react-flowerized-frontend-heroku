@@ -1,9 +1,67 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "../../styles/image.module.css";
 import naomi from "../../assets/image/naomi.png";
+import React, { useState, useEffect } from "react";
 
-const MyCart = () => {
+const MyCart = (props) => {
+  const [carts, setCarts] = useState([]);
+  const [payload, setPayloader] = useState({});
+  const [hasError, setError] = useState(false);
+  async function fetchCart() {
+    const res = await fetch(
+      "https://flowerized-backend.herokuapp.com/api/carts/"
+    );
+    res
+      .json()
+      .then((res) => {
+        console.log(res.data.items);
+        setCarts(res.data.items);
+        setPayloader(res.data);
+      })
+      .catch((error) => {
+        setError(error);
+      });
+  }
+  async function increaseQty(id) {
+    try {
+      const res = await fetch(
+        "https://flowerized-backend.herokuapp.com/api/carts/",
+        {
+          method: "POST",
+          body: JSON.stringify({
+            productId: id,
+            quantity: 1,
+          }),
+          headers: {
+            "Content-type": "application/json; charset=UTF-8",
+          },
+        }
+      );
+      console.log(res);
+      fetchCart();
+      alert("Item Increamented");
+    } catch (err) {
+      console.log(err);
+    }
+  }
+  async function emptyCart() {
+    try {
+      const res = await fetch(
+        "https://flowerized-backend.herokuapp.com/api/carts/",
+        {
+          method: "DELETE",
+        }
+      );
+      await res.json();
+      fetchCart();
+      props.history.push("/");
+    } catch (err) {
+      console.log(err);
+    }
+  }
+  useEffect(() => {
+    fetchCart();
+  }, []);
   const navigate = useNavigate();
   return (
     <>
@@ -15,17 +73,19 @@ const MyCart = () => {
               Cart Cart
             </h1>
             <div className="py-4 h-[500px] overflow-auto">
-              <div className="flex w-[100%] lg:w-[90%] bg-[#ffff] rounded shadow-md mx-[auto] my-3">
-                <div className="w-[150px] py-2 px-2">
-                  <img
-                    src={naomi}
-                    className={`rounded`}
-                    alt="ProductImage"
-                    loading="lazy"
-                  />
-                  <h1 className="text-center">Naomi</h1>
+              {carts.map((item, i) => (
+                <div className="flex w-[100%] lg:w-[90%] bg-[#ffff] rounded shadow-md mx-[auto] my-3">
+                  <div className="w-[150px] py-2 px-2">
+                    <img
+                      src={naomi}
+                      className={`rounded`}
+                      alt="ProductImage"
+                      loading="lazy"
+                    />
+                    <h1 className="text-center">{props.name}</h1>
+                  </div>
                 </div>
-              </div>
+              ))}
             </div>
           </div>
           <div className="w-[100%] lg:w-[40%] bg-[#ffff]/50 h-[300px] lg:h-[700px]">
