@@ -53,6 +53,7 @@ export const AuthProvider = ({ children }) => {
     setTokens(null);
     setUser(null);
     localStorage.removeItem("tokens");
+    navigate("/login");
   };
 
   const register = async (e) => {

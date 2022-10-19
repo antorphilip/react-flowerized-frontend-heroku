@@ -3,7 +3,7 @@ import carousel1 from "../../assets/image/EventsCarousel1.webp";
 import carousel2 from "../../assets/image/EventsCarousel2.webp";
 import carousel3 from "../../assets/image/EventsCarousel3.webp";
 import carousel4 from "../../assets/image/EventsCarousel4.webp";
-import Product from "./Product";
+import Products from "./Products";
 
 const Events = () => {
   return (
@@ -181,7 +181,7 @@ const Events = () => {
       </div>
 
       <div className="w-[100%] lg:w-[80%] mx-[auto] ">
-        <Product />
+        <Products />
       </div>
     </>
   );
