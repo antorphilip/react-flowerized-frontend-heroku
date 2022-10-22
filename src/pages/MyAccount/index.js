@@ -19,7 +19,7 @@ const MyAccount = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-            id: e.target.id.value,
+          id: e.target.id.value,
           email: e.target.email.value,
         }),
       });
@@ -67,7 +67,7 @@ const MyAccount = () => {
                   Email
                 </h3>
                 <input
-                  placeholder={user.email}
+                  placeholder={user.id}
                   className="accounttxtBox"
                   type="text"
                   name="Email"
