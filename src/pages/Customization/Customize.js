@@ -10,14 +10,14 @@ import AccentFlower from "../../components/FlowerPicker/AccentFlower";
 
 const Customize = () => {
   const navigate = useNavigate();
-  const [isOpen, setisOpen] = useState(false);
+  const [isOpenFocal, setisOpenFocal] = useState(false);
 
-  const handleButtonToggle = () => setisOpen(!isOpen);
+  const handleButtonToggle = () => setisOpenFocal(!isOpenFocal);
 
   return (
     <>
-      <div>{isOpen ? <FocalFlower /> : ""}</div>
-      <div>{isOpen ? <AccentFlower /> : ""}</div>
+      <div>{isOpenFocal ? <FocalFlower /> : ""}</div>
+      {/* <div>{isOpen ? <AccentFlower /> : ""}</div> */}
 
       <div className="mt-[80px]"></div>
 
