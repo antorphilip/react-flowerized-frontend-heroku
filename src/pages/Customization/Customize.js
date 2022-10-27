@@ -7,6 +7,7 @@ import carousel4 from "../../assets/image/EventsCarousel4.webp";
 import imageme from "../../assets/image/coffee.webp";
 import FocalFlower from "../../components/FlowerPicker/FocalFlower";
 import AccentFlower from "../../components/FlowerPicker/AccentFlower";
+import redcarn from "../../assets/image/red-carn.png";
 
 const Customize = () => {
   const navigate = useNavigate();
@@ -98,12 +99,12 @@ const Customize = () => {
       <div className="w-[95%] lg:w-[90%] flex flex-col lg:flex-row mx-[auto] justify-around lg:px-28 py-14">
         <div className="w-[100%] lg:w-[60%] h-[300px] lg:h-[auto] shadow-2xl rounded "></div>
         <div className="w-[100%] lg:w-[30%] border-2 mt-7 lg:mt-0 py-7 border-[#694E4E] rounded">
-          <div className="uppercase text-center w-[80%] mx-[auto]">
-            <h1 className="p-4 bg-[#C1A3A3] font-[Alata] text-white">
+          <div className="text-center w-[80%] mx-[auto]">
+            <h1 className="p-4 bg-[#C1A3A3] font-[Alata] text-white uppercase">
               Pick focal flower
             </h1>
             <div className="grid grid-cols-1 grid-rows-2 gap-4 mt-[10px] text-xl">
-              <button
+              {/* <button
                 className="border-2 h-[100px] border-[#694E4E] flex border-dashed items-center"
                 onClick={handleButtonFocalToggle}
               >
@@ -111,7 +112,39 @@ const Customize = () => {
                   +
                 </span>
                 <span className="w-[100%] h-[100%] uppercase text-center font-[Alata] text-white"></span>
-              </button>
+              </button> */}
+              <div className="h-[100px] flex">
+                <span className="w-[30%] h-full py-2 shadow-xl ">
+                  <img
+                    src={redcarn}
+                    className={`rounded mx-[auto] h-full`}
+                    alt="Flower"
+                    loading="lazy"
+                  />
+                </span>
+                <div className="w-[60%] h-[100%] flex-col">
+                  <div className="flex justify-between pt-2 px-3">
+                    <p className="font-[Atlata] text-lg">Carnation</p>
+                    <p className="font-[Atlata] text-lg">150.00</p>
+                  </div>
+                  <div>
+                    <p className="font-[Atlata] text-sm text-left px-3">
+                      5 STEMS
+                    </p>
+                  </div>
+                  <select className="w-[90%] py-1 px-2 font-[Alata] text-sm border-black rounded border-[1px] mt-2">
+                    <option>Red</option>
+                    <option>Pink</option>
+                    <option>White</option>
+                    <option>Black</option>
+                    <option>Gold</option>
+                    <option>Brown</option>
+                    <option>Cream</option>
+                  </select>
+                </div>
+                <span className="w-[10%] h-full py-7 text-red-500">x</span>
+              </div>
+
               <button
                 className="border-2 h-[100px] border-[#694E4E] flex border-dashed items-center"
                 onClick={handleButtonFocalToggle}
