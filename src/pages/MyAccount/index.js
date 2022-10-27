@@ -54,10 +54,10 @@ const MyAccount = () => {
                   Name
                 </h3>
                 <input
-                  // value={user.id}
+                  placeholder={user.id}
                   className="accounttxtBox"
                   type="text"
-                  name="Name"
+                  name="id"
                   readOnly={readOnly}
                 ></input>
               </div>
@@ -67,10 +67,10 @@ const MyAccount = () => {
                   Email
                 </h3>
                 <input
-                  placeholder={user.id}
+                  placeholder={user.email}
                   className="accounttxtBox"
                   type="text"
-                  name="Email"
+                  name="email"
                   readOnly={readOnly}
                 />
               </div>
@@ -80,9 +80,10 @@ const MyAccount = () => {
                   Contact
                 </h3>
                 <input
+                  placeholder={user.email}
                   className="accounttxtBox"
                   type="text"
-                  name="Contact"
+                  name="email"
                   readOnly={readOnly}
                 />
               </div>

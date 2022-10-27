@@ -19,6 +19,7 @@ import MyCart from "./pages/MyCart";
 import Payment from "./pages/Payment";
 import Signup from "./pages/Signup";
 import CheckOut from "./pages/Checkout";
+import Test from "./pages/Test/Test";
 
 const ProtectedRoute = ({ children }) => {
   const { user } = useContext(AuthContext);
@@ -53,6 +54,8 @@ function App() {
             </ProtectedRoute>
           }
         />
+
+        <Route path="/test" element={<Test />} />
 
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/aboutus" element={<AboutUs />} />

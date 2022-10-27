@@ -11,13 +11,15 @@ import AccentFlower from "../../components/FlowerPicker/AccentFlower";
 const Customize = () => {
   const navigate = useNavigate();
   const [isOpenFocal, setisOpenFocal] = useState(false);
+  const [isOpenAccent, setisOpenAccent] = useState(false);
 
-  const handleButtonToggle = () => setisOpenFocal(!isOpenFocal);
+  const handleButtonFocalToggle = () => setisOpenFocal(!isOpenFocal);
+  const handleButtonAccentToggle = () => setisOpenAccent(!isOpenAccent);
 
   return (
     <>
       <div>{isOpenFocal ? <FocalFlower /> : ""}</div>
-      {/* <div>{isOpen ? <AccentFlower /> : ""}</div> */}
+      <div>{isOpenAccent ? <AccentFlower /> : ""}</div>
 
       <div className="mt-[80px]"></div>
 
@@ -100,21 +102,21 @@ const Customize = () => {
             <h1 className="p-4 bg-[#C1A3A3] font-[Alata] text-white">
               Pick focal flower
             </h1>
-            <div className="grid grid-cols-1 grid-rows-2 gap-4 mt-[10px]">
+            <div className="grid grid-cols-1 grid-rows-2 gap-4 mt-[10px] text-xl">
               <button
                 className="border-2 h-[100px] border-[#694E4E] flex border-dashed items-center"
-                onClick={handleButtonToggle}
+                onClick={handleButtonFocalToggle}
               >
-                <span className="w-[30%] h-full border-dashed border-2 border-[#694E4E] py-7 border-y-0 border-l-0">
+                <span className="w-[40%] h-full border-dashed border-2 border-[#694E4E] py-7 border-y-0 border-l-0">
                   +
                 </span>
                 <span className="w-[100%] h-[100%] uppercase text-center font-[Alata] text-white"></span>
               </button>
               <button
                 className="border-2 h-[100px] border-[#694E4E] flex border-dashed items-center"
-                onClick={handleButtonToggle}
+                onClick={handleButtonFocalToggle}
               >
-                <span className="w-[30%] h-full border-dashed border-2 border-[#694E4E] py-7 border-y-0 border-l-0">
+                <span className="w-[40%] h-full border-dashed border-2 border-[#694E4E] py-7 border-y-0 border-l-0">
                   +
                 </span>
                 <span className="w-[100%] h-[100%] uppercase text-center font-[Alata] text-white"></span>
@@ -126,15 +128,21 @@ const Customize = () => {
             <h1 className="p-4 bg-[#C1A3A3] font-[Alata] text-white">
               Pick accent flower
             </h1>
-            <div className="grid grid-cols-1 grid-rows-2 gap-4 mt-[10px]">
-              <button className="border-2 h-[100px] border-[#694E4E] flex border-dashed items-center">
-                <span className="w-[30%] h-full border-dashed border-2 border-[#694E4E] py-7 border-y-0 border-l-0">
+            <div className="grid grid-cols-1 grid-rows-2 gap-4 mt-[10px] text-xl">
+              <button
+                className="border-2 h-[100px] border-[#694E4E] flex border-dashed items-center"
+                onClick={handleButtonAccentToggle}
+              >
+                <span className="w-[40%] h-full border-dashed border-2 border-[#694E4E] py-7 border-y-0 border-l-0">
                   +
                 </span>
                 <span className="w-[100%] h-[100%] uppercase text-center font-[Alata] text-white"></span>
               </button>
-              <button className="border-2 h-[100px] border-[#694E4E] flex border-dashed items-center">
-                <span className="w-[30%] h-full border-dashed border-2 border-[#694E4E] py-7 border-y-0 border-l-0">
+              <button
+                className="border-2 h-[100px] border-[#694E4E] flex border-dashed items-center"
+                onClick={handleButtonAccentToggle}
+              >
+                <span className="w-[40%] h-full border-dashed border-2 border-[#694E4E] py-7 border-y-0 border-l-0">
                   +
                 </span>
                 <span className="w-[100%] h-[100%] uppercase text-center font-[Alata] text-white"></span>
